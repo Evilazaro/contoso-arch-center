@@ -11,7 +11,7 @@
         - title: Standard Data Platform
           url: .
     - title: Sample Applications
-      url: .
+      url: sampe-applications
       children:
         - title: eShop on Containers
           url: eshoponcontiners
