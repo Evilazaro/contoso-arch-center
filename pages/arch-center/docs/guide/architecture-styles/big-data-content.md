@@ -1,3 +1,7 @@
+---
+title: Big Data 
+permalink: /big-data-content/
+---
 A big data architecture is designed to handle the ingestion, processing, and analysis of data that is too large or complex for traditional database systems.
 
 ![Logical diagram of a big data architecture style](./images/big-data-logical.svg)

@@ -1,29 +1,6 @@
 ---
-title: Apache scenarios on Azure
-description: Review a list of architectures and solutions that use Apache open-source solutions.
-author: EdPrice-MSFT
-ms.author: edprice
-ms.date: 04/11/2022 
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
-  - azure-kubernetes-service
-  - azure-stack-hub
-  - azure-hdinsight
-categories:
-  - ai-machine-learning
-  - databases
-  - hybrid
-  - analytics
-  - web
-  - iot
-  - migration 
-  - containers
-  - integration 
-  - compute
-  - storage
-ms.custom: fcp
+title: Apache Scenarios
+permalink: /apache-schenarios/
 ---
 
 # Apache open-source scenarios on Azure

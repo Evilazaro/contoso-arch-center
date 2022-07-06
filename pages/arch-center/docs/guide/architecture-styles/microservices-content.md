@@ -1,4 +1,9 @@
-[!INCLUDE [microservices-intro](../../includes/microservices-intro.md)]
+---
+title: Microservices
+permalink: /microservices-content/
+---
+
+[!INCLUDE [microservices-intro]( ../../includes/microservices-intro.md)]
 
 ## Best practices
 

@@ -1,32 +1,6 @@
 ---
-title: Scenarios that feature Microsoft on-premises technologies on Azure
-description: Review a list of architectures and solutions that use Microsoft on-premises technologies on Microsoft Azure.
-author: EdPrice-MSFT
-ms.author: edprice
-ms.date: 06/21/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
-  - windows-server
-  - office-exchange-server
-  - sql-server
-  - azure-active-directory
-  - azure-virtual-machines-windows
-categories:
-  - mobile
-  - hybrid
-  - identity
-  - windows-virtual-desktop
-  - web
-  - networking
-  - management-and-governance
-  - devops
-  - databases
-  - integration 
-  - analytics
-  - storage
-ms.custom: fcp
+title: OnPrem
+permalink: /on-premises-microsoft-technologies/
 ---
 
 # Scenarios featuring Microsoft on-premises technologies on Azure

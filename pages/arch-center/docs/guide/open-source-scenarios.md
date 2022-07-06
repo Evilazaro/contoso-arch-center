@@ -1,42 +1,9 @@
 ---
-title: Open-source scenarios on Azure
-description: Review a list of architectures and solutions that use open-source technologies.
-author: EdPrice-MSFT
-ms.author: edprice
-ms.date: 04/11/2022 
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
-  - azure-kubernetes-service
-  - azure-netapp-files
-  - azure-database-mariadb
-  - azure-database-mysql
-  - azure-database-postgresql
-categories:
-  - ai-machine-learning
-  - databases
-  - hybrid
-  - analytics
-  - web
-  - iot
-  - migration 
-  - containers
-  - integration 
-  - media
-  - compute
-  - devops
-  - management-and-governance
-  - blockchain
-  - storage
-  - mobile
-  - security
-  - networking
-  - windows-virtual-desktop
-ms.custom: fcp
+title: Contoso Open Source
+permalink: /open-source-scenarios/
 ---
 
-# Open-source scenarios on Azure
+# Contoso Open Source
 
 Microsoft is proud to support open-source projects, initiatives, and foundations and contribute to thousands of open-source communities. By using open-source technologies on Azure, you can run applications your way while optimizing your investments. 
 

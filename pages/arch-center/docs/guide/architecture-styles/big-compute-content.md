@@ -1,3 +1,8 @@
+---
+title: Big Compute
+permalink: /big-compute-content/
+---
+
 The term *big compute* describes large-scale workloads that require a large number of cores, often numbering in the hundreds or thousands. Scenarios include image rendering, fluid dynamics, financial risk modeling, oil exploration, drug design, and engineering stress analysis, among others.
 
 ![Logical diagram for big compute architecture style](./images/big-compute-logical.png)

@@ -1,21 +1,9 @@
 ---
-title: Azure Application Architecture Fundamentals
-description: A structured approach for designing applications on Azure that are scalable, resilient, and highly available
-author: EdPrice-MSFT
-ms.author: pnp
-ms.date: 12/13/2021
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: guide
-ms.custom:
-  - guide
-products:
-  - azure
-categories:
-  - management-and-governance
+title: Contoso Applicatio Architecture Fundamentals
+permalink: /default/
 ---
 
-# Azure application architecture fundamentals
+# Contoso application architecture fundamentals
 
 This library of content presents a structured approach for designing applications on Azure that are scalable, secure, resilient, and highly available. The guidance is based on proven practices that we have learned from customer engagements.
 
