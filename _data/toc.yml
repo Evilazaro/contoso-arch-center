@@ -1,24 +1,23 @@
 - title:  Contoso Architecture Center
   url: .
-- title: What's new
-  url: changelog.md
 - title: Contoso Application architecture fundamentals
-  url: .
-- title: Introduction
-  url: guide/index.md
-- title: Architecture styles
-  url:
-- title: Overview
-  url: guide/architecture-styles/index.md
-- title: Big compute
-  url: guide/architecture-styles/big-compute.yml
-- title: Big data
-  url: guide/architecture-styles/big-data.yml
-- title: Event-driven architecture
-  url: guide/architecture-styles/event-driven.yml
-- title: Microservices
-  url: guide/architecture-styles/microservices.yml
-- title: N-tier application
-  url: guide/architecture-styles/n-tier.yml
-- title: Web-queue-worker
-  url: guide/architecture-styles/web-queue-worker.yml
+  url: ./arch-center/docs/guide/
+  children:
+    - title: Introduction
+      url: guide/index.md
+    - title: Architecture styles
+      url:
+    - title: Overview
+      url: guide/architecture-styles/index.md
+    - title: Big compute
+      url: guide/architecture-styles/big-compute.yml
+    - title: Big data
+      url: guide/architecture-styles/big-data.yml
+    - title: Event-driven architecture
+      url: guide/architecture-styles/event-driven.yml
+    - title: Microservices
+      url: guide/architecture-styles/microservices.yml
+    - title: N-tier application
+      url: guide/architecture-styles/n-tier.yml
+    - title: Web-queue-worker
+      url: guide/architecture-styles/web-queue-worker.yml
