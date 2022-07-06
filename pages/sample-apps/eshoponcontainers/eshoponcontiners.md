@@ -1,6 +1,6 @@
 ---
 title: Building Blocks
-permalink: /building-blocks/
+permalink: /eshoponcontiners/
 ---
 
 <a href="https://dot.net/architecture">
