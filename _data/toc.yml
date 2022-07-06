@@ -1,10 +1,21 @@
 - title:  Contoso Architecture Center
   url: .
-- title: Multitenant Applications
-  url: .
 - title: Contoso Application architecture fundamentals
   url: ./arch-center/docs/guide/
   links:
+    - title: Multitenant Applications
+      url: .
+      children:
+        - title: Architecture styles
+          url:
+        - title: Contoso Design Principles for Cloud Native Apps
+          url: guide/architecture-styles/
+        - title: Technology Choices
+          url: guide/architecture-styles/big-compute/
+        - title: Best Practices for Cloud-Native Applications
+          url: guide/architecture-styles/big-data/
+        - title: Mission Critical Applications
+          url: guide/architecture-styles/event-driven/
     - title: Architecture styles
       url:
     - title: Contoso Design Principles for Cloud Native Apps
@@ -14,4 +25,19 @@
     - title: Best Practices for Cloud-Native Applications
       url: guide/architecture-styles/big-data/
     - title: Mission Critical Applications
+      url: guide/architecture-styles/event-driven/
+- title: Design Patterns
+  url: ./arch-center/docs/guide/
+  links:
+    - title: Ambassador
+      url: .
+    - title: Backends for Frontends
+      url:
+    - title: Circuite Breaker
+      url: guide/architecture-styles/
+    - title: Gateway Agregation
+      url: guide/architecture-styles/big-compute/
+    - title: Gateway Routing
+      url: guide/architecture-styles/big-data/
+    - title: Publisher/Subscriber
       url: guide/architecture-styles/event-driven/
