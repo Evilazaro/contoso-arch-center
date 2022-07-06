@@ -1,11 +1,11 @@
 - title:  Contoso Architecture Center
   url: .
 - title: Contoso Application architecture fundamentals
-  url: ./arch-center/docs/guide/
+  url: ./contoso-apparch-fundamentals/
   links:
     - title: Multitenant Applications
       url: .
-      children:
+      links:
         - title: Architecture styles
           url:
         - title: Contoso Design Principles for Cloud Native Apps
@@ -40,4 +40,19 @@
     - title: Gateway Routing
       url: guide/architecture-styles/big-data/
     - title: Publisher/Subscriber
+      url: guide/architecture-styles/event-driven/
+- title: Technology Categories
+  url: ./arch-center/docs/guide/
+  links:
+    - title: Containers
+      url: .
+    - title: Compute
+      url:
+    - title: DevOps
+      url: guide/architecture-styles/
+    - title: Integration
+      url: guide/architecture-styles/big-compute/
+    - title: Networking
+      url: guide/architecture-styles/big-data/
+    - title: Storage
       url: guide/architecture-styles/event-driven/

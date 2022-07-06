@@ -10,8 +10,6 @@ permalink: /
 
 Contoso patterns & practices
 
-<https://aka.ms/architecture>
-
 ## Legal Notices
 
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content
