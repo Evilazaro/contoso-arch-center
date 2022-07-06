@@ -46,7 +46,7 @@ Each service can be built by a small, focused development team. Individual servi
 
 ![Diagram of an event-driven architecture style.](./images/event-driven.svg)
 
-**[Event-Driven Architectures](./event-driven/)** use a publish-subscribe (pub-sub) model, where producers publish events, and consumers subscribe to them. The producers are independent from the consumers, and consumers are independent from each other.
+**[Event-Driven Architectures](/event-driven/)** use a publish-subscribe (pub-sub) model, where producers publish events, and consumers subscribe to them. The producers are independent from the consumers, and consumers are independent from each other.
 
 Consider an event-driven architecture for applications that ingest and process a large volume of data with very low latency, such as IoT solutions. The style is also useful when different subsystems must perform different types of processing on the same event data.
 
@@ -54,7 +54,7 @@ Consider an event-driven architecture for applications that ingest and process a
 
 ![Logical diagram of a big data architecture style.](./images/big-data-logical.svg)
 
-**[Big Data](./big-data/)** and **[Big Compute](./big-compute/)** are specialized architecture styles for workloads that fit certain specific profiles. Big data divides a very large dataset into chunks, performing parallel processing across the entire set, for analysis and reporting. Big compute, also called high-performance computing (HPC), makes parallel computations across a large number (thousands) of cores. Domains include simulations, modeling, and 3-D rendering.
+**[Big Data](/big-data/)** and **[Big Compute](/big-compute/)** are specialized architecture styles for workloads that fit certain specific profiles. Big data divides a very large dataset into chunks, performing parallel processing across the entire set, for analysis and reporting. Big compute, also called high-performance computing (HPC), makes parallel computations across a large number (thousands) of cores. Domains include simulations, modeling, and 3-D rendering.
 
 ## Architecture styles as constraints
 
@@ -75,11 +75,11 @@ The following table summarizes how each style manages dependencies, and the type
 | Architecture style | Dependency management | Domain type |
 |--------------------|------------------------|-------------|
 | [N-tier][n-tier] | Horizontal tiers divided by subnet | Traditional business domain. Frequency of updates is low. |
-| [Web-queue-worker](./web-queue-worker/) | Front and backend jobs, decoupled by async messaging. | Relatively simple domain with some resource intensive tasks. |
+| [Web-queue-worker](/web-queue-worker/) | Front and backend jobs, decoupled by async messaging. | Relatively simple domain with some resource intensive tasks. |
 | [Microservices][microservices] | Vertically (functionally) decomposed services that call each other through APIs. | Complicated domain. Frequent updates. |
-| [Event-driven architecture](./event-driven/) | Producer/consumer. Independent view per sub-system. | IoT and real-time systems. |
-| [Big data](./big-data/) | Divide a huge dataset into small chunks. Parallel processing on local datasets. | Batch and real-time data analysis. Predictive analysis using ML. |
-| [Big compute](./big-compute/) | Data allocation to thousands of cores. | Compute intensive domains such as simulation. |
+| [Event-driven architecture](/event-driven/) | Producer/consumer. Independent view per sub-system. | IoT and real-time systems. |
+| [Big data](/big-data/) | Divide a huge dataset into small chunks. Parallel processing on local datasets. | Batch and real-time data analysis. Predictive analysis using ML. |
+| [Big compute](/big-compute/) | Data allocation to thousands of cores. | Compute intensive domains such as simulation. |
 
 ## Consider challenges and benefits
 
@@ -95,17 +95,5 @@ Here are some of the types of challenges to consider when selecting an architect
 
 - **Manageability**. How hard is it to manage the application, monitor, deploy updates, and so on?
 
-## Related resources
-
-- [Ten design principles for Azure applications](/azure/architecture/guide/design-principles/)
-- [Build applications on the Microsoft Cloud](/azure/architecture/guide/microsoft-cloud/overview)
-- [Best practices in cloud applications](/azure/architecture/best-practices/index-best-practices)
-- [Cloud Design Patterns](/azure/architecture/patterns/)
-- [Performance testing and antipatterns for cloud applications](/azure/architecture/antipatterns/)
-- [Architect multitenant solutions on Azure](/azure/architecture/guide/multitenant/overview)
-- [Mission critical workload architecture on Azure](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-intro)
-- [Architecture for startups](/azure/architecture/guide/startups/startup-architecture)
-
-[ball-of-mud]: https://en.wikipedia.org/wiki/Big_ball_of_mud
-[microservices]: ./microservices/
-[n-tier]: ./n-tier/
+[microservices]: /microservices/
+[n-tier]: /n-tier/

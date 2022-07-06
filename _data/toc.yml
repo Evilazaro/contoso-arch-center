@@ -1,11 +1,26 @@
-- title: Contoso Architecture Center
-  url: .
-- title: Building Blocks
+- title: Contoso - Building Blocks
   url: ./building-blocks/
   links:
-    - title: eShops on Containers
-      url: ./eshoponcontainers/
-- title: Contoso Application architecture fundamentals
+    - title: Kubernetes Adoption/Deployment accelerator
+      url: .
+    - title: Contoso Single-Sign-on
+      url: .
+    - title: Standard Data Platform
+      url: .
+- title: Contoso - Sample Applications
+  url: .
+  links:
+    - title: eShop on Containers
+      url: .
+    - title: Fabrikam Cloud-Native
+      url: .
+- title: Insdustry solutions at Contoso
+  url: ./arch-center/docs/guide/
+  links:
+    - title: Retail
+      url: .
+    - title: Finance
+- title: Architecture Guidance
   url: ./contoso-apparch-fundamentals/
   links:
     - title: Multitenant Applications
@@ -55,21 +70,6 @@
     - title: Containers
       url: .
     - title: Compute
-      url:
-    - title: DevOps
-      url: guide/architecture-styles/
-    - title: Integration
-      url: guide/architecture-styles/big-compute/
-    - title: Networking
-      url: guide/architecture-styles/big-data/
-    - title: Storage
-      url: guide/architecture-styles/event-driven/
-- title: Insdustry solutions at Contoso
-  url: ./arch-center/docs/guide/
-  links:
-    - title: Retail
-      url: .
-    - title: Finance
       url:
     - title: DevOps
       url: guide/architecture-styles/
