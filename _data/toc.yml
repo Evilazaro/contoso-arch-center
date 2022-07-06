@@ -2,6 +2,9 @@
   url: .
 - title: Building Blocks
   url: ./building-blocks/
+  links:
+    - title: eShops on Containers
+      url: ./eshoponcontainers/
 - title: Contoso Application architecture fundamentals
   url: ./contoso-apparch-fundamentals/
   links:
