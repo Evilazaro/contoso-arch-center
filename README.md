@@ -1,4 +1,6 @@
-# Contoso Architecture Center
+![](./assets//img/contoso-logo.png)
+
+# Contoso Architecture Center  
 
 Contoso patterns & practices
 

@@ -4,6 +4,8 @@ title: Contoso Architecture Center
 permalink: /
 ---
 
+![](../assets//img/contoso-logo.png)
+
 # Contoso Architecture Center
 
 Contoso patterns & practices
