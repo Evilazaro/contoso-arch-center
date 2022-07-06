@@ -1,3 +1,8 @@
+---
+title: Building Blocks
+permalink: /building-blocks/
+---
+
 # AKS Landing Zone Accelerator
 
 ## Check our GitHub Repo
