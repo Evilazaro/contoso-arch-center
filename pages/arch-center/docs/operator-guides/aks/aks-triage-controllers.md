@@ -62,5 +62,5 @@ configmaps                               cm                                     
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+
 > [Verify the connection to the container registry](aks-triage-container-registry.md)

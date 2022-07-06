@@ -46,5 +46,5 @@ ASICs are manufactured to do a specific task. ASICs are by far the fastest accel
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+
 > [Machine learning and data science in Azure IoT Edge vision AI](./machine-learning.yml)

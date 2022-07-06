@@ -125,5 +125,5 @@ When appropriate, professional and citizen developers can work together to creat
 
 See how successful enterprise application development leaders get the most value from technical talent with fusion development and an integrated low-code and pro-code development process that includes GitHub and Azure DevOps.
 
-> [!div class="nextstepaction"]
+
 > [3. Get the most value from technical talent](get-most-value-technical-talent.md)

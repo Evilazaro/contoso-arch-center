@@ -74,7 +74,7 @@ Before continuing, consider reviewing these related articles:
 - [Authorize access with a shared access signature in Azure Event Hubs](/azure/event-hubs/authorize-access-shared-access-signature)
 - [Configure an identity-based resource](/azure/azure-functions/functions-reference#configure-an-identity-based-connection)
 
-> [!div class="nextstepaction"]
+
 > [Observability](./observability.yml)
 
 ## Related resources

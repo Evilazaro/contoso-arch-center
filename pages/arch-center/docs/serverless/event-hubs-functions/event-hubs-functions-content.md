@@ -67,7 +67,7 @@ To learn more, see [Azure Event Hubs bindings for Azure Functions](/azure/azure-
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+
 > [Performance and scale](./performance-scale.yml)
 
 ## Related resources

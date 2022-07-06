@@ -44,6 +44,6 @@ For alerts, the best option is the built-in store and forward capability of the 
 
 ## Next step
 
-> [!div class="nextstepaction"]
+
 > [Image storage and management in Azure IoT Edge Vision](./image-storage.md)
 

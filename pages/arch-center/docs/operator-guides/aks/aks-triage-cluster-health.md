@@ -40,5 +40,5 @@ To learn more about this feature, see [Azure Kubernetes Service Diagnostics over
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+
 > [Examine the node and pod health](aks-triage-node-health.md)

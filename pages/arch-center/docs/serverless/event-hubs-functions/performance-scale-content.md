@@ -203,7 +203,7 @@ Before continuing, consider reviewing these related articles:
 - [Designing Azure Functions for identical input](/azure/azure-functions/functions-idempotent)
 - [ASP.NET Core async guidance](https://github.com/davidfowl/AspNetCoreDiagnosticScenarios/blob/master/AsyncGuidance.md).
 
-> [!div class="nextstepaction"]
+
 > [Resilient Event Hubs and Functions design](./resilient-design.md)
 
 ## Related resources

@@ -122,7 +122,7 @@ Before continuing, consider reviewing these related articles:
 - [Designing Azure Functions for identical input](/azure/azure-functions/functions-idempotent)
 - [Azure Functions error handling and retry guidance](/azure/azure-functions/functions-bindings-error-pages)
 
-> [!div class="nextstepaction"]
+
 > [Security](./security.md)
 
 ## Related resources

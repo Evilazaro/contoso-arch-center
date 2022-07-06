@@ -97,5 +97,5 @@ Using the Microsoft Cloud makes possible a modern process for fusion development
 
 See how successful enterprise application development leaders integrate new applications with existing solutions by using Azure API Management, Microsoft Graph, and Dynamics 365.
 
-> [!div class="nextstepaction"]
+
 > [4. Integrate new applications with existing solutions](integrate-new-applications-existing-solutions.md)

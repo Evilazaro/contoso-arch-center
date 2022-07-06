@@ -253,7 +253,7 @@ For product documentation on the Azure services used in this architecture, see t
 
 Deploy the reference implementation to get a complete understanding of considered resources, including how they are operationalized in a mission-critical context. 
 
-> [!div class="nextstepaction"]
+
 > [Implementation: Mission-Critical Online](https://github.com/Azure/Mission-Critical-Online)
 
 ## Next steps

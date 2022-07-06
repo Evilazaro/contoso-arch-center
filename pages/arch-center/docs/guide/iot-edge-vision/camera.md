@@ -150,5 +150,5 @@ In planning a computer vision workload, it's important to understand how the cam
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+
 > [Hardware acceleration in Azure IoT Edge vision AI](./hardware.md)

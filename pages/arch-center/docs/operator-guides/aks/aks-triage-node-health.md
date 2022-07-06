@@ -176,5 +176,5 @@ The events that can trigger IOPS throttle include:
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+
 > [Check the workload deployments](aks-triage-deployment.md)

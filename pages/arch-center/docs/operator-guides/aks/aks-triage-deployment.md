@@ -31,5 +31,5 @@ _This article is part of a series. Read the introduction [here](aks-triage-pract
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+
 > [Validate the admission controllers](aks-triage-controllers.md)

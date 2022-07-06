@@ -84,7 +84,7 @@ Scoring data locally and sending only relevant data to the cloud can improve the
 
 To continue with this series about IoT Edge vision AI, go on to the next article:
 
-> [!div class="nextstepaction"]
+
 > [Camera selection for Azure IoT Edge vision AI](./camera.md)
 
 To learn more about CNNs, vision AI, Azure Machine Learning, and Azure IoT Edge, see the following documentation:

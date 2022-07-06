@@ -76,5 +76,5 @@ Our reference implementation primarily uses Kubernetes, but we did use Azure Fun
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+
 > [Interservice communication](./interservice-communication.yml)

@@ -82,5 +82,5 @@ Security isn’t a simple topic. Because of this, Microsoft provides Microsoft S
 
 See a summary of **Build applications on the Microsoft Cloud** and find out how to learn more about succeeding as an enterprise application development leader.
 
-> [!div class="nextstepaction"]
+
 > [6. Summary](summary.md)

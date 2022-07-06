@@ -125,5 +125,5 @@ Another option is to design all operations to be idempotent. An operation is ide
 
 For microservices that talk directly to each other, it's important to create well-designed APIs.
 
-> [!div class="nextstepaction"]
+
 > [API design](./api-design.yml)

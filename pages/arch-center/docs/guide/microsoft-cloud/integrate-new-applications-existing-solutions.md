@@ -147,5 +147,5 @@ There are connections between Dynamics 365 and other parts of the Microsoft Clou
 
 See how successful enterprise application development leaders create and run secure applications by using Active Directory for identity and access management.
 
-> [!div class="nextstepaction"]
+
 > [5. Create and run secure applications](create-run-secure-applications.md)

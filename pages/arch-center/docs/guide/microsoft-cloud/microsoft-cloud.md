@@ -55,5 +55,5 @@ After you read these articles, you can learn more about building applications on
 
 See how successful enterprise application development leaders create better applications in less time with pro-code development on Azure and low-code development on Power Platform.
 
-> [!div class="nextstepaction"]
+
 > [2. Create and deploy more applications in less time](create-deploy-more-applications-less-time/)

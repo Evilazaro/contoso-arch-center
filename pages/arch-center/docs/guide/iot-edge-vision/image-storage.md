@@ -52,5 +52,5 @@ The following steps describe a typical workflow that uses an IoT Edge blob stora
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+
 > [User interface and scenarios in Azure IoT Edge vision AI](./user-interface.md)

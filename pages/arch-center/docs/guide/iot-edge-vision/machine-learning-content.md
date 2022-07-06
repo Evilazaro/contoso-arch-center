@@ -163,5 +163,5 @@ Here are key ML and data science deployment considerations for IoT Edge vision A
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+
 > [Alert persistence in Azure IoT Edge vision AI](./alerts.md)

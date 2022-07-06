@@ -64,5 +64,5 @@ The following diagram shows the design at this point:
 
 At this point, you should have a clear understanding of the purpose and functionality of each microservice in your design. Now you can architect the system.
 
-> [!div class="nextstepaction"]
+
 > [Design a microservices architecture](../design/index.yml)

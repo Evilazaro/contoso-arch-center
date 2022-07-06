@@ -123,5 +123,5 @@ How you manage your data plays directly into the availability of your applicatio
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+
 > [Test for resiliency and availability](/azure/architecture/framework/resiliency/testing)

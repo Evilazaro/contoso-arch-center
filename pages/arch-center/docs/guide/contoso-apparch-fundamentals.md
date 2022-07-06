@@ -74,5 +74,5 @@ Our [security best practices](/security/compass/applications-services) describe 
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+
 > [Architecture styles](./architecture-styles/)

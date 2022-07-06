@@ -237,5 +237,5 @@ Similarly, Application Insights is also deployed as a regional resource to colle
 
 Deploy the reference implementation to get a full understanding of the resources and their configuration used in this architecture.
 
-> [!div class="nextstepaction"]
+
 > [Implementation: Mission-Critical Online](https://github.com/Azure/Mission-Critical-Online)
