@@ -31,7 +31,7 @@ Migrating a monolith to a microservice requires significant time and investment 
 - A single service that fails will not bring down the entire application.
 - Testing becomes more coherent and consistent, using [behavior-driven development](https://en.wikipedia.org/wiki/Behavior-driven_development).
 
-For more information about the benefits and challenges of microservices, see [Microservices architecture style](../guide/architecture-styles/microservices.yml).
+For more information about the benefits and challenges of microservices, see [Microservices architecture style](../guide/architecture-styles/microservices/).
 
 ## Apply domain-driven design
 
@@ -71,7 +71,7 @@ The  [glue code](https://en.wikipedia.org/wiki/Glue_code) (adapter pattern) effe
 
 Through the process of refactoring, teams can inventory the monolithic application and identify candidates for microservices refactoring while also establishing new functionality with new services.
 
-For more information about anti-corruption layers, see [Anti-Corruption Layer pattern](../patterns/anti-corruption-layer.yml).
+For more information about anti-corruption layers, see [Anti-Corruption Layer pattern](../patterns/anti-corruption-layer/).
 
 ## Create a presentation layer
 
@@ -83,7 +83,7 @@ The follow diagram shows the presentation layer (UI) split out from the applicat
 
 This diagram also introduces another layer, the API gateway, that sits between the presentation layer and the application logic. The API gateway is a façade layer that provides a consistent and uniform interface for the presentation layer to interact with, while allowing downstream services to evolve independently, without affecting the application. The API Gateway may use a technology such as [Azure API Management](/azure/api-management/), and allows the application to interact in a RESTful manner.
 
-The presentation tier can be developed in any language or framework that the team has expertise in, such as a single page application or an MVC application. These applications interact with the microservices via the gateway, using standard HTTP calls. For more information about API Gateways, see [Using API gateways in microservices](./design/gateway.yml).
+The presentation tier can be developed in any language or framework that the team has expertise in, such as a single page application or an MVC application. These applications interact with the microservices via the gateway, using standard HTTP calls. For more information about API Gateways, see [Using API gateways in microservices](./design/gateway/).
 
 ## Start to retire the monolith
 
@@ -93,8 +93,8 @@ At this stage, the team can begin peeling away the monolithic application and sl
 
 As you continue to peel away the monolith, eventually there will come the point when it no longer needs to exist, and the microservices have been successfully extracted from the monolith. At this point, the anti-corruption layer (glue code) can safely be removed.
 
-This approach is an example of the [Strangler Fig pattern](../patterns/strangler-fig.yml) and allows for a controlled decomposition of a monolith into a set of microservices. Over time, as existing functionality is moved into microservices, the monolith will shrink in size and complexity, to the point that it no longer exists.
+This approach is an example of the [Strangler Fig pattern](../patterns/strangler-fig/) and allows for a controlled decomposition of a monolith into a set of microservices. Over time, as existing functionality is moved into microservices, the monolith will shrink in size and complexity, to the point that it no longer exists.
 
 ## Next steps
 
-When the application has been decomposed into constituent microservices, it becomes possible to use modern orchestration tools such as [Azure DevOps](/azure/devops/) to manage the lifecycle of each service. For more information, see [CI/CD for microservices architectures](./ci-cd.yml).
+When the application has been decomposed into constituent microservices, it becomes possible to use modern orchestration tools such as [Azure DevOps](/azure/devops/) to manage the lifecycle of each service. For more information, see [CI/CD for microservices architectures](./ci-cd/).

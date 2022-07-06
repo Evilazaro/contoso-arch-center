@@ -9,18 +9,18 @@ The articles listed here present a structured approach for designing, building, 
 **Domain analysis.** To avoid some common pitfalls when designing microservices, use domain analysis to define your microservice boundaries. Follow these steps:
 
 1. [Use domain analysis to model microservices](./model/domain-analysis.md).
-1. [Use tactical DDD to design microservices](./model/tactical-ddd.yml).
-1. [Identify microservice boundaries](./model/microservice-boundaries.yml).
+1. [Use tactical DDD to design microservices](./model/tactical-ddd/).
+1. [Identify microservice boundaries](./model/microservice-boundaries/).
 
-**Design the services**. Microservices require a different approach to designing and building applications. For more information, see [Designing a microservices architecture](./design/index.yml).
+**Design the services**. Microservices require a different approach to designing and building applications. For more information, see [Designing a microservices architecture](./design/index/).
 
 **Operate in production**. Because microservices architectures are distributed, you must have robust operations for deployment and monitoring.
 
-- [CI/CD for microservices architectures](./ci-cd.yml)
-- [Build a CI/CD pipeline for microservices on Kubernetes](./ci-cd-kubernetes.yml)
-- [Monitor microservices running on Azure Kubernetes Service (AKS)](./logging-monitoring.yml)
+- [CI/CD for microservices architectures](./ci-cd/)
+- [Build a CI/CD pipeline for microservices on Kubernetes](./ci-cd-kubernetes/)
+- [Monitor microservices running on Azure Kubernetes Service (AKS)](./logging-monitoring/)
 
 ## Microservices reference architectures for Azure
 
-- [Microservices architecture on Azure Kubernetes Service (AKS)](../reference-architectures/containers/aks-microservices/aks-microservices.yml)
-- [Microservices architecture on Azure Service Fabric](../reference-architectures/microservices/service-fabric.yml)
+- [Microservices architecture on Azure Kubernetes Service (AKS)](../reference-architectures/containers/aks-microservices/aks-microservices/)
+- [Microservices architecture on Azure Service Fabric](../reference-architectures/microservices/service-fabric/)

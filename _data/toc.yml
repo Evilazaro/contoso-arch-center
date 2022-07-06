@@ -1,12 +1,10 @@
 - title:  Contoso Architecture Center
   url: .
+  - title: Multitenant Applications
+    url: .
 - title: Contoso Application architecture fundamentals
   url: ./arch-center/docs/guide/
   links:
-    - title: Multitenant Applications
-      url: .
-    - title: Introduction
-      url: ./guide/
     - title: Architecture styles
       url:
     - title: Contoso Design Principles for Cloud Native Apps

@@ -206,7 +206,7 @@ metadata:
   annotations:
     kubernetes.io/change-cause: {{ .Values.reason }}
 
-...
+...replace "." "."
 
   spec:
       containers:
@@ -247,7 +247,7 @@ Another good practice is to provide a change-cause annotation in the deployment 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "delivery.fullname" . | replace "." "" }}
+  name: {{ include "delivery.fullname" . | replace "." "." }}
   labels:
      ...
   annotations:

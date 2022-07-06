@@ -81,7 +81,7 @@ In a rolling update, you deploy new instances of a service, and the new instance
 
 One challenge of rolling updates is that during the update process, a mix of old and new versions are running and receiving traffic. During this period, any request could get routed to either of the two versions.
 
-For breaking API changes, a good practice is to support both versions side by side, until all clients of the previous version are updated. See [API versioning](./design/api-design.yml#api-versioning).
+For breaking API changes, a good practice is to support both versions side by side, until all clients of the previous version are updated. See [API versioning](./design/api-design/#api-versioning).
 
 ### Blue-green deployment
 
@@ -105,4 +105,4 @@ A canary release is more complex to manage than either blue-green or rolling upd
 
 Learn specific CI/CD practices for microservices running on Kubernetes.
 
-- [CI/CD for microservices on Kubernetes](./ci-cd-kubernetes.yml)
+- [CI/CD for microservices on Kubernetes](./ci-cd-kubernetes/)

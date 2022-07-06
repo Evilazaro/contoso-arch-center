@@ -219,7 +219,7 @@ A significant challenge of microservices is to understand the flow of events acr
 
 ### Example of distributed tracing
 
-This example follows a distributed transaction through a set of microservices. The example is taken from a reference implementation described [here](./design/index.yml#reference-implementation).
+This example follows a distributed transaction through a set of microservices. The example is taken from a reference implementation described [here](./design/index/#reference-implementation).
 
 ![Diagram that shows the architecture of a drone delivery application.](./images/drone-delivery-impl.png)
 
