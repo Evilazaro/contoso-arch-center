@@ -1,22 +1,6 @@
 ---
-title: "High-performance computing (HPC) on Azure"
-description: Learn about high-performance computing (HPC) on Azure, which uses many CPU or GPU-based computers to solve complex mathematical tasks.
-author: SMBrook
-ms.author: sibrook
-ms.date: 01/03/2022
-ms.topic: guide
-ms.service: architecture-center
-ms.subservice: reference-architecture
-products: azure
-categories: 
-  - compute
-  - storage
-ms.category:
-  - compute
-  - storage
-ms.custom:
-  - fcp
-social_image_url: /azure/architecture/topics/media/architecture-hpc-saas.png
+title: High Performance
+permalink: /high-performance-computing/
 ---
 
 <!-- cSpell:ignore fullheight neuro milliman hymans netapp gluster tibco cyclecloud hpcpack radioss ansys axioma alces slurm mdcs cntk -->

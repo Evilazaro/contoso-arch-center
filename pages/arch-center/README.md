@@ -1,3 +1,8 @@
+---
+title: Contoso Architecture Center
+permalink: /readme/
+---
+
 # Contoso Architecture Center
 
 Contoso patterns & practices
