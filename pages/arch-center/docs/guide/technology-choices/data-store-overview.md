@@ -1,20 +1,3 @@
----
-title: Understand data store models
-titleSuffix: Azure Application Architecture Guide
-description: Learn about the high-level differences between the various data storage models found in Azure data services.
-author: dsk-2015
-ms.author: pnp
-ms.date: 01/12/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: guide
-azureCategories: developer-tools
-categories: developer-tools
-products: azure
-ms.custom:
-  - guide
----
-
 # Understand data store models
 
 Modern business systems manage increasingly large volumes of heterogeneous data. This heterogeneity means that a single data store is usually not the best approach. Instead, it's often better to store different types of data in different data stores, each focused toward a specific workload or usage pattern. The term *polyglot persistence* is used to describe solutions that use a mix of data store technologies. Therefore, it's important to understand the main storage models and their tradeoffs.
@@ -354,7 +337,7 @@ Sometimes, using simple flat files can be the most effective means of storing an
 - Legacy files
 - Shared content accessible among a number of VMs or app instances
 
-Aided with this understanding of different data storage models, the next step is to evaluate your workload and application, and decide which data store will meet your specific needs. Use the [data storage decision tree](./data-store-decision-tree.md) to help with this process.
+Aided with this understanding of different data storage models, the next step is to evaluate your workload and application, and decide which data store will meet your specific needs. Use the [data storage decision tree](./data-store-decision-tree/) to help with this process.
 
 <!-- links -->
 

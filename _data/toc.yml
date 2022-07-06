@@ -1,10 +1,10 @@
 - title:  Contoso Architecture Center
   url: .
 - title: Contoso Application architecture fundamentals
-  url: ./arch-center/docs/guide/
+  url: ./docs/guide/
   links:
     - title: Introduction
-      url: guide/
+      url: ./guide/
     - title: Architecture styles
       url:
     - title: Overview

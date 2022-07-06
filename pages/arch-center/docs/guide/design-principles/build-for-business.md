@@ -1,22 +1,3 @@
----
-title: Build for business needs
-titleSuffix: Azure Application Architecture Guide
-description: Use these recommendations to design and build cloud applications that meet functional and nonfunctional business requirements for performance, availability, scalability, growth, and cost management.
-author: EdPrice-MSFT
-ms.author: pnp
-ms.date: 06/24/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
-  - azure-cloud-services
-  - azure-devops
-categories: devops
-ms.custom:
-  - seojan19
-  - guide
----
-
 # Build for business needs
 
 Every design decision must be justified by a business requirement. This design principle might seem obvious, but is crucial to keep in mind when designing Azure applications.
@@ -48,6 +29,6 @@ The following recommendations help you design and build solutions to meet busine
 
 ## Related resources
 
-- [Design to scale out](scale-out.md)
-- [Partition around limits](partition.md)
-- [Design for evolution](design-for-evolution.md)
+- [Design to scale out](scale-out/)
+- [Partition around limits](partition/)
+- [Design for evolution](design-for-evolution/)

@@ -1,22 +1,3 @@
----
-title: Use platform as a service (PaaS) options
-titleSuffix: Azure Architecture Center
-description: "Understand the difference between infrastructure as a service (IaaS) and platform as a service (PaaS). Learn how to swap IaaS components for PaaS solutions."
-author: EdPrice-MSFT
-ms.author: edprice
-ms.date: 04/28/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: guide
-ms.custom:
-  - seojan19
-  - guide
-products:
-  - azure
-categories:
-  - developer-tools
-  - management-and-governance
----
 
 # Use platform as a service (PaaS) options
 

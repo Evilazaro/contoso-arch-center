@@ -124,7 +124,7 @@ Review and understand the available security controls and visibility for each se
 
 | Criteria | Virtual Machines | App Service | App Spring Apps | Service Fabric | Azure Functions | Azure Kubernetes Service | Container Instances | Azure Batch | Azure Container Apps |
 |----------|-----------------|-------------|----------------|----------------|-----------------|-------------------------|----------------|-------------|-------------|
-| SSL | Configured in VM | Supported | Supported  | Supported |  Supported | [Ingress controller](/azure/aks/ingress) | Use [sidecar](../../patterns/sidecar.yml) container | Supported | [Ingress controller](/azure/container-apps/ingress) |
+| SSL | Configured in VM | Supported | Supported  | Supported |  Supported | [Ingress controller](/azure/aks/ingress) | Use [sidecar](../../patterns/sidecar/) container | Supported | [Ingress controller](/azure/container-apps/ingress) |
 | Cost | [Windows][cost-windows-vm], [Linux][cost-linux-vm] | [App Service pricing][cost-app-service] | [Azure Spring Apps pricing][cost-azure-spring-apps] | [Service Fabric pricing][cost-service-fabric] | [Azure Functions pricing][cost-functions] | [AKS pricing][cost-acs] | [Container Instances pricing](https://azure.microsoft.com/pricing/details/container-instances/) | [Azure Batch pricing][cost-batch] | [Azure Container Apps pricing][cost-container-apps]
 | Suitable architecture styles | [N-Tier][n-tier], [Big compute][big-compute] (HPC) | [Web-Queue-Worker][w-q-w], [N-Tier][n-tier] | Spring Boot, [Microservices][microservices] | [Microservices][microservices], [Event-driven architecture][event-driven] | [Microservices][microservices], [Event-driven architecture][event-driven] | [Microservices][microservices], [Event-driven architecture][event-driven] | [Microservices][microservices], task automation, batch jobs  | [Big compute][big-compute] (HPC) | [Microservices][microservices], [Event-driven architecture][event-driven]
 
@@ -138,7 +138,7 @@ Perform a more detailed evaluation looking at the following aspects of the servi
 - [Cost](https://azure.microsoft.com/pricing/)
 - [SLA](https://azure.microsoft.com/support/legal/sla/)
 - [Regional availability](https://azure.microsoft.com/global-infrastructure/services/)
-- [Compute comparison tables](./compute-decision-tree.yml)
+- [Compute comparison tables](./compute-decision-tree/)
 
 ## Next steps
 
@@ -165,11 +165,11 @@ Perform a more detailed evaluation looking at the following aspects of the servi
 
 [resource-manager-supported-services]: /azure/azure-resource-manager/resource-manager-supported-services
 
-[n-tier]: ../architecture-styles/n-tier.yml
-[w-q-w]: ../architecture-styles/web-queue-worker.yml
-[microservices]: ../architecture-styles/microservices.yml
-[event-driven]: ../architecture-styles/event-driven.yml
-[big-compute]: ../architecture-styles/big-compute.yml
+[n-tier]: ../architecture-styles/n-tier/
+[w-q-w]: ../architecture-styles/web-queue-worker/
+[microservices]: ../architecture-styles/microservices/
+[event-driven]: ../architecture-styles/event-driven/
+[big-compute]: ../architecture-styles/big-compute/
 
 [app-service-hybrid]: /azure/app-service/app-service-hybrid-connections
 [func-premium]: /azure/azure-functions/functions-premium-plan#private-network-connectivity

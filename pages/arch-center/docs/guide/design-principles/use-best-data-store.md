@@ -1,28 +1,3 @@
----
-title: Use a suitable data store
-titleSuffix: Azure Architecture Center
-description: "Pick the storage technology that's the best fit for how you use your data. Learn about alternatives to relational databases. Consider polyglot persistence."
-author: EdPrice-MSFT
-ms.author: edprice
-ms.date: 04/28/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: guide
-ms.category:
-  - storage
-  - databases
-ms.custom:
-  - seojan19
-  - guide
-products:
-  - azure
-  - azure-cognitive-search
-  - azure-cosmos-db
-categories:
-  - databases
-  - storage
----
-
 # Use the best data store for your data
 
 In the past, many organizations stored all their data in large relational SQL databases. Relational databases are good at providing atomic, consistent, isolated, and durable (ACID) guarantees for transactions that involve relational data. But these databases come with costs:
@@ -77,6 +52,6 @@ For example, you might store a product catalog in a document database, such as A
 - Look at *bounded contexts*, a concept from domain-driven design. A bounded context is an explicit boundary around a domain model. A bounded context defines which parts of the domain the model applies to. Ideally, a bounded context maps to a subdomain of the business domain. The bounded contexts in your system are a natural place to consider polyglot persistence. For example, *products* might appear in the Product Catalog subdomain and the Product Inventory subdomain. But most likely, these two subdomains have different requirements for storing, updating, and querying products.
 
 [CAP theroem]: /previous-versions/msp-n-p/dn589800(v=pandp.10)#eventual-consistency
-[Compensating Transaction pattern]: ../../patterns/compensating-transaction.yml
-[data-store-overview]: ../technology-choices/data-store-overview.md
+[Compensating Transaction pattern]: ../../patterns/compensating-transaction/
+[data-store-overview]: ../technology-choices/data-store-overview/
 [Eventual consistency]: /previous-versions/msp-n-p/dn589800(v=pandp.10)#eventual-consistency

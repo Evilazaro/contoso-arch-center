@@ -1,20 +1,3 @@
----
-title: Design for change
-titleSuffix: Azure Application Architecture Guide
-description: Use these recommendations to implement evolutionary design, which is key for continuous innovation. Microservices helps achieve an evolutionary design.
-author: EdPrice-MSFT
-categories: azure
-ms.date: 08/30/2018
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: guide
-products:
-  - azure-devops
-ms.custom:
-  - seojan19
-  - guide
----
-
 # Design for evolution
 
 ## An evolutionary design is key for continuous innovation
