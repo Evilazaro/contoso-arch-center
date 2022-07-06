@@ -1,78 +1,81 @@
-- title: Contoso - Building Blocks
-  url: building-blocks
-  links:
-    - title: Kubernetes Accelerator
-      url: kubernetes-accelerator
-    - title: Contoso Single-Sign-on
-      url: .
-    - title: Standard Data Platform
-      url: .
-- title: Contoso - Sample Applications
+- title: Contoso - Docs 
   url: .
   links:
-    - title: eShop on Containers
+    - title: Contoso - Building Blocks
+      url: building-blocks
+      children:
+        - title: Kubernetes Accelerator
+          url: kubernetes-accelerator
+        - title: Contoso Single-Sign-on
+          url: .
+        - title: Standard Data Platform
+          url: .
+    - title: Contoso - Sample Applications
       url: .
-    - title: Fabrikam Cloud-Native
-      url: .
-- title: Insdustry solutions at Contoso
-  url: ./arch-center/docs/guide/
-  links:
-    - title: Retail
-      url: .
-    - title: Finance
-- title: Architecture Guidance
-  url: contoso-apparch-fundamentals
-  links:
-    - title: Multitenant Applications
-      url: multitenant
-    - title: Considerations
-      url: considerations
-    - title: Approaches
-      url: approaches
-    - title: Service-specific guidance
-      url: service
-    - title: Multitenancy checklist
-      url: checklist
-    - title: Architecture styles
-      url: architecture-styles
-      links:
-        - title: Microservices
-          url: ./microservices-content/
-        - title: Big Data
-          url: ./big-data-content/
-        - title: N-tier Application (Monolith)
-          url: ./n-tier-content/
-        - title: Event-driven Architecture
-          url: ./event-driven-content/  
-        - title: Web-queue Worker
-          url: ./web-queue-worker-content/  
-- title: Design Patterns
-  url: ./arch-center/docs/guide/
-  links:
-    - title: Ambassador
-      url: .
-    - title: Backends for Frontends
-      url:
-    - title: Circuite Breaker
-      url: guide/architecture-styles/
-    - title: Gateway Agregation
-      url: guide/architecture-styles/big-compute/
-    - title: Gateway Routing
-      url: guide/architecture-styles/big-data/
-    - title: Publisher/Subscriber
-      url: guide/architecture-styles/event-driven/
-- title: Technology Categories
-  url: ./arch-center/docs/guide/
-  links:
-    - title: Containers
-      url: .
-    - title: Compute
-      url:
-    - title: DevOps
-      url: guide/architecture-styles/
-    - title: Integration
-      url: guide/architecture-styles/big-compute/
-    - title: Networking
-      url: guide/architecture-styles/big-data/
-    - title: Storage
-      url: guide/architecture-styles/event-driven/
+      children:
+        - title: eShop on Containers
+          url: .
+        - title: Fabrikam Cloud-Native
+          url: .
+    - title: Insdustry solutions at Contoso
+      url: ./arch-center/docs/guide/
+      children:
+        - title: Retail
+          url: .
+        - title: Finance
+    - title: Architecture Guidance
+      url: contoso-apparch-fundamentals
+      children:
+        - title: Multitenant Applications
+          url: multitenant
+        - title: Considerations
+          url: considerations
+        - title: Approaches
+          url: approaches
+        - title: Service-specific guidance
+          url: service
+        - title: Multitenancy checklist
+          url: checklist
+        - title: Architecture styles
+          url: architecture-styles
+          children:
+            - title: Microservices
+              url: ./microservices-content/
+            - title: Big Data
+              url: ./big-data-content/
+            - title: N-tier Application (Monolith)
+              url: ./n-tier-content/
+            - title: Event-driven Architecture
+              url: ./event-driven-content/  
+            - title: Web-queue Worker
+              url: ./web-queue-worker-content/  
+    - title: Design Patterns
+      url: ./arch-center/docs/guide/
+      children:
+        - title: Ambassador
+          url: .
+        - title: Backends for Frontends
+          url:
+        - title: Circuite Breaker
+          url: guide/architecture-styles/
+        - title: Gateway Agregation
+          url: guide/architecture-styles/big-compute/
+        - title: Gateway Routing
+          url: guide/architecture-styles/big-data/
+        - title: Publisher/Subscriber
+          url: guide/architecture-styles/event-driven/
+    - title: Technology Categories
+      url: ./arch-center/docs/guide/
+      children:
+        - title: Containers
+          url: .
+        - title: Compute
+          url:
+        - title: DevOps
+          url: guide/architecture-styles/
+        - title: Integration
+          url: guide/architecture-styles/big-compute/
+        - title: Networking
+          url: guide/architecture-styles/big-data/
+        - title: Storage
+          url: guide/architecture-styles/event-driven/
