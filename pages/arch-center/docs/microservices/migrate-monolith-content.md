@@ -1,3 +1,8 @@
+---
+title: Migrate Monolith Applications to Microservices
+permalink: /migrate-monolith-content/
+---
+
 This article describes how to use domain-driven design (DDD) to migrate a monolithic application to microservices.
 
 A monolithic application is typically an application system in which all of the relevant modules are packaged together as a single deployable unit of execution. For example, it might be a Java Web Application (WAR) running on Tomcat or an ASP<span>.</span>NET application running on IIS. A typical monolithic application uses a layered design, with separate layers for UI, application logic, and data access.

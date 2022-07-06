@@ -1,3 +1,8 @@
+---
+title: CI CD Kubernetes
+permalink: /ci-cd-kubernetes-content/
+---
+
 It can be challenging to create a reliable CI/CD process for a microservices architecture. Individual teams must be able to release services quickly and reliably, without disrupting other teams or destabilizing the application as a whole.
 
 This article describes an example CI/CD pipeline for deploying microservices to Azure Kubernetes Service (AKS). Every team and project is different, so don't take this article as a set of hard-and-fast rules. Instead, it's meant to be a starting point for designing your own CI/CD process.
@@ -199,9 +204,9 @@ For example, here's part of a YAML file that defines a deployment:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "package.fullname" . | replace  " " }}
+  name: {{ include "package.fullname" . | replace "a","b" }}
   labels:
-    app.kubernetes.io/name: {{ include "package.name" . }}
+    app.kubernetes.io/name: {{ include "package.name" "a","b" }}
     app.kubernetes.io/instance: {{ .Release.Name }}
   annotations:
     kubernetes.io/change-cause: {{ .Values.reason }}
@@ -247,7 +252,7 @@ Another good practice is to provide a change-cause annotation in the deployment 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "delivery.fullname" . | replace   }}
+  name: {{ include "delivery.fullname" . | replace "a","b"  }}
   labels:
      ...
   annotations:

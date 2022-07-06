@@ -1,3 +1,8 @@
+---
+title: Microservices CI CD 
+permalink: /ci-cd-content/
+---
+
 Faster release cycles are one of the major advantages of microservices architectures. But without a good CI/CD process, you won't achieve the agility that microservices promise. This article describes the challenges and recommends some approaches to the problem.
 
 ## What is CI/CD?

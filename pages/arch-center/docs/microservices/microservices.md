@@ -1,3 +1,8 @@
+---
+title: Microservices at Contoso
+permalink: /microservices/
+---
+
 Microservices are a popular architectural style for building applications that are resilient, highly scalable, independently deployable, and able to evolve quickly. But a successful microservices architecture requires a different approach to designing and building applications.
 
 [!INCLUDE [microservices-intro](../includes/microservices-intro.md)]
