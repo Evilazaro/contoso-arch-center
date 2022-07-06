@@ -1,7 +1,7 @@
-- title: Contoso - Docs 
+- title: Architecture Center
   url: .
   links:
-    - title: Contoso - Building Blocks
+    - title: Building Blocks
       url: building-blocks
       children:
         - title: Kubernetes Accelerator
@@ -10,19 +10,20 @@
           url: .
         - title: Standard Data Platform
           url: .
-    - title: Contoso - Sample Applications
+    - title: Sample Applications
       url: .
       children:
         - title: eShop on Containers
-          url: .
+          url: eshoponcontiners
         - title: Fabrikam Cloud-Native
-          url: .
+          url: fabrikam-medical-conferences
     - title: Insdustry solutions at Contoso
-      url: ./arch-center/docs/guide/
+      url: industries-solutions
       children:
         - title: Retail
-          url: .
+          url: retail
         - title: Finance
+          url: finance
     - title: Architecture Guidance
       url: contoso-apparch-fundamentals
       children:
