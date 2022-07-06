@@ -3,21 +3,17 @@
 - title: Contoso Application architecture fundamentals
   url: ./arch-center/docs/guide/
   links:
+    - title: Multitenant Applications
+      url: .
     - title: Introduction
       url: ./guide/
     - title: Architecture styles
       url:
-    - title: Overview
+    - title: Contoso Design Principles for Cloud Native Apps
       url: guide/architecture-styles/
-    - title: Big compute
+    - title: Technology Choices
       url: guide/architecture-styles/big-compute/
-    - title: Big data
+    - title: Best Practices for Cloud-Native Applications
       url: guide/architecture-styles/big-data/
-    - title: Event-driven architecture
+    - title: Mission Critical Applications
       url: guide/architecture-styles/event-driven/
-    - title: Microservices
-      url: guide/architecture-styles/microservices/
-    - title: N-tier application
-      url: guide/architecture-styles/n-tier/
-    - title: Web-queue-worker
-      url: guide/architecture-styles/web-queue-worker/
