@@ -1,3 +1,7 @@
+---
+title: Data Decision Tree
+permalink: /data-store-decision-tree/
+---
 
 # Select an Azure data store for your application
 
