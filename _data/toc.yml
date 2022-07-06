@@ -1,8 +1,8 @@
 - title: Contoso - Building Blocks
   url: ./building-blocks/
   links:
-    - title: Kubernetes Adoption/Deployment accelerator
-      url: .
+    - title: Kubernetes Accelerator
+      url: ./building-blocks/kubernetes-accelerator/
     - title: Contoso Single-Sign-on
       url: .
     - title: Standard Data Platform
