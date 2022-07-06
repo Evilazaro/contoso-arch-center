@@ -1,3 +1,7 @@
+---
+title: Considerations
+permalink: /considerations/
+---
 When you're considering a multitenant architecture, there are several decisions you need to make and elements you need to consider.
 
 In a multitenant architecture, you share some or all of your resources between tenants. This process means that a multitenant architecture can give you cost and operational efficiency. However, multitenancy introduces complexities, including the following:
@@ -22,4 +26,4 @@ The pages in this section are particularly relevant for technical decision-maker
 
 ## Next steps
 
-Consider different [tenancy models](tenancy-models.yml) for your solution.
+Consider different [tenancy models](tenancy-models/) for your solution.

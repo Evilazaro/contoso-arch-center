@@ -1,6 +1,6 @@
 ---
-title: Contoso Applicatio Architecture Fundamentals
-permalink: /contoso-apparch-fundamentals/
+title: Reference Architectures
+permalink: /reference-architectures/
 ---
 
 # Contoso application architecture fundamentals

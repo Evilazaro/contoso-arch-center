@@ -1,10 +1,10 @@
 - title:  Contoso Architecture Center
   url: .
 - title: Contoso Application architecture fundamentals
-  url: /contoso-apparch-fundamentals/
+  url: ./contoso-apparch-fundamentals/
   links:
     - title: Multitenant Applications
-      url: .
+      url: ./multitenant/
       links:
         - title: Architecture styles
           url:
