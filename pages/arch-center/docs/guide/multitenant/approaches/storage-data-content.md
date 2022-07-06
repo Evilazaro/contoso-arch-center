@@ -1,3 +1,9 @@
+---
+title: Storage Data
+permalink: /storage-data-content/
+---
+
+
 When planning multitenant storage or data components, you need to decide on an approach for sharing or isolating your tenants' data. Data is often considered the most valuable part of a solution, since it represents your or your customers' valuable business information. So, it's important to carefully plan the approach you use to manage data in a multitenant environment. On this page, we provide guidance about the key considerations and requirements that are essential for solution architects when deciding on an approach to store data in a multitenant system. We then suggest some common patterns for applying multitenancy to storage and data services, and some antipatterns to avoid. Finally, we provide targeted guidance for some specific situations.
 
 ## Key considerations and requirements

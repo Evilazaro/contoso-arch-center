@@ -1,3 +1,8 @@
+---
+title: Networking
+permalink: /networking/
+---
+
 # Architectural approaches for networking in multitenant solutions
 
 All solutions deployed to Azure require networking of some kind. Depending on your solution design and the workload, the ways in which you interact with Azure's networking services might be different. In this article, we provide considerations and guidance for the networking aspects of multitenant solutions on Azure. We include information about the lower-level networking components, like virtual networks, through to higher-level and application-tier approaches.

@@ -1,3 +1,8 @@
+---
+title: Cost Management
+permalink: /cost-management-allocation-content/
+---
+
 Multitenant solutions often require special consideration when you measure and allocate costs, and when you optimize costs. On this page, we describe some key guidance for solution architects to consider about the measurement, allocation, and optimization of costs for a multitenant application.
 
 ## Key considerations and requirements

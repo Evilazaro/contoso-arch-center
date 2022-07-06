@@ -1,3 +1,8 @@
+---
+title: Messaging
+permalink: /messaging/
+---
+
 # Architectural approaches for messaging in multitenant solutions
 
 Asynchronous messaging and event-driven communication are critical assets when building a distributed application that's composed of several internal and external services. When you design a multitenant solution, it's crucial to conduct a preliminary analysis to define how to share or partition messages that pertain to different tenants.

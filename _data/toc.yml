@@ -5,7 +5,7 @@
   links:
     - title: Multitenant Applications
       url: ./multitenant/
-      links:
+      children:
         - title: Overview
           url: ./multitenant/
         - title: Considerations
@@ -18,7 +18,7 @@
           url: ./checklist/
     - title: Architecture styles
       url: ./architecture-styles/
-      links:
+      children:
         - title: Microservices
           url: ./microservices-content/
         - title: Big Data

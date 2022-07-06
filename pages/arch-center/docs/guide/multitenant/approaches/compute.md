@@ -1,3 +1,7 @@
+---
+title: Compute
+permalink: /compute/
+---
 # Architectural approaches for compute in multitenant solutions
 
 Most cloud-based solutions are composed of compute resources of some kind, such as web and application tiers, batch processors, scheduled jobs, and even specialized resources like GPUs and high-performance compute (HPC). Multitenant solutions often benefit from shared compute resources, because a higher density of tenants to infrastructure reduces the operational cost and management. You should consider the isolation requirements and the implications of shared infrastructure.

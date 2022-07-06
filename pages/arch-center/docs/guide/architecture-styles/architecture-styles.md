@@ -1,6 +1,6 @@
 ---
 title: Architecture Styles
-permalink: /Overview/
+permalink: /architecture-styles/
 ---
 
 # Architecture styles

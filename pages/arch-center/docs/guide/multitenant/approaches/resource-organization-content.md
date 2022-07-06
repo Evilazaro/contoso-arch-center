@@ -1,3 +1,8 @@
+---
+title: Resource Organization
+permalink: /resource-organization-content/
+---
+
 Azure provides many options for organizing your resources. In a multitenant solution, there are specific tradeoffs to consider, when you plan your resource organization strategy. In this article, we review two core elements of organizing your Azure resources: tenant isolation and scale-out across multiple resources. We also describe how to work with Azure's resource limits and quotas, and how to scale your solution beyond these limits.
 
 ## Key considerations and requirements

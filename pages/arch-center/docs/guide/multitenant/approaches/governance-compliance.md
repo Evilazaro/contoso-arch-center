@@ -1,3 +1,8 @@
+---
+title: Governance Compliance
+permalink: /governance-compliance/
+---
+
 # Architectural approaches for governance and compliance in multitenant solutions
 
 As your use of Azure matures, it's important to consider the governance of your cloud resources. Governance includes how tenants' data is stored and managed, and how you organize your Azure resources. You might also need to follow regulatory or legal standards. This article provides information about how to consider governance and compliance in a multitenant solution. It also suggests some of the key Azure platform features that support these concerns.

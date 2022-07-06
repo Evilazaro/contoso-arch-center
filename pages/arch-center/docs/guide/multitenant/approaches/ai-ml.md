@@ -1,4 +1,7 @@
-
+---
+title: AI
+permalink: /ai/
+---
 
 # Architectural approaches for AI and ML in multitenant solutions
 

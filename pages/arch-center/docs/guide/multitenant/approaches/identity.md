@@ -1,3 +1,7 @@
+---
+title: Identity
+permalink: /identity/
+---
 
 # Architectural approaches for identity in multitenant solutions
 
