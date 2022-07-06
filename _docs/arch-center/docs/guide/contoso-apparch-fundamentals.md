@@ -34,17 +34,17 @@ The Azure application architecture fundamentals guidance is organized as a serie
 
 The first decision point is the most fundamental. What kind of architecture are you building? It might be a microservices architecture, a more traditional N-tier application, or a big data solution. We have identified several distinct architecture styles. There are benefits and challenges to each.
 
-Learn more: [Architecture styles](/architecture-styles/)
+Learn more: [Architecture styles](./architecture-styles/)
 
 ## Technology choices
 
 Knowing the type of architecture you are building, now you can start to choose the main technology pieces for the architecture. The following technology choices are critical:
 
-- *Compute* refers to the hosting model for the computing resources that your applications run on. For more information, see [Choose a compute service](/technology-choices/compute-decision-tree/).
+- *Compute* refers to the hosting model for the computing resources that your applications run on. For more information, see [Choose a compute service](./technology-choices/compute-decision-tree/).
 
-- *Data stores* include databases but also storage for message queues, caches, logs, and anything else that an application might persist to storage. For more information, see [Choose a data store](/technology-choices/data-store-overview/).
+- *Data stores* include databases but also storage for message queues, caches, logs, and anything else that an application might persist to storage. For more information, see [Choose a data store](./technology-choices/data-store-overview/).
 
-- *Messaging* technologies enable asynchronous messages between components of the system. For more information, see [Choose a messaging service](/technology-choices/messaging/).
+- *Messaging* technologies enable asynchronous messages between components of the system. For more information, see [Choose a messaging service](./technology-choices/messaging/).
 
 You will probably have to make additional technology choices along the way, but these three elements (compute, data, and messaging) are central to most cloud applications and will determine many aspects of your design.
 
@@ -54,7 +54,7 @@ Once you have chosen the architecture style and the major technology components,
 
 ### Reference architectures
 
-Depending on your scenario, one of our [reference architectures](/azure/architecture/architectures/?filter=reference-architecture) may be a good starting point. Each reference architecture includes recommended practices, along with considerations for scalability, availability, security, resilience, and other aspects of the design. Most also include a deployable solution or reference implementation.
+Depending on your scenario, one of our [reference architectures](../reference-architectures/architectures/?filter=reference-architecture) may be a good starting point. Each reference architecture includes recommended practices, along with considerations for scalability, availability, security, resilience, and other aspects of the design. Most also include a deployable solution or reference implementation.
 
 ### Design principles
 
@@ -66,11 +66,7 @@ Software design patterns are repeatable patterns that are proven to solve specif
 
 ### Best practices
 
-Our [best practices](/azure/architecture/best-practices) articles cover various design considerations including API design, autoscaling, data partitioning, caching, and so forth. Review these and apply the best practices that are appropriate for your application.
-
-### Security best practices
-
-Our [security best practices](/security/compass/applications-services) describe how to ensure that the confidentiality, integrity, and availability of your application aren't compromised by malicious actors.
+Our [best practices](../best-practices/) articles cover various design considerations including API design, autoscaling, data partitioning, caching, and so forth. Review these and apply the best practices that are appropriate for your application.
 
 ## Next steps
 
