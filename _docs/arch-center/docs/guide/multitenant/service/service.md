@@ -1,3 +1,7 @@
+---
+title: Service Specific
+permalink: /service/
+---
 # Service-specific guidance for a multitenant solution
 
 When you're building a solution on Azure, you combine multiple distinct Azure services together to achieve your business goals. Although Azure services work in a consistent manner, there are specific considerations for how you design and implement each service. When you design a multitenant solution, there are further considerations to review, for each service.

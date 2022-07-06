@@ -21,24 +21,21 @@
       url: .
     - title: Finance
 - title: Architecture Guidance
-  url: ./contoso-apparch-fundamentals/
+  url: contoso-apparch-fundamentals
   links:
     - title: Multitenant Applications
-      url: ./multitenant/
-      children:
-        - title: Overview
-          url: ./multitenant/
-        - title: Considerations
-          url: ./considerations/
-        - title: Approaches
-          url: ./approaches/
-        - title: Service-specific guidance
-          url: ./service/
-        - title: Multitenancy checklist
-          url: ./checklist/
+      url: multitenant
+    - title: Considerations
+      url: considerations
+    - title: Approaches
+      url: approaches
+    - title: Service-specific guidance
+      url: service
+    - title: Multitenancy checklist
+      url: checklist
     - title: Architecture styles
-      url: ./architecture-styles/
-      children:
+      url: architecture-styles
+      links:
         - title: Microservices
           url: ./microservices-content/
         - title: Big Data
