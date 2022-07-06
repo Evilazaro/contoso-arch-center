@@ -1,6 +1,6 @@
 ---
 title: Kubernetes Accelerator
-permalink: ./building-blocks/kubernetes-accelerator/
+permalink: /kubernetes-accelerator/
 ---
 
 # Kubernetes Accelerator
