@@ -199,14 +199,14 @@ For example, here's part of a YAML file that defines a deployment:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "package.fullname" . | replace "." " " }}
+  name: {{ include "package.fullname" . | replace  " " }}
   labels:
     app.kubernetes.io/name: {{ include "package.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
   annotations:
     kubernetes.io/change-cause: {{ .Values.reason }}
 
-...replace "." "."
+...replace  
 
   spec:
       containers:
@@ -247,7 +247,7 @@ Another good practice is to provide a change-cause annotation in the deployment 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "delivery.fullname" . | replace "." "." }}
+  name: {{ include "delivery.fullname" . | replace   }}
   labels:
      ...
   annotations:
