@@ -1,25 +1,3 @@
----
-title: DevOps architecture design
-titleSuffix: Azure Architecture Center
-description: Learn about DevOps and how to implements DevOps solutions on Azure by using services such as Azure DevOps, Azure Pipelines, Azure Monitor, and Azure DevTest Labs.
-author: EdPrice-MSFT
-ms.author: edprice
-ms.date: 3/31/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: reference-architecture
-categories:
-  - devops
-  - containers
-products:
-  - azure-devops
-  - azure-monitor
-  - azure-pipelines
-  - azure-devtest-labs
-ms.custom:
-  - overview
-  - fcp
----
 
 # DevOps architecture design
 
@@ -57,13 +35,13 @@ Plan your path to production by reviewing:
 
 | Article or section | Description |
 |--------------|-------------|
-| [DevOps checklist](../../checklist/dev-ops.md) | A list of things to consider and do when you implement DevOps attitudes and methods in culture, development, testing, release, monitoring, and management. |
-| [Operational Excellence patterns](/azure/architecture/framework/devops/devops-patterns) | A list of design patterns for achieving Operational Excellence—one of the five pillars of the [Microsoft Azure Well-Architected Framework](/azure/architecture/framework)—in a cloud environment. See [Cloud Design Patterns](../../patterns/index.md) for more patterns. |
-| [Advanced Azure Resource Manager template functionality](../../guide/azure-resource-manager/advanced-templates/index.md) | Some advanced examples of template use. |
+| [DevOps checklist](../../checklist/dev-ops/) | A list of things to consider and do when you implement DevOps attitudes and methods in culture, development, testing, release, monitoring, and management. |
+| [Operational Excellence patterns](/azure/architecture/framework/devops/devops-patterns) | A list of design patterns for achieving Operational Excellence—one of the five pillars of the [Microsoft Azure Well-Architected Framework](/azure/architecture/framework)—in a cloud environment. See [Cloud Design Patterns](../../patterns/index/) for more patterns. |
+| [Advanced Azure Resource Manager template functionality](../../guide/azure-resource-manager/advanced-templates/index/) | Some advanced examples of template use. |
 | DevTest Labs guidance | A series of articles to help you use Azure Devtest Labs to provision development and test environments. The first article in the series is [DevTest Labs in the enterprise](/azure/devtest-labs/devtest-lab-guidance-prescriptive-adoption). |
 | Azure Monitor guidance | A series of articles to help you use Azure Monitor to monitor cloud environments. The first article in the series is [Azure Monitor best practices - Planning your monitoring strategy and configuration](/azure/azure-monitor/best-practices-plan?toc=%2Fazure%2Farchitecture%2Ftoc.json&bc=%2Fazure%2Farchitecture%2Fbread%2Ftoc.json).
 | [Continuous integration and delivery for an Azure Synapse Analytics workspace](/azure/synapse-analytics/cicd/continuous-integration-delivery?toc=%2Fazure%2Farchitecture%2Ftoc.json&bc=%2Fazure%2Farchitecture%2Fbread%2Ftoc.json) | An outline of how to use an Azure DevOps release pipeline and GitHub Actions to automate the deployment of an Azure Synapse workspace to multiple environments. |
-| [DevOps for quantum computing](../../guide/quantum/devops-for-quantum-computing.yml) | A discussion of the DevOps requirements for hybrid quantum applications. |
+| [DevOps for quantum computing](../../guide/quantum/devops-for-quantum-computing/) | A discussion of the DevOps requirements for hybrid quantum applications. |
 | [Platform automation for Azure VMware Solution enterprise-scale scenario](/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-platform-automation-and-devops?toc=%2Fazure%2Farchitecture%2Ftoc.json&bc=%2Fazure%2Farchitecture%2Fbread%2Ftoc.json) | An overview for deploying Azure VMware Solution, including guidance for operational automation. |
 
 ### Azure DevOps services
@@ -87,18 +65,18 @@ The DevOps architectures are found in two sections:
 
 | Section | First article in the section |
 |---------|------------------------------|
-| Architectures | [Automate multistage DevOps pipelines with Azure Pipelines](../../example-scenario/devops/automate-azure-pipelines.yml) |
-| Solution ideas | [CI/CD for Azure VMs](../../solution-ideas/articles/cicd-for-azure-vms.yml) |
+| Architectures | [Automate multistage DevOps pipelines with Azure Pipelines](../../example-scenario/devops/automate-azure-pipelines/) |
+| Solution ideas | [CI/CD for Azure VMs](../../solution-ideas/articles/cicd-for-azure-vms/) |
 
 Here are some example architectures. For each one there's a list of the key Azure services used in the architecture.
 
 | Architecture | Description | Azure services used |
 |--------------|-------------|----------------|
-| [Automate multistage DevOps pipelines with Azure Pipelines](../../example-scenario/devops/automate-azure-pipelines.yml) | Use Azure DevOps REST APIs to build CI/CD pipelines. | Azure DevOps, Logic Apps, Azure Pipelines |
-| [Automated API deployments with APIOps](../../example-scenario/devops/automated-api-deployments-apiops.yml) | Apply GitOps and DevOps techniques to ensure quality APIs. | Azure Repos, API Management, Azure DevOps, Azure Pipelines, Azure Repos |
-| [Design a CI/CD pipeline using Azure DevOps](../../example-scenario/apps/devops-dotnet-webapp.yml) | Build a CI/CD pipeline by using Azure DevOps and other services. | Azure Repos, Azure Test Plans, Azure Pipelines |
-| [Teacher-provisioned virtual labs in Azure](../../example-scenario/devops/teacher-provisioned-virtual-labs-azure.yml) | Teachers can easily set up virtual machines for students to work on class exercises. | Lab Services |
-| [Enterprise monitoring with Azure Monitor](../../example-scenario/monitoring/enterprise-monitoring.yml) | Use Azure Monitor to achieve enterprise-level monitoring and centralized monitoring management. | Azure Monitor |
+| [Automate multistage DevOps pipelines with Azure Pipelines](../../example-scenario/devops/automate-azure-pipelines/) | Use Azure DevOps REST APIs to build CI/CD pipelines. | Azure DevOps, Logic Apps, Azure Pipelines |
+| [Automated API deployments with APIOps](../../example-scenario/devops/automated-api-deployments-apiops/) | Apply GitOps and DevOps techniques to ensure quality APIs. | Azure Repos, API Management, Azure DevOps, Azure Pipelines, Azure Repos |
+| [Design a CI/CD pipeline using Azure DevOps](../../example-scenario/apps/devops-dotnet-webapp/) | Build a CI/CD pipeline by using Azure DevOps and other services. | Azure Repos, Azure Test Plans, Azure Pipelines |
+| [Teacher-provisioned virtual labs in Azure](../../example-scenario/devops/teacher-provisioned-virtual-labs-azure/) | Teachers can easily set up virtual machines for students to work on class exercises. | Lab Services |
+| [Enterprise monitoring with Azure Monitor](../../example-scenario/monitoring/enterprise-monitoring/) | Use Azure Monitor to achieve enterprise-level monitoring and centralized monitoring management. | Azure Monitor |
 
 ## Best practices
 
@@ -115,9 +93,9 @@ The following articles are about best practices that are specific to DevOps and 
 ### DevOps
 
 - [How Teams at Microsoft Embraced a DevOps Culture - Azure webinar series](https://info.microsoft.com/ww-ondemand-how-teams-at-microsoft-embraced-a-devops-culture.html)
-- [DevOps checklist](../../checklist/dev-ops.md)
+- [DevOps checklist](../../checklist/dev-ops/)
 - [Azure cloud migration best practices checklist](/azure/cloud-adoption-framework/migrate/azure-best-practices)
-- [Resiliency checklist for specific Azure services](../../checklist/resiliency-per-service.md)
+- [Resiliency checklist for specific Azure services](../../checklist/resiliency-per-service/)
 - [Continuous monitoring with Azure Monitor](/azure/azure-monitor/continuous-monitoring)
 - [Monitoring best practices for reliability in Azure applications](/azure/architecture/framework/resiliency/monitor-best-practices)
 - [Overview of the Azure Security Benchmark (v1)](/security/benchmark/azure/overview-v1)
@@ -149,12 +127,12 @@ Stay current with Azure DevOps by monitoring these articles:
 
 ### Example solutions
 
-- [Design a CI/CD pipeline using Azure DevOps](../../example-scenario/apps/devops-dotnet-webapp.yml)
-- [Manage Microsoft 365 tenant configuration by using Microsoft365DSC and Azure DevOps](../../example-scenario/devops/manage-microsoft-365-tenant-configuration-microsoft365dsc-devops.yml)
-- [Run containers in a hybrid environment](../../hybrid/hybrid-containers.yml)
+- [Design a CI/CD pipeline using Azure DevOps](../../example-scenario/apps/devops-dotnet-webapp/)
+- [Manage Microsoft 365 tenant configuration by using Microsoft365DSC and Azure DevOps](../../example-scenario/devops/manage-microsoft-365-tenant-configuration-microsoft365dsc-devops/)
+- [Run containers in a hybrid environment](../../hybrid/hybrid-containers/)
 
 
 ### AWS or Google Cloud professionals
 
-- [AWS to Azure services comparison - DevOps and application monitoring](../../aws-professional/services.md#devops-and-application-monitoring)
-- [Google Cloud to Azure services comparison - DevOps and application monitoring](../../gcp-professional/services.md#devops-and-application-monitoring)
+- [AWS to Azure services comparison - DevOps and application monitoring](../../aws-professional/services/#devops-and-application-monitoring)
+- [Google Cloud to Azure services comparison - DevOps and application monitoring](../../gcp-professional/services/#devops-and-application-monitoring)

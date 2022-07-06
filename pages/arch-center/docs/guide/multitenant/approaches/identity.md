@@ -1,31 +1,10 @@
----
-title: Architectural approaches for identity in multitenant solutions
-titleSuffix: Azure Architecture Center
-description: This article describes the approaches for managing identities in a multitenant solution.
-author: johndowns
-ms.author: jodowns
-ms.date: 06/16/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
-  - azure
-  - azure-active-directory
-  - azure-active-directory-b2c
-categories:
-  - identity
-ms.category:
-  - fcp
-ms.custom:
-  - guide
----
 
 # Architectural approaches for identity in multitenant solutions
 
 Almost all multitenant solutions require an identity system. In this article, we discuss common components of identity, including both authentication and authorization, and we discuss how these components can be applied in a multitenant solution.
 
 > [!NOTE]
-> Review [Architectural considerations for identity in a multitenant solution](../considerations/identity.md) to learn more about the key requirements and decisions that you need to make, before you start to build an identity system for a multitenant solution.
+> Review [Architectural considerations for identity in a multitenant solution](../considerations/identity/) to learn more about the key requirements and decisions that you need to make, before you start to build an identity system for a multitenant solution.
 
 ## Authentication
 
@@ -38,13 +17,13 @@ You might need to federate with other identity providers (IdPs). Federation can 
 - Social login, such as by enabling users to use their Google, Facebook, GitHub, or personal Microsoft account.
 - Tenant-specific directories, such as by enabling tenants to federate your application with their own identity providers, so they don't need to manage accounts in multiple places.
 
-For general information about federation, see the [Federated Identity pattern](../../../patterns/federated-identity.yml).
+For general information about federation, see the [Federated Identity pattern](../../../patterns/federated-identity/).
 
 If you choose to support tenant-specific identity providers, ensure you clarify which services and protocols you need to support. For example, will you support the OpenID Connect protocol and the Security Assertion Markup Language (SAML) protocol? Or, will you only support federating with Azure Active Directory instances?
 
 When you implement any identity provider, consider any scale and limits that might apply. For example, if you use Azure Active Directory (Azure AD) B2C as your own identity provider, you might need to deploy custom policies to federate with certain types of tenant identity providers. Azure AD B2C [limits the number of custom policies](/azure/active-directory-b2c/service-limits?pivots=b2c-custom-policy#azure-ad-b2c-configuration-limits) that you can deploy, which might limit the number of tenant-specific identity providers that you can federate with.
 
-You can also consider providing federation as a feature that only applies to customers at a higher [product tier](../considerations/pricing-models.md#feature--and-service-level-based-pricing).
+You can also consider providing federation as a feature that only applies to customers at a higher [product tier](../considerations/pricing-models/#feature--and-service-level-based-pricing).
 
 ### Single sign-on
 
@@ -87,7 +66,7 @@ Authorization data can be stored in several places, including in the following l
 
 In most multitenant solutions, role and permission assignments are managed by the tenant or customer, not by you as the vendor of the multitenant system.
 
-For more information, see [Application roles](../../../multitenant-identity/app-roles.md).
+For more information, see [Application roles](../../../multitenant-identity/app-roles/).
 
 ### Add tenant identity and role information to tokens
 
@@ -127,7 +106,7 @@ Instead of building or running your own identity system, it's a good practice to
 
 Tenants often have strong opinions about how identity should be managed for the solutions they use. For example, many enterprise customers require federation with their own identity providers, to enable single sign-on experiences and to avoid managing multiple sets of credentials. Other tenants might require multifactor authentication, or other forms of protection around the sign-in processes. If you haven't designed for these requirements, it can be challenging to retrofit them later.
 
-Ensure you understand your tenants' identity requirements, before you finalize the design of your identity system. Review [Architectural considerations for identity in a multitenant solution](../considerations/identity.md), to understand some specific requirements that often emerge.
+Ensure you understand your tenants' identity requirements, before you finalize the design of your identity system. Review [Architectural considerations for identity in a multitenant solution](../considerations/identity/), to understand some specific requirements that often emerge.
 
 ### Conflating users and tenants
 
@@ -135,7 +114,7 @@ It's important to clearly consider how your solution defines a user and a tenant
 
 Ensure you have a clear process for tracking the tenant context, within your application and requests. In some situations, this process might require you to include a tenant identifier in every access token, and for you to validate the tenant identifier on each request. In other situations, you store the tenant authorization information separately from the user identities, and you use a more complex authorization system, to manage which users can perform which operations against which tenants.
 
-Tracking the tenant context of a user or token is applicable to any [tenancy model](../considerations/tenancy-models.yml), because a user identity always has a tenant context within a multitenant solution. It's even a good practice to track tenant context when you deploy independent stamps for a single tenant, which future-proofs your codebase for other forms of multitenancy.
+Tracking the tenant context of a user or token is applicable to any [tenancy model](../considerations/tenancy-models/), because a user identity always has a tenant context within a multitenant solution. It's even a good practice to track tenant context when you deploy independent stamps for a single tenant, which future-proofs your codebase for other forms of multitenancy.
 
 ### Conflating role and resource authorization
 
@@ -163,4 +142,4 @@ Other contributors:
 
 ## Next steps
 
-Review [Architectural considerations for identity in a multitenant solution](../considerations/identity.md).
+Review [Architectural considerations for identity in a multitenant solution](../considerations/identity/).

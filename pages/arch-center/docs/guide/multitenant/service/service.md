@@ -1,23 +1,3 @@
----
-title: Service-specific guidance for a multitenant solution
-titleSuffix: Azure Architecture Center
-description: This article introduces the guidance we provide for using many distinct Azure services in a multitenant solution.
-author: johndowns
-ms.author: jodowns
-ms.date: 1/11/2021
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
-  - azure
-categories:
-  - management-and-governance
-ms.category:
-  - fcp
-ms.custom:
-  - guide
----
-
 # Service-specific guidance for a multitenant solution
 
 When you're building a solution on Azure, you combine multiple distinct Azure services together to achieve your business goals. Although Azure services work in a consistent manner, there are specific considerations for how you design and implement each service. When you design a multitenant solution, there are further considerations to review, for each service.
@@ -35,13 +15,13 @@ The content in this section is designed for architects, lead developers, and any
 
 The articles in this section describe some Azure services commonly used in multitenant solutions. The following Azure services are covered so far:
 
-- Deployment and configuration: [Azure Resource Manager](resource-manager.md)
-- Compute: [App Service and Azure Functions](app-service.yml)
-- Networking: [NAT Gateway](nat-gateway.md)
-- Storage and data: [Azure Storage](storage.md), [Azure SQL Database](sql-database.md), [Azure Cosmos DB](cosmos-db.md), and [Azure Database for PostgreSQL](postgresql.md)
+- Deployment and configuration: [Azure Resource Manager](resource-manager/)
+- Compute: [App Service and Azure Functions](app-service/)
+- Networking: [NAT Gateway](nat-gateway/)
+- Storage and data: [Azure Storage](storage/), [Azure SQL Database](sql-database/), [Azure Cosmos DB](cosmos-db/), and [Azure Database for PostgreSQL](postgresql/)
 
 We frequently add new articles with guidance for additional services. You're also welcome to [submit suggestions for additional service-specific guidance](https://aka.ms/multitenancy/feedback).
 
 ## Next steps
 
-Review the guidance for [Azure Resource Manager](resource-manager.md).
+Review the guidance for [Azure Resource Manager](resource-manager/).

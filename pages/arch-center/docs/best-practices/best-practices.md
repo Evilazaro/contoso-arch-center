@@ -1,25 +1,3 @@
----
-title: Best practices in cloud applications
-titleSuffix: Azure Architecture Center
-description: Learn best practices for building reliable, scalable, and secure applications in the cloud. See resources on caching, partitioning, monitoring, and other areas.
-author: EdPrice-MSFT
-ms.date: 01/04/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: design-pattern
-ms.custom:
-  - design-pattern
-keywords:
-  - Azure
-categories:
-  - devops
-  - management-and-governance
-  - security
-  - storage
-products:
-  - azure
----
-
 # Best practices in cloud applications
 
 These best practices can help you build reliable, scalable, and secure applications in the cloud. They offer guidelines and tips for designing and implementing efficient and robust systems, mechanisms, and approaches. Many also include code examples that you can use with Azure services. The practices apply to any distributed system, whether your host is Azure or a different cloud platform.
@@ -58,21 +36,21 @@ This table lists various best practices. The **Related pillars or patterns** col
 - [Microsoft Azure Well-Architected Framework][Microsoft Azure Well-Architected Framework]
 
 [About Azure Cache for Redis]: /azure/azure-cache-for-redis/cache-overview
-[Autoscaling]: ./auto-scaling.md
-[Background jobs]: ./background-jobs.md
-[Best practices for monitoring cloud applications]: ./monitoring.yml
-[Best practices for using content delivery networks (CDNs)]: ./cdn.yml
-[Caching]: ./caching.yml
-[Cloud Design Patterns]: ../patterns/index.md
-[Data Management patterns]: ../patterns/category/data-management.md
-[Data partitioning strategies]: ./data-partitioning-strategies.yml
-[Design and implementation patterns]: ../patterns/category/design-implementation.md
-[Horizontal, vertical, and functional data partitioning]: ./data-partitioning.yml
-[Host name preservation]: ./host-name-preservation.yml
+[Autoscaling]: ./auto-scaling/
+[Background jobs]: ./background-jobs/
+[Best practices for monitoring cloud applications]: ./monitoring/
+[Best practices for using content delivery networks (CDNs)]: ./cdn/
+[Caching]: ./caching/
+[Cloud Design Patterns]: ../patterns/index/
+[Data Management patterns]: ../patterns/category/data-management/
+[Data partitioning strategies]: ./data-partitioning-strategies/
+[Design and implementation patterns]: ../patterns/category/design-implementation/
+[Horizontal, vertical, and functional data partitioning]: ./data-partitioning/
+[Host name preservation]: ./host-name-preservation/
 [Introduction to Azure Blob storage]: /azure/storage/blobs/storage-blobs-introduction
 [Introduction to the core Azure Storage services]: /azure/storage/common/storage-introduction
-[Message encoding considerations]: ./message-encode.md
-[Messaging patterns]: ../patterns/category/messaging.md
+[Message encoding considerations]: ./message-encode/
+[Messaging patterns]: ../patterns/category/messaging/
 [Microsoft Azure Well-Architected Framework]: /azure/architecture/framework/index
 [Overview of autoscale in Microsoft Azure]: /azure/azure-monitor/autoscale/autoscale-overview
 [Overview of the operational excellence pillar]: /azure/architecture/framework/devops/overview
@@ -80,9 +58,9 @@ This table lists various best practices. The **Related pillars or patterns** col
 [Overview of the security pillar]: /azure/architecture/framework/security/overview
 [Principles of cost optimization]: /azure/architecture/framework/cost/overview
 [Principles of the reliability pillar]: /azure/architecture/framework/resiliency/principles
-[Retry guidance for Azure services]: ./retry-service-specific.md
-[Transient fault handling]: ./transient-faults.md
-[Web API design]: ./api-design.md
-[Web API implementation]: ./api-implementation.md
+[Retry guidance for Azure services]: ./retry-service-specific/
+[Transient fault handling]: ./transient-faults/
+[Web API design]: ./api-design/
+[Web API implementation]: ./api-implementation/
 [What is Azure SQL Database?]: /azure/azure-sql/database/sql-database-paas-overview
 [What is Azure Table storage?]: /azure/storage/tables/table-storage-overview

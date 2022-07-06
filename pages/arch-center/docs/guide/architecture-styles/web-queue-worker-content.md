@@ -83,10 +83,10 @@ For more information, see [App Service web application reference architecture][s
 
 <!-- links -->
 
-[api-design]: ../../best-practices/api-design.md
-[autoscaling]: ../../best-practices/auto-scaling.md
-[caching]: ../../best-practices/caching.yml
-[cdn]: ../../best-practices/cdn.yml
-[data-partition]: ../../best-practices/data-partitioning.yml
+[api-design]: ../../best-practices/api-design/
+[autoscaling]: ../../best-practices/auto-scaling/
+[caching]: ../../best-practices/caching/
+[cdn]: ../../best-practices/cdn/
+[data-partition]: ../../best-practices/data-partitioning/
 [polyglot]: /azure/architecture/guide/design-principles/use-best-data-store
-[scalable-web-app]: ../../reference-architectures/app-service-web-app/scalable-web-app.yml
+[scalable-web-app]: ../../reference-architectures/app-service-web-app/scalable-web-app/

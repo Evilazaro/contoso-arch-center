@@ -1,25 +1,3 @@
----
-title: Azure Storage considerations for multitenancy
-titleSuffix: Azure Architecture Center
-description: This article describes the features of Azure Storage that are useful when working with multitenanted systems. It provides links to guidance and examples for how to use Azure Storage in a multitenant solution.
-author: johndowns
-ms.author: jodowns
-ms.date: 10/18/2021
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
-  - azure
-  - azure-storage
-categories:
-  - storage
-ms.category:
-  - fcp
-ms.custom:
-  - guide
-  - fcp
----
-
 # Multitenancy and Azure Storage
 
 Azure Storage is a foundational service used in almost every solution. Multitenant solutions often use Azure Storage for blob, file, queue, and table storage. On this page, we describe some of the features of Azure Storage that are useful for multitenant solutions, and then we provide links to the guidance that can help you, when you're planning how you're going to use Azure Storage.
@@ -34,7 +12,7 @@ When you work with Azure Storage from a client application, it's important to co
 
 Shared access signatures can be used to restrict the scope of operations that a client can perform, and the objects that they can perform operations against. For example, if you have a shared storage account for all of your tenants, and you store all of tenant A's data in a blob container named `tenanta`, you can create an SAS that only permits tenant A's users to access that container. For more information, see [Isolation models](#isolation-models) to explore the approaches you can use to isolate your tenants' data in a storage account.
 
-The [Valet Key pattern](../../../patterns/valet-key.yml) is useful as a way to issue constrained and scoped shared access signatures from your application tier. For example, suppose you have a multitenant application that allows users to upload videos. Your API or application tier can authenticate the client using your own authentication system. You can then provide a SAS to the client that allows them to upload a video file to a specified blob, into a container and blob path that you specify. The client then uploads the file directly to the storage account, avoiding the extra bandwidth and load on your API. If they try to read data from the blob container, or if they try to write data to a different part of the container to another container in the storage account, Azure Storage blocks the request. The signature expires after a configurable time period.
+The [Valet Key pattern](../../../patterns/valet-key/) is useful as a way to issue constrained and scoped shared access signatures from your application tier. For example, suppose you have a multitenant application that allows users to upload videos. Your API or application tier can authenticate the client using your own authentication system. You can then provide a SAS to the client that allows them to upload a video file to a specified blob, into a container and blob path that you specify. The client then uploads the file directly to the storage account, avoiding the extra bandwidth and load on your API. If they try to read data from the blob container, or if they try to write data to a different part of the container to another container in the storage account, Azure Storage blocks the request. The signature expires after a configurable time period.
 
 [Stored access policies](/rest/api/storageservices/define-stored-access-policy) extend the SAS functionality, which enables you to define a single policy that can be used when issuing multiple shared access signatures.
 
@@ -52,11 +30,11 @@ Consider using [lifecycle management policies](/azure/storage/blobs/lifecycle-ma
 
 When you configure [immutable blob storage](/azure/storage/blobs/immutable-storage-overview) on storage containers with [time-based retention policies](/azure/storage/blobs/immutable-time-based-retention-policy-overview), Azure Storage prevents deletion or modification of the data before a specified time. The prevention is enforced at the storage account layer and applies to all users. Even your organization's administrators can't delete immutable data.
 
-Immutable storage can be useful when you work with tenants that have legal or compliance requirements to maintain data or records. However, you should consider how this feature is used within the context of your [tenant lifecycle](../considerations/tenant-lifecycle.md). For example, if tenants are offboarded and request the deletion of their data, you might not be able to fulfill their requests. If you use immutable storage for your tenants' data, consider how you address this issue in your terms of service.
+Immutable storage can be useful when you work with tenants that have legal or compliance requirements to maintain data or records. However, you should consider how this feature is used within the context of your [tenant lifecycle](../considerations/tenant-lifecycle/). For example, if tenants are offboarded and request the deletion of their data, you might not be able to fulfill their requests. If you use immutable storage for your tenants' data, consider how you address this issue in your terms of service.
 
 ### Server-side copy
 
-In a multitenant system, there is sometimes a need to move data from one storage account to another. For example, if you move a tenant between deployment stamps or rebalance a [sharded](../../../patterns/sharding.yml) set of storage accounts, you need to copy or move a specific tenant's data. When working with large volumes of data, it's advisable to use [server-side copy APIs](https://azure.microsoft.com/updates/new-copy-apis-for-efficient-data-copy) to decrease the time it takes to migrate the data.
+In a multitenant system, there is sometimes a need to move data from one storage account to another. For example, if you move a tenant between deployment stamps or rebalance a [sharded](../../../patterns/sharding/) set of storage accounts, you need to copy or move a specific tenant's data. When working with large volumes of data, it's advisable to use [server-side copy APIs](https://azure.microsoft.com/updates/new-copy-apis-for-efficient-data-copy) to decrease the time it takes to migrate the data.
 
 The [AzCopy tool](/azure/storage/common/storage-use-azcopy-v10) is an application that you can run from your own computer, or from a virtual machine, to manage the copy process. AzCopy is compatible with the server-side copy feature, and it provides a scriptable command-line interface that you can run from your own solutions. AzCopy is also helpful for uploading and downloading large volumes of data.
 
@@ -64,7 +42,7 @@ If you need to use the server-side copy APIs directly from your code, consider u
 
 ### Object replication
 
-The [Object replication](/azure/storage/blobs/object-replication-overview) feature automatically replicates data between a source and destination storage account. Object replication is asynchronous. In a multitenant solution, this feature can be useful when you need to continuously replicate data between deployment stamps, or in an implementation of the [Geode pattern](../../../patterns/geodes.yml).
+The [Object replication](/azure/storage/blobs/object-replication-overview) feature automatically replicates data between a source and destination storage account. Object replication is asynchronous. In a multitenant solution, this feature can be useful when you need to continuously replicate data between deployment stamps, or in an implementation of the [Geode pattern](../../../patterns/geodes/).
 
 ### Encryption
 
@@ -72,7 +50,7 @@ Azure Storage enables you to [provide encryption keys](/azure/storage/blobs/encr
 
 ### Monitoring
 
-When working with a multitenant solution, consider whether you need to [measure the consumption for each tenant](../considerations/measure-consumption.md), and define the specific metrics you need to track, such as the amount of storage used for each tenant (the capacity), or the number of operations performed for each tenant's data.
+When working with a multitenant solution, consider whether you need to [measure the consumption for each tenant](../considerations/measure-consumption/), and define the specific metrics you need to track, such as the amount of storage used for each tenant (the capacity), or the number of operations performed for each tenant's data.
 
 Azure Storage provides [built-in monitoring capabilities](/azure/storage/blobs/monitor-blob-storage). It's important to consider the services you'll use within the Azure Storage account. For example, when you work with [blobs](/azure/storage/blobs/monitor-blob-storage-reference), it's possible to view the total capacity of a storage account, but not a single container. In contrast, when you work with file shares, it's possible to see the capacity for each share, but not for each folder.
 
@@ -147,7 +125,7 @@ By creating file shares for each tenant, you can use Azure Storage access contro
 
 When using table storage with a single shared table, you can consider using the [built-in support for partitioning](/rest/api/storageservices/understanding-the-table-service-data-model#partitionkey-property). Each entity must include a partition key. A tenant identifier is often a good choice for a partition key.
 
-Shared access signatures and policies enable you to specify a partition key range, and Azure Storage ensures that requests containing the signature can only access the specified partition key ranges. This enables you to implement the [Valet Key pattern](../../../patterns/valet-key.yml), which allows untrusted clients to access a single tenant's partition, without affecting other tenants.
+Shared access signatures and policies enable you to specify a partition key range, and Azure Storage ensures that requests containing the signature can only access the specified partition key ranges. This enables you to implement the [Valet Key pattern](../../../patterns/valet-key/), which allows untrusted clients to access a single tenant's partition, without affecting other tenants.
 
 For high-scale applications, consider the maximum throughput of each table partition and the storage account.
 
@@ -175,4 +153,4 @@ When you dynamically create queues for each tenant, consider how your applicatio
 
 ## Next steps
 
-Review [storage and data approaches for multitenancy](../approaches/storage-data.yml).
+Review [storage and data approaches for multitenancy](../approaches/storage-data/).

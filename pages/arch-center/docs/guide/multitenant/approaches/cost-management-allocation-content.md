@@ -2,7 +2,7 @@ Multitenant solutions often require special consideration when you measure and a
 
 ## Key considerations and requirements
 
-Consider the requirements you have for measuring the consumption for your solution. This is discussed in more detail on [Measure the consumption of each tenant](../considerations/measure-consumption.md). 
+Consider the requirements you have for measuring the consumption for your solution. This is discussed in more detail on [Measure the consumption of each tenant](../considerations/measure-consumption/). 
 
 ### Purpose of measurement
 
@@ -10,14 +10,14 @@ It's important to decide what your goal is. The following are examples of goals:
 
 - **Calculate an approximate cost of goods sold for each tenant.** For example, if you deploy a significant number of shared resources, you might only be interested in a rough approximation of the cost incurred for each tenant.
 - **Calculate the exact cost incurred by each tenant.** For example, if you charge your tenants for the exact amount of consumption they incur, you need to have precise information about how much each tenant's resources cost.
-- **Identify outlier tenants that cost significantly more than others.** For example, if you provide a [flat-rate pricing model](../considerations/pricing-models.md#flat-rate-pricing), you might need to determine whether any tenants are consuming a disproportionate amount of your provisioned capacity, so that you can apply fair-use policies. In many situations, this use case doesn't require precise measurement of costs.
+- **Identify outlier tenants that cost significantly more than others.** For example, if you provide a [flat-rate pricing model](../considerations/pricing-models/#flat-rate-pricing), you might need to determine whether any tenants are consuming a disproportionate amount of your provisioned capacity, so that you can apply fair-use policies. In many situations, this use case doesn't require precise measurement of costs.
 - **Reduce the overall Azure cost for your solution.** For example, you might want to look at the cost of every component, and then determine whether you have over-provisioned for the workload.
 
 By understanding the goal of measuring the consumption by a tenant, you can determine whether the cost allocations need to be approximate or highly precise, which affects the specific tools you can use and the practices you can follow.
 
 ### Shared components
 
-You might be able to reduce the cost of a multitenant solution by moving tenants to shared infrastructure. However, you need to carefully consider the impact of sharing resources, such as whether your tenants will begin to experience the [Noisy Neighbor problem](../../../antipatterns/noisy-neighbor/noisy-neighbor.yml).
+You might be able to reduce the cost of a multitenant solution by moving tenants to shared infrastructure. However, you need to carefully consider the impact of sharing resources, such as whether your tenants will begin to experience the [Noisy Neighbor problem](../../../antipatterns/noisy-neighbor/noisy-neighbor/).
 
 You also need to consider how you measure and allocate the costs of shared components. For example, you can evenly divide the cost between each of the tenants that use the shared component. Or, you can meter each tenant's usage to get a more precise measurement of their consumption of shared components.
 
@@ -29,14 +29,14 @@ Azure enables you to [apply tags to your resources](/azure/azure-resource-manage
 
 The way you use tags in a multitenant solution is likely to be different, depending on your architecture.
 
-In some solutions, you might deploy dedicates resources for each tenant, such as if you deploy dedicated [Deployment Stamps](../../../patterns/deployment-stamp.yml) for each tenant. In these situations, it's clear that any Azure consumption for those resources should be allocated to that tenant, and so you can tag your Azure resources with the tenant ID.
+In some solutions, you might deploy dedicates resources for each tenant, such as if you deploy dedicated [Deployment Stamps](../../../patterns/deployment-stamp/) for each tenant. In these situations, it's clear that any Azure consumption for those resources should be allocated to that tenant, and so you can tag your Azure resources with the tenant ID.
 
-In other situations, you might have sets of shared resources. For example, when you apply the [Sharding pattern](../../../patterns/sharding.yml), you might deploy multiple databases and spread your tenants across them. Consider tagging the resources with an identifier for the _group_ of tenants. You might not be able to easily allocate costs to a single tenant, but you can at least narrow down the cost to a set of tenants, when you use this approach. You can also use the consumption information to help you rebalance tenants across the shards, if you notice that a specific shard is accruing higher costs than the others.
+In other situations, you might have sets of shared resources. For example, when you apply the [Sharding pattern](../../../patterns/sharding/), you might deploy multiple databases and spread your tenants across them. Consider tagging the resources with an identifier for the _group_ of tenants. You might not be able to easily allocate costs to a single tenant, but you can at least narrow down the cost to a set of tenants, when you use this approach. You can also use the consumption information to help you rebalance tenants across the shards, if you notice that a specific shard is accruing higher costs than the others.
 
 > [!NOTE]
 > There is a [limit to the number of tags](/azure/azure-resource-manager/management/tag-resources#limitations) that can be applied to a resource. When you work with shared resources, it's best not to add a tag for every tenant that shares the resource. Instead, consider adding a tag with the shard ID or another way to identify the group of tenants.
 
-Consider an example multitenant solution that's built using the [Deployment Stamps pattern](../../../patterns/deployment-stamp.yml). Each deployment stamp includes a shared web server and sharded databases. Tags can be applied to each of the Azure components, as shown in the following diagram.
+Consider an example multitenant solution that's built using the [Deployment Stamps pattern](../../../patterns/deployment-stamp/). Each deployment stamp includes a shared web server and sharded databases. Tags can be applied to each of the Azure components, as shown in the following diagram.
 
 ![Diagram showing two stamps, with tags added to each component.](media/cost-management-allocation/tags.png)
 
@@ -86,4 +86,4 @@ Reservation scopes can also be helpful, when you have tenants with unpredictable
 
 ## Next steps
 
-- [Measure the consumption of each tenant](../considerations/measure-consumption.md)
+- [Measure the consumption of each tenant](../considerations/measure-consumption/)

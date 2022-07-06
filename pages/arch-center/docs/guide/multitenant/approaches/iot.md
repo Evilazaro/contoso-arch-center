@@ -1,28 +1,3 @@
----
-title: Architectural approaches for IoT in a multitenant solution
-titleSuffix: Azure Architecture Center
-description: This article describes approaches for supporting multitenancy in your IoT solution.
-author: drcrook1
-ms.author: dacrook
-ms.date: 04/11/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
-  - azure
-  - azure-iot
-  - azure-iot-central
-  - azure-iot-dps
-  - azure-iot-hub
-categories:
-  - iot
-ms.category:
-  - fcp
-ms.custom:
-  - guide
-  - fcp
----
-
 # Architectural approaches for IoT in a multitenant solution
 
 Multitenant IoT solutions come in many different flavors and sizes. You might have many requirements and constraints, ranging from infrastructure ownership, to customer data isolation, to compliance. It can be challenging to define a pattern that meets all of these design constraints, and doing so often requires considering multiple dimensions. This article describes several approaches commonly used to solve multitenancy considerations for IoT-based solutions. This document includes example multitenant architectures that leverage common components, according to the [IoT Reference Architecture](/azure/architecture/reference-architectures/iot).
@@ -33,7 +8,7 @@ These considerations and requirements are presented in the order in which they'r
 
 ### Governance and compliance
 
-Governance and compliance considerations might require that you use a particular pattern or set of IoT resources. Not all IoT services have the same certifications or capabilities. If you need to meet specific compliance standards, you might need to select specific services. Information on governance and compliance is covered in a [dedicated article on that topic](governance-compliance.md).
+Governance and compliance considerations might require that you use a particular pattern or set of IoT resources. Not all IoT services have the same certifications or capabilities. If you need to meet specific compliance standards, you might need to select specific services. Information on governance and compliance is covered in a [dedicated article on that topic](governance-compliance/).
 
 Governance in IoT can also take additional forms, such as device ownership and management. Does the customer own the device or does the solution provider?  Who owns the management of those devices?  These considerations and implications are unique to each solution provider and can lead to different choices in the technology, deployment pattern, and multi-tenancy pattern that you use.
 
@@ -62,7 +37,7 @@ You can isolate and distribute tenants across the IoT control, management, and c
 
 #### Data storage, query, usage, and retention
 
-IoT solutions tend to be very data-intensive, both when streaming and at rest. For more information on managing data in multitenant solutions, see [Architectural approaches for storage and data in multitenant solutions](storage-data.yml).
+IoT solutions tend to be very data-intensive, both when streaming and at rest. For more information on managing data in multitenant solutions, see [Architectural approaches for storage and data in multitenant solutions](storage-data/).
 
 ## Approaches to consider
 
@@ -148,7 +123,7 @@ Communications to systems outside of IoT Central, such as for longer-term data a
 
 If you compare the *Simple SaaS* approach with the [*Single tenant automated*](#single-tenant-automated) aPaaS model, many characteristics are similar.  The primary difference between the two models is that in the  *Single tenant automated* model, you deploy a distinct IoT Central instance for each tenant, while in the *Simple SaaS with aPaaS* model, you instead deploy a shared instance for multiple customers, and you create an IoT Central organization for each tenant.
 
-As you're sharing a multitenanted data tier in this model, you'll need to implement row-level security, as described in [Architectural approaches for storage and data in multitenant solutions](storage-data.yml), in order to isolate the customer data.
+As you're sharing a multitenanted data tier in this model, you'll need to implement row-level security, as described in [Architectural approaches for storage and data in multitenant solutions](storage-data/), in order to isolate the customer data.
 
 **Benefits**:
 
@@ -168,7 +143,7 @@ As you're sharing a multitenanted data tier in this model, you'll need to implem
 |---|---|---|
 | Service provider's subscription | Horizontally partitioned | Deployment Stamp |
 
-A common scalability approach is to [horizontally partition the solution](../considerations/tenancy-models.yml#horizontally-partitioned-deployments). This means you have some shared components and some per-customer components.
+A common scalability approach is to [horizontally partition the solution](../considerations/tenancy-models/#horizontally-partitioned-deployments). This means you have some shared components and some per-customer components.
 
 Within an IoT solution, there are many components that can be horizontally partitioned. The horizontally partitioned subsystems are typically arranged using a [deployment stamp pattern](/azure/architecture/patterns/deployment-stamp) which integrates with the greater solution.
 
@@ -271,7 +246,7 @@ Other contributors:
 
 ## Next steps
 
-* Review guidance for [multitenancy and Azure Cosmos DB](../service/cosmos-db.md).
+* Review guidance for [multitenancy and Azure Cosmos DB](../service/cosmos-db/).
 * Learn about [hot, warm, and cold data paths with IoT on Azure](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/hot-warm-and-cold-data-paths-with-iot-on-azure/ba-p/2336035).
 * Refer to the [Azure IoT reference architectures](/azure/architecture/reference-architectures/iot).
-* Review documentation on how to [Scale IoT solutions with deployment stamps](../../../example-scenario/iot/application-stamps.yml).
+* Review documentation on how to [Scale IoT solutions with deployment stamps](../../../example-scenario/iot/application-stamps/).

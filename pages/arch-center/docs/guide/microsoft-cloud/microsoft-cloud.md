@@ -1,25 +1,3 @@
----
-title: Build applications on the Microsoft Cloud
-description: Learn how the unified collection of services that the Microsoft Cloud provides can deliver more value in less time with better security.
-author: DanWahlin
-ms.author: dwahlin
-ms.contributors: dwahlin-5182022
-ms.date: 05/24/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-categories:
-  - developer-tools
-products:
-  - azure
-  - power-platform
-  - github
-  - azure-devops
-  - m365
-ms.custom:
-  - fcp
-  - team=cloud_advocates
----
 
 # Build applications on the Microsoft Cloud
 
@@ -66,10 +44,10 @@ The following table describes each article and provides a link to it. The articl
 
 | How enterprise application development leaders succeed | Article that shows how |
 | --------------------------------- | ---------------------------------------- |
-| They create better applications in less time with pro-code development on Azure and low-code development on Power Platform. | [2. Create and deploy more applications in less time](create-deploy-more-applications-less-time.md) |
-| They get the most value from technical talent with fusion development and an integrated low-code and pro-code development process that includes GitHub and Azure DevOps. | [3. Get the most value from technical talent](get-most-value-technical-talent.md) |
-| They integrate new applications with existing solutions by using Azure API Management, Microsoft Graph, and Dynamics 365. | [4. Integrate new applications with existing solutions](integrate-new-applications-existing-solutions.md) |
-| They create and run secure applications by using Active Directory for identity and access management. They also use Azure Sentinel for security information and event management (SIEM), and for security orchestration, automation, and response (SOAR).| [5. Create and run secure applications](create-run-secure-applications.md) |
+| They create better applications in less time with pro-code development on Azure and low-code development on Power Platform. | [2. Create and deploy more applications in less time](create-deploy-more-applications-less-time/) |
+| They get the most value from technical talent with fusion development and an integrated low-code and pro-code development process that includes GitHub and Azure DevOps. | [3. Get the most value from technical talent](get-most-value-technical-talent/) |
+| They integrate new applications with existing solutions by using Azure API Management, Microsoft Graph, and Dynamics 365. | [4. Integrate new applications with existing solutions](integrate-new-applications-existing-solutions/) |
+| They create and run secure applications by using Active Directory for identity and access management. They also use Azure Sentinel for security information and event management (SIEM), and for security orchestration, automation, and response (SOAR).| [5. Create and run secure applications](create-run-secure-applications/) |
 
 After you read these articles, you can learn more about building applications on the Microsoft Cloud by making use of our [Microsoft Cloud resources collection](https://aka.ms/microsoft-cloud-collection). It provides design guides, solutions, learning resources, and product documentation to help get you started.
 
@@ -78,4 +56,4 @@ After you read these articles, you can learn more about building applications on
 See how successful enterprise application development leaders create better applications in less time with pro-code development on Azure and low-code development on Power Platform.
 
 > [!div class="nextstepaction"]
-> [2. Create and deploy more applications in less time](create-deploy-more-applications-less-time.md)
+> [2. Create and deploy more applications in less time](create-deploy-more-applications-less-time/)

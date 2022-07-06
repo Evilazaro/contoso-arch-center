@@ -6,7 +6,7 @@ permalink: /
 
 ![](../assets//img/contoso-logo.png)
 
-# Contoso Architecture Center
+# Architecture Center
 
 Contoso patterns & practices
 

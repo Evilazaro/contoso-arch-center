@@ -1,33 +1,8 @@
----
-title: Architectural approaches for messaging in multitenant solutions
-titleSuffix: Azure Architecture Center
-description: This article describes approaches for messaging in a multitenant solution.
-author: paolosalvatori
-ms.author: paolos
-ms.date: 05/18/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
-  - azure-service-bus
-  - azure-event-grid
-  - azure-event-hubs
-  - azure-queue-storage
-categories:
-  - integration
-  - compute
-  - hybrid
-ms.category:
-  - fcp
-ms.custom:
-  - guide
----
-
 # Architectural approaches for messaging in multitenant solutions
 
 Asynchronous messaging and event-driven communication are critical assets when building a distributed application that's composed of several internal and external services. When you design a multitenant solution, it's crucial to conduct a preliminary analysis to define how to share or partition messages that pertain to different tenants.
 
-Sharing the same messaging system or event-streaming service can significantly reduce the operational cost and management complexity. However, using a dedicated messaging system for each tenant provides better data isolation, reduces the risk of data leakage, eliminates the [Noisy Neighbor issue](../../../antipatterns/noisy-neighbor/noisy-neighbor.yml), and allows to charge back Azure costs to tenants easily.
+Sharing the same messaging system or event-streaming service can significantly reduce the operational cost and management complexity. However, using a dedicated messaging system for each tenant provides better data isolation, reduces the risk of data leakage, eliminates the [Noisy Neighbor issue](../../../antipatterns/noisy-neighbor/noisy-neighbor/), and allows to charge back Azure costs to tenants easily.
 
 In this article, you can find a distinction between messages and events, and you'll find guidelines that solution architects can follow when deciding which approach to use for a messaging or eventing infrastructure in a multitenant solution.
 
@@ -74,7 +49,7 @@ Here is a list of some example multitenant scenarios for messages, data points, 
 
 ## Key considerations and requirements
 
-The [deployment and tenancy model](../considerations/tenancy-models.yml) that you choose for your solution has a deep impact on security, performance, data isolation, management, and the ability to cross-charge resource costs to tenants. This analysis includes the model that you select for your messaging and eventing infrastructure. In this section, we review some of the key decisions you must make when you plan for a messaging system in your multitenant solution. 
+The [deployment and tenancy model](../considerations/tenancy-models/) that you choose for your solution has a deep impact on security, performance, data isolation, management, and the ability to cross-charge resource costs to tenants. This analysis includes the model that you select for your messaging and eventing infrastructure. In this section, we review some of the key decisions you must make when you plan for a messaging system in your multitenant solution. 
 
 ### Scale
 
@@ -101,7 +76,7 @@ The messaging system could be sized with a maximum throughput in messages per un
 
 ### Performance predictability and reliability
 
-When designing and building a messaging system for a limited number of tenants, using a single messaging system could be an excellent solution to meet the functional requirements, in terms of throughput, and it could reduce the total cost of ownership. A multitenant application might share the same messaging entities, such as queues and topics across multiple customers. Or they might use a dedicated set of components for each, in order to increase tenant isolation. On the other hand, sharing the same messaging infrastructure across multiple tenants could expose the entire solution to the [Noisy Neighbor issue](../../../antipatterns/noisy-neighbor/noisy-neighbor.yml). The activity of one tenant could harm other tenants, in terms of performance and operability. 
+When designing and building a messaging system for a limited number of tenants, using a single messaging system could be an excellent solution to meet the functional requirements, in terms of throughput, and it could reduce the total cost of ownership. A multitenant application might share the same messaging entities, such as queues and topics across multiple customers. Or they might use a dedicated set of components for each, in order to increase tenant isolation. On the other hand, sharing the same messaging infrastructure across multiple tenants could expose the entire solution to the [Noisy Neighbor issue](../../../antipatterns/noisy-neighbor/noisy-neighbor/). The activity of one tenant could harm other tenants, in terms of performance and operability. 
 
 In this case, the messaging system should be properly sized to sustain the expected traffic load at peak time. Ideally, it should support autoscaling. The messaging system should dynamically scale out when the traffic increases and scale in when the traffic decreases. A dedicated messaging system for each tenant could also mitigate the Noisy Neighbor risk, but managing a large number of messaging systems could increase the complexity of the solution.
 
@@ -155,7 +130,7 @@ Plan from the beginning how you intend to operate, monitor, and maintain your me
 
 ### Cost
 
-Generally, the higher the density of tenants to your deployment infrastructure, the lower the cost to provision that infrastructure. However, shared infrastructure increases the likelihood of issues like the [Noisy Neighbor issue](../../../antipatterns/noisy-neighbor/noisy-neighbor.yml), so consider the tradeoffs carefully.
+Generally, the higher the density of tenants to your deployment infrastructure, the lower the cost to provision that infrastructure. However, shared infrastructure increases the likelihood of issues like the [Noisy Neighbor issue](../../../antipatterns/noisy-neighbor/noisy-neighbor/), so consider the tradeoffs carefully.
 
 ## Approaches and patterns to consider
 
@@ -163,7 +138,7 @@ Several [Cloud Design Patterns](/azure/architecture/patterns) from the Azure Arc
 
 ### Deployment Stamps pattern
 
-For more information about the Deployment Stamps pattern and multitenancy, see [the Deployment Stamps pattern section of Architectural approaches for multitenancy](overview.yml#deployment-stamps-pattern). For more information about tenancy models, see [Tenancy models to consider for a multitenant solution](../considerations/tenancy-models.yml).
+For more information about the Deployment Stamps pattern and multitenancy, see [the Deployment Stamps pattern section of Architectural approaches for multitenancy](overview/#deployment-stamps-pattern). For more information about tenancy models, see [Tenancy models to consider for a multitenant solution](../considerations/tenancy-models/).
 
 ### Shared messaging system
 
@@ -183,7 +158,7 @@ Tenants may have different requirements for security, intra-region resiliency, d
 
 ### Sharding pattern
 
-The [Sharding pattern](../../../patterns/sharding.yml) involves deploying multiple messaging systems, called *shards*, which contain one or more tenants' messaging entities, such as queues and topics. Unlike deployment stamps, shards don't imply that the entire infrastructure is duplicated. You might shard messaging systems without also duplicating or sharding other infrastructure in your solution.
+The [Sharding pattern](../../../patterns/sharding/) involves deploying multiple messaging systems, called *shards*, which contain one or more tenants' messaging entities, such as queues and topics. Unlike deployment stamps, shards don't imply that the entire infrastructure is duplicated. You might shard messaging systems without also duplicating or sharding other infrastructure in your solution.
 
 ![Diagram showing a sharded messaging system. One messaging system contains the queues for tenants A and B, and the other contains the queues for tenant C.](media/messaging/sharding.png)
 
@@ -207,7 +182,7 @@ With a horizontally partitioned deployment, you need to adopt an automated proce
 
 ### Geodes pattern
 
-The [Geode pattern](../../../patterns/geodes.yml) involves deploying a collection of backend services into a set of geographical nodes. Each can service any request for any client in any region. This pattern allows you to serve requests in an active-active style, which improves latency and increases availability, by distributing request processing around the globe.
+The [Geode pattern](../../../patterns/geodes/) involves deploying a collection of backend services into a set of geographical nodes. Each can service any request for any client in any region. This pattern allows you to serve requests in an active-active style, which improves latency and increases availability, by distributing request processing around the globe.
 
 ![Diagram showing the Geode pattern, with messaging systems deployed across multiple regions that synchronize together.](media/messaging/geodes.png)
 

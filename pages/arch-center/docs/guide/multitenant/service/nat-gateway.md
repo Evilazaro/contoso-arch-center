@@ -1,24 +1,3 @@
----
-title: Azure NAT Gateway considerations for multitenancy
-titleSuffix: Azure Architecture Center
-description: This article describes the features of NAT Gateway that are useful when you work with multitenanted systems. It also provides links to guidance and examples for how to use NAT Gateway in a multitenant solution.
-author: johndowns
-ms.author: jodowns
-ms.date: 1/7/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
- - azure
- - azure-virtual-network
-categories:
- - networking
-ms.category:
-  - fcp
-ms.custom:
-  - guide
-  - fcp
----
 
 # Azure NAT Gateway considerations for multitenancy
 
@@ -61,10 +40,10 @@ When a NAT Gateway instance is applied to a subnet, any outbound traffic from th
 
 If you need to provide different outbound public IP addresses for each tenant, you must deploy individual NAT Gateway resources. Each subnet can be associated with a single NAT Gateway instance. To deploy more NAT gateways, you need to deploy multiple subnets or virtual networks. In turn, you likely need to deploy multiple sets of compute resources.
 
-Review [Architectural approaches for networking in multitenant solutions](../approaches/networking.md) for more information about how to design a multitenant network topology.
+Review [Architectural approaches for networking in multitenant solutions](../approaches/networking/) for more information about how to design a multitenant network topology.
 
 ## Next steps
 
 - [Learn more about NAT Gateway](/azure/virtual-network/nat-gateway/nat-gateway-resource).
 - [Learn how to use NAT Gateway with Azure App Service and Azure Functions](/azure/app-service/networking/nat-gateway-integration).
-- Review [Architectural approaches for networking in multitenant solutions](../approaches/networking.md).
+- Review [Architectural approaches for networking in multitenant solutions](../approaches/networking/).

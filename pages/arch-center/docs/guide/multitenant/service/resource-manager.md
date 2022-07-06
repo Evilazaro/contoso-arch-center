@@ -1,26 +1,3 @@
----
-title: Azure Resource Manager considerations for multitenancy
-titleSuffix: Azure Architecture Center
-description: This article describes the features of Azure Resource Manager that are useful when you work with multitenanted systems, and it provides links to guidance and examples for how to use Azure Resource Manager in a multitenant solution.
-author: johndowns
-ms.author: jodowns
-ms.date: 1/4/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
- - azure
- - azure-resource-manager
-categories:
- - management-and-governance
- - devops
-ms.category:
-  - fcp
-ms.custom:
-  - guide
-  - fcp
----
-
 # Multitenancy and Azure Resource Manager
 
 Azure Resource Manager is the core resource management service for Azure. Every resource in Azure is created, managed, and eventually deleted through Resource Manager. When you build a multitenant solution, you often work with Resource Manager to dynamically provision resources for each tenant. On this page, we describe some of the features of Resource Manager that are relevant to multitenant solutions. We'll also provide links to guidance that can help you when you're planning to use Resource Manager.
@@ -43,7 +20,7 @@ In some solutions, you might choose to write custom code to dynamically provisio
 
 ### Tags
 
-[Tags](/azure/azure-resource-manager/management/tag-resources) enable you to add custom metadata to your Azure resources, resource groups, and subscriptions. Consider tagging your tenant-specific resources with the tenant's identifier so that you can easily [track and allocate your Azure costs](../approaches/cost-management-allocation.yml), and to simplify your resource management.
+[Tags](/azure/azure-resource-manager/management/tag-resources) enable you to add custom metadata to your Azure resources, resource groups, and subscriptions. Consider tagging your tenant-specific resources with the tenant's identifier so that you can easily [track and allocate your Azure costs](../approaches/cost-management-allocation/), and to simplify your resource management.
 
 ### Azure resource quotas
 
@@ -64,8 +41,8 @@ The mitigations you select need to be appropriate for the specific limit you enc
 
 ## Isolation models
 
-In some multitenant solutions, you might decide to deploy separate or dedicated resources for each tenant. Resource Manager provides several models that you can use to isolate resources, depending on your requirements and the reason you choose to isolate the resources. See [Azure resource organization in multitenant solutions](../approaches/resource-organization.yml) for guidance about how to isolate your Azure resources.
+In some multitenant solutions, you might decide to deploy separate or dedicated resources for each tenant. Resource Manager provides several models that you can use to isolate resources, depending on your requirements and the reason you choose to isolate the resources. See [Azure resource organization in multitenant solutions](../approaches/resource-organization/) for guidance about how to isolate your Azure resources.
 
 ## Next steps
 
-Review [deployment and configuration approaches for multitenancy](../approaches/deployment-configuration.yml).
+Review [deployment and configuration approaches for multitenancy](../approaches/deployment-configuration/).

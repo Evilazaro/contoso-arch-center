@@ -6,26 +6,29 @@
     - title: Multitenant Applications
       url: ./multitenant/
       links:
-        - title: Architecture styles
-          url:
-        - title: Contoso Design Principles for Cloud Native Apps
-          url: guide/architecture-styles/
-        - title: Technology Choices
-          url: guide/architecture-styles/big-compute/
-        - title: Best Practices for Cloud-Native Applications
-          url: guide/architecture-styles/big-data/
-        - title: Mission Critical Applications
-          url: guide/architecture-styles/event-driven/
+        - title: Overview
+          url: ./multitenant/
+        - title: Considerations
+          url: ./considerations/
+        - title: Approaches
+          url: ./approaches/
+        - title: Service-specific guidance
+          url: ./service/
+        - title: Multitenancy checklist
+          url: ./checklist/
     - title: Architecture styles
-      url:
-    - title: Contoso Design Principles for Cloud Native Apps
-      url: guide/architecture-styles/
-    - title: Technology Choices
-      url: guide/architecture-styles/big-compute/
-    - title: Best Practices for Cloud-Native Applications
-      url: guide/architecture-styles/big-data/
-    - title: Mission Critical Applications
-      url: guide/architecture-styles/event-driven/
+      url: ./architecture-styles/
+      links:
+        - title: Microservices
+          url: ./microservices-content/
+        - title: Big Data
+          url: ./big-data-content/
+        - title: N-tier Application (Monolith)
+          url: ./n-tier-content/
+        - title: Event-driven Architecture
+          url: ./event-driven-content/  
+        - title: Web-queue Worker
+          url: ./web-queue-worker-content/  
 - title: Design Patterns
   url: ./arch-center/docs/guide/
   links:
