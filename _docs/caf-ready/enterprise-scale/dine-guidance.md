@@ -28,7 +28,7 @@ For example, consider a scenario where a new landing zone subscription is provis
 >[!NOTE]
 > You can disable the preceding options at any time or during deployment of the Azure landing zone reference implementations.
 >  
-> The preceding list shows a subset of all the policies that are assigned as part of the Azure landing zone accelerator. For a full list of policies that can be assigned by the Azure landing zone reference implementation, see [Policies included in enterprise-scale landing zones reference implementations](https://github.com/Azure/Enterprise-scale/blob/main/docs/ESLZ-Policies.md).
+> The preceding list shows a subset of all the policies that are assigned as part of the Azure landing zone accelerator. For a full list of policies that can be assigned by the Azure landing zone reference implementation, see [Policies included in enterprise-scale landing zones reference implementations](https://github.com/Evilazaro/Enterprise-scale/blob/main/docs/ESLZ-Policies.md).
 
 All assigned policies help you and the landing zone owners remain compliant. No actual workload resources are deployed via DINE or Modify policies. We don't recommend this either. For more information, see [Should we use Azure Policy to deploy workloads?](./faq.md#should-we-use-azure-policy-to-deploy-workloads). Only auxiliary or supporting resources or settings are deployed or configured by these DINE policies.
 

@@ -276,9 +276,9 @@ The start small and expand approach uses ARM templates, Azure Policy, and Azure 
 
 The enterprise-scale approach uses ARM templates and Azure Policy, and offers three reference implementations and different deployments:
 
-- [Enterprise-scale Accelerator Landing Zone(https://github.com/Azure/Enterprise-scale/blob/main/docs/reference/wingtip/README.md)
-- [Enterprise-scale Virtual WAN](https://github.com/Azure/Enterprise-scale/blob/main/docs/reference/contoso/Readme.md)
-- [Enterprise-scale hub and spoke](https://github.com/Azure/Enterprise-scale/blob/main/docs/reference/adventureworks/README.md)
+- [Enterprise-scale Accelerator Landing Zone(https://github.com/Evilazaro/Enterprise-scale/blob/main/docs/reference/wingtip/README.md)
+- [Enterprise-scale Virtual WAN](https://github.com/Evilazaro/Enterprise-scale/blob/main/docs/reference/contoso/Readme.md)
+- [Enterprise-scale hub and spoke](https://github.com/Evilazaro/Enterprise-scale/blob/main/docs/reference/adventureworks/README.md)
 
 Whether you implement the start small and expand or enterprise-scale approach, you can use templates and a portal-based experience. You can include IaC later in the process. Explore this [IaC overview](/dotnet/architecture/cloud-native/infrastructure-as-code) for more information.
 

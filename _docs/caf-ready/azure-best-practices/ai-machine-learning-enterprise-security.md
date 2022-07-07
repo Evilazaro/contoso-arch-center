@@ -256,7 +256,7 @@ Learn more about machine learning security configurations:
 Get started with a machine learning template-based deployment:
 
 - [Azure quickstart templates (`microsoft.com`)](https://azure.microsoft.com/resources/templates/?resourceType=Microsoft.Machinelearningservices)
-- [Enterprise-scale analytics and AI data landing zone](https://github.com/Azure/data-landing-zone)
+- [Enterprise-scale analytics and AI data landing zone](https://github.com/Evilazaro/data-landing-zone)
 
 Read more articles about architectural considerations for deploying machine learning:
 
