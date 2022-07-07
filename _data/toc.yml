@@ -16,6 +16,8 @@
       url:
     - title: Containers
       url: .
+- title: Getting Started
+  url: getting-started-default
 - title: "About"
   url: "about"
 - title: "News"
