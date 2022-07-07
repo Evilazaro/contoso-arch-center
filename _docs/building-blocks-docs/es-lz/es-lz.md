@@ -12,6 +12,8 @@ The Enterprise-Scale architecture is modular by design and allows organizations 
 
 ![hippo](./docs/media/ESLZ.gif)
 
+![hippo](../../caf-ready/enterprise-scale/media/ESLZ.gif)
+
 ![hippo]({{ site.baseurl }}/caf-ready/enterprise-scale/media/ESLZ.gif)
 
 ---
