@@ -23,7 +23,7 @@ The Contoso AKS Landing Zone Accelerator is only concerned with what gets deploy
 The reference implementations are spread across three repos that all build on top of the [AKS Secure Baseline](https://docs.microsoft.com/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks) and Contoso Landing Zones.
 
 1. This one
-1. The [Bicep AKS Accelerator](bicep-accelerator.md)
+1. The [Bicep AKS Accelerator](bicep-accelerator)
 
 ### This repo
 
