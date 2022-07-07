@@ -1,17 +1,22 @@
-- title: Documentation
+- title: Architecture Center
   url: docs
   links:
-    - title: "Getting Started"
-      url: "docs/getting-started"
-      children:
-        - title: Features
-          url: "docs/getting-started#getting-started"
-        - title: Development
-          url: "docs/getting-started#development"
-        - title: Customization
-          url: "docs/getting-started#customization"
-    - title: Versioning
-      url: "docs/versioning"
+    - title: Building Blocks
+      url: 
+      links:
+        - title: Kubernestes as a Service Accelerator
+          url: 
+        - title: Contoso Single-sign on
+          url: 
+        - title: Common Data Platform
+          url: 
+    - title: Reference Architectures
+      url: 
+      links:
+        - title: Microservices
+          url:
+        - title: Containers
+          url:
     - title: "About"
       url: "about"
     - title: "News"
