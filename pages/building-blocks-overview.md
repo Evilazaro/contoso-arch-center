@@ -27,3 +27,9 @@ permalink: /building-blocks-overview/
 {% include doc.html name="AKS Accelerator" path="docs/aks-accelerator-lz-overview" %}
 
 {% include doc.html name="AKS Accelerator" path="docs/aks-accelerator-lz-overview" %}
+
+{% include doc.html name="AKS Accelerator" path="getting-started" %}
+
+{% include doc.html name="AKS Accelerator" path="subfolder/getting-started" %}
+
+{% include doc.html name="AKS Accelerator" path="subfolder" %}
