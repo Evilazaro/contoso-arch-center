@@ -10,11 +10,7 @@ The Enterprise-Scale architecture provides prescriptive guidance coupled with Az
 
 The Enterprise-Scale architecture is modular by design and allows organizations to start with foundational landing zones that support their application portfolios, and the architecture enables organizations to start as small as needed and scale alongside their business requirements regardless of scale point.
 
-![hippo](./docs/media/ESLZ.gif)
-
-![hippo](../../caf-ready/enterprise-scale/media/ESLZ.gif)
-
-![hippo]({{ site.baseurl }}/caf-ready/enterprise-scale/media/ESLZ.gif)
+![hippo]({{ site.baseurl }}/assets/img/media/ESLZ.gif)
 
 ---
 
