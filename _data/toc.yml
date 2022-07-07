@@ -3,10 +3,10 @@
 - title: Building Blocks
   url: building-blocks-overview
   links:
-    - title: AKS Accelerator Landing Zone
-      url: aks-accelerator-lz-overview
     - title: Enterprise-scale Accelerator Landing Zone
       url: es-lz
+    - title: AKS Accelerator Landing Zone
+      url: aks-accelerator-lz-overview
 - title: Business Units
   url: business-units-overview
   links:
