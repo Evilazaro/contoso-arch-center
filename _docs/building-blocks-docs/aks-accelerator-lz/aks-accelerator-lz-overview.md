@@ -12,7 +12,7 @@ Contoso AKS Landing Zone Accelerator represents the strategic design path and ta
 
 Below is a picture of what a golden state looks like and open source software like flux and traefik integrate well within the AKS ecosystem.
 
-![Golden state platform foundation with AKS landingzone highlighted in red](./media/aks-eslz-architecture.png)
+![Golden state platform foundation with AKS landingzone highlighted in red](../media/aks-eslz-architecture.png)
 
 The Contoso AKS Landing Zone Accelerator is only concerned with what gets deployed in the landing zone subscription highlighted by the red box in the picture above. It is assumed that an appropriate platform foundation is already setup which may or may not be the [official ESLZ](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/architecture) platform foundation. This means that policies and governance should already be in place or should be setup after this implementation and are not a part of the scope this reference implementaion. The policies applied to management groups in the hierarchy above the subscription will trickle down to the Contoso AKS Landing Zone Accelerator landing zone subscription.
 
@@ -22,7 +22,7 @@ The Contoso AKS Landing Zone Accelerator is only concerned with what gets deploy
 
 The reference implementations are spread across three repos that all build on top of the [AKS Secure Baseline](https://docs.microsoft.com/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks) and Contoso Landing Zones.
 
-1. This one
+1. The [Bicep AKS Accelerator](../../../_docs/building-blocks-docs/aks-accelerator-lz/bicep-accelerator.md)
 1. The [Bicep AKS Accelerator](bicep-accelerator)
 
 ### This repo
