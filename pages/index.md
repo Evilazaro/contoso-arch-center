@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Docsy Jekyll Theme
+title: Guidelines for Reference Architectures on Contoso Architecture Center
 permalink: /
 ---
 
