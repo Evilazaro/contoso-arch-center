@@ -16,16 +16,16 @@ The AKS Bicep Accelerator is part of the official [Contoso AKS Landing Zone Acce
 
 This projects focus is split equally over 3 areas, configuration, modular templating and CI implementation.
 
-![project component areas](../media/images/AKSBicepComponents.png)
+![project component areas](../../../pages/img/media/images/AKSBicepComponents.png)
 
-![project component areas](../media/images/AKSBicepComponents.png)
+![project component areas](../../../pages/img/media/images/AKSBicepComponents.png)
 
 ### Wizard experience
 
 To help guide your AKS configuration, use the [Deployment Helper](https://evilazaro.github.io/AKS-Construction/), which will provide a set of parameters and scripts to make deployment simple. It uses several preset configurations to guide configuration decisions.
 The deployment helper provides links to the official Microsoft documentation to help provide additional context for each feature.
 
-[![preview screenshot of the helper wizard](../media/images/helper_preview_es.png)](https://evilazaro.github.io/AKS-Construction/)
+[![preview screenshot of the helper wizard](../../../pages/img/media/images/helper_preview_es.png)](https://evilazaro.github.io/AKS-Construction/)
 
 ### IaC - Bicep code files
 
@@ -36,7 +36,7 @@ Releases are used to version the bicep code files, they can be leveraged directl
 ### DevOps - GitHub Actions
 
 A number of [GitHub actions](https://github.com/evilazaro/AKS-Construction/tree/main/.github/workflows) are used in the repo that run on push/pr/schedules. These can be copied into your own repo and customised for your CI/CD pipeline. A robust deployment pipeline is essential when coordinating the deployment of multiple Azure services that work together, additionally there is configuration that cannot be set in the template and that needs to be automated (and tested) consistently.
-![preview screenshot of the helper wizard](../media/images/ghactionworkflow.jpg)
+![preview screenshot of the helper wizard](../../../pages/img/media/images/ghactionworkflow.jpg)
 
 CI Name | Actions Workflow | Parameter file | CI Status | Notes
 |--------|--------|--------|-----------|------|
