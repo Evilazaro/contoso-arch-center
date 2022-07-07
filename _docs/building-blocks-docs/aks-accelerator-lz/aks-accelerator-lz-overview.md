@@ -24,12 +24,6 @@ The reference implementations are spread across three repos that all build on to
 |--------------------------------------------------------------------------------------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------------------	|------------------------------	|
 | Contoso AKS Accelerator Landing Zone 	| Contoso AKS Landing Zone Accelerator represents the strategic design path and target technical state for an Azure Kubernetes Service (AKS) deployment. This solution provides an architectural approach and reference implementation to prepare landing zone subscriptions for a scalable Azure Kubernetes Service (AKS) cluster. 	| [GitHub Repo][GitHub-AKS] 	| [![DTA-Button-AKS]][DTA-AKS] 	|
 
-## Next Steps to implement Contoso AKS Landing Zone Accelerator
-
-### Leverage one of the Landing Zone Accelerator implementations from our other repos
-
- [Bicep AKS Accelerator](https://github.com/Evilazaro/Aks-Construction#getting-started)
-
 <!-- The following section is used to store references to external images and links to reduce maintenance overhead and enable tooltips -->
 
 [/]: # (*******************************)

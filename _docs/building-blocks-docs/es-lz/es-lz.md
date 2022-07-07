@@ -18,14 +18,6 @@ _The Enterprise-scale architecture represents the strategic design path and targ
 
 ---
 
-# Deploying Enterprise-scale Architecture in your own environment
-
-The Enterprise-scale architecture is modular by design and allows customers to start with foundational Landing Zones that support their application portfolios, regardless of whether the applications are being migrated or are newly developed and deployed to Azure. The architecture can scale alongside the customer's business requirements regardless of scale point. In this repository we are providing the following four templates representing different scenarios composed using ARM templates.
-
-| Example deployment                                                                                	| Description                                             	| GitHub repo                   	| Deploy to Azure                      	|
-|---------------------------------------------------------------------------------------------------	|---------------------------------------------------------	|-------------------------------	|--------------------------------------	|
-| Contoso Enterprise-scale Accelerator Landing Zone 	| The suggested foundation for enterprise-scale adoption. 	| [GitHub Repo][GitHub-WingTip] 	| [![Dta-button-wingtip]][dta-wingtip] 	|
-
 Not all enterprises adopt Azure in the same way, so the Enterprise-scale architecture may vary between customers. Ultimately, the technical considerations and design recommendations of the Enterprise-scale architecture may lead to different trade-offs based on the customer's scenario. Some variation is expected, but if core recommendations are followed, the resulting target architecture will put the customer on a path to sustainable scale.
 
 The Enterprise-scale reference implementations in this repository are intended to support Enterprise-scale Azure adoption and provides prescriptive guidance based on authoritative design for the Azure platform as a whole.
@@ -47,28 +39,13 @@ The Enterprise-scale reference implementations in this repository are intended t
 
 To fully leverage this reference implementation in this repository, readers must have a collaborative engagement with key customer stakeholders across critical technical domains, such as identity, security, and networking. Ultimately, the success of cloud adoption hinges on cross-discipline cooperation within the organization, since key requisite Enterprise-scale design decisions are cross cutting, and to be authoritative must involve domain Subject Matter Expertise (SME) and stakeholders within the customer. 
 
-# Deploying Enterprise-scale Architecture in your own environment
+## Deployment Model
 
 The Enterprise-scale architecture is modular by design and allows customers to start with foundational Landing Zones that support their application portfolios, regardless of whether the applications are being migrated or are newly developed and deployed to Azure. The architecture can scale alongside the customer's business requirements regardless of scale point. In this repository we are providing the following four templates representing different scenarios composed using ARM templates.
 
 | Example deployment                                                                                	| Description                                             	| GitHub repo                   	| Deploy to Azure                      	|
 |---------------------------------------------------------------------------------------------------	|---------------------------------------------------------	|-------------------------------	|--------------------------------------	|
 | Contoso Enterprise-scale Accelerator Landing Zone 	| The suggested foundation for enterprise-scale adoption. 	| [GitHub Repo][GitHub-WingTip] 	| [![Dta-button-wingtip]][dta-wingtip] 	|
-
-
-## Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Contoso Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 <!-- The following section is used to store references to external images and links to reduce maintenance overhead and enable tooltips -->
 
