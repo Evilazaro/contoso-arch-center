@@ -94,6 +94,7 @@ defaults:
       type: "docs"
     values:
       layout: page
+  
   - scope:
       path: "_docs/building-blocks"
       type: "docs"
