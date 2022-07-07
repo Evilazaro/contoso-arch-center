@@ -21,9 +21,9 @@ The following table lists example reference implementations based on the recomme
 | Example deployment | Description | GitHub repo | Deploy to Azure |
 |---------|---------|---------|---------|
 | Enterprise-scale foundation | The suggested foundation for enterprise-scale adoption. | [Example in GitHub][GitHub-WingTip] | [![Dta-button-wingtip]][dta-wingtip] |
-| Enterprise-scale hub and spoke | Add a [hub and spoke](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) network module to the enterprise-scale foundation. | [Example in GitHub][GitHub-AdventureWorks] | [![Dta-button-adventureworks]][dta-adventureworks] |
-| Enterprise-scale Virtual WAN | Add a [Virtual WAN](/azure/virtual-wan/virtual-wan-global-transit-network-architecture) network module to the enterprise-scale foundation. | [Example in GitHub][GitHub-Contoso] | [![Dta-button-Contoso]][dta-Contoso] |
-| Enterprise-scale for small enterprises | Add a [hub and spoke](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) network architecture for small organizations. | [Example in GitHub][GitHub-TreyResearch] | [![Dta-button-treyresearch]][dta-treyresearch] |
+| Enterprise-scale hub and spoke | Add a hub and spoke network module to the enterprise-scale foundation. | [Example in GitHub][GitHub-AdventureWorks] | [![Dta-button-adventureworks]][dta-adventureworks] |
+| Enterprise-scale Virtual WAN | Add a Virtual WAN network module to the enterprise-scale foundation. | [Example in GitHub][GitHub-Contoso] | [![Dta-button-Contoso]][dta-Contoso] |
+| Enterprise-scale for small enterprises | Add a hub and spoke network architecture for small organizations. | [Example in GitHub][GitHub-TreyResearch] | [![Dta-button-treyresearch]][dta-treyresearch] |
 | Enterprise-scale for Azure Government | Reference implementation that can be deployed to Azure Government and includes all options in a converged portal experience. | [Example in GitHub][GitHub-AzureGov] | [![Dta-button-azuregov]][dta-azuregov] |
 
 Each reference implementation deploys platform resources to the selected target environment. Deployment details and an overview of the deployed resources can be found using the GitHub link in the table above.
@@ -51,10 +51,10 @@ These examples provide an easy deployment option to support continued learning f
 [/]: # (External link labels below)
 [/]: # (**************************)
 
-[GitHub-WingTip]: https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/wingtip/README.md
-[GitHub-AdventureWorks]: https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/adventureworks/README.md
-[GitHub-Contoso]: https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md
-[GitHub-TreyResearch]: https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/treyresearch/README.md
+[GitHub-WingTip]: https://github.com/evilazaro/Enterprise-Scale/blob/main/docs/reference/wingtip/README.md
+[GitHub-AdventureWorks]: https://github.com/evilazaro/Enterprise-Scale/blob/main/docs/reference/adventureworks/README.md
+[GitHub-Contoso]: https://github.com/evilazaro/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md
+[GitHub-TreyResearch]: https://github.com/evilazaro/Enterprise-Scale/blob/main/docs/reference/treyresearch/README.md
 [Github-AzureGov]: https://aka.ms/enterprisescale
 
 [DTA-WingTip]: https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2FeslzArm%2FeslzArm.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2FeslzArm%2Feslz-portal.json
