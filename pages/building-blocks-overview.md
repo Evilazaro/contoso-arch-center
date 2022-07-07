@@ -4,7 +4,7 @@ title: Building Blocks Overview
 permalink: /building-blocks-overview/
 ---
 
-# What is an Building Block?
+# What is a Building Block?
 
 A Building Block is an environment for hosting your workloads, preprovisioned through code. Watch the following video to learn more.
 
@@ -29,7 +29,7 @@ This conceptual architecture represents scale and maturity decisions based on a 
 
 While your specific implementation might vary, as a result of specific business decisions or existing investments in tools that need to persist in your cloud environment, this conceptual architecture will help set a direction for the overall approach your organization takes to designing and implementing a Building Block.
 
-![Diagram that shows a Building Block design.](../_docs/caf-ready/enterprise-scale/media/ns-arch-cust-expanded.png)
+![Diagram that shows a Building Block design.](../assets/img/media/ns-arch-cust-expanded.png)
 
 Use this architecture as a starting point. Download the [Visio file](../assets/files/enterprise-scale-architecture.vsdx) and modify it to fit your specific business and technical requirements when planning your Building Block implementation.
 
