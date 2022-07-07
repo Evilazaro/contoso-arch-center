@@ -1,7 +1,7 @@
 - title: Architecture Center
   url: docs
 - title: Building Blocks
-  url: .
+  url: building-blocks-overview
   links:
     - title: Kubernestes as a Service Accelerator
       url: 
