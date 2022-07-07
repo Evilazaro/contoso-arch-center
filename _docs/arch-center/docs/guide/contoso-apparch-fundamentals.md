@@ -44,7 +44,7 @@ Knowing the type of architecture you are building, now you can start to choose t
 
 - *Data stores* include databases but also storage for message queues, caches, logs, and anything else that an application might persist to storage. For more information, see [Choose a data store](technology-choices/data-store-decision-tree).
 
-- *Messaging* technologies enable asynchronous messages between components of the system. For more information, see [Choose a messaging service](./technology-choices/messaging/).
+- *Messaging* technologies enable asynchronous messages between components of the system. For more information, see [Choose a messaging service](technology-choices/messaging/).
 
 You will probably have to make additional technology choices along the way, but these three elements (compute, data, and messaging) are central to most cloud applications and will determine many aspects of your design.
 
@@ -58,7 +58,7 @@ Depending on your scenario, one of our [reference architectures](../reference-ar
 
 ### Design principles
 
-We have identified 10 high-level design principles that will make your application more scalable, resilient, and manageable. These design principles apply to any architecture style. Throughout the design process, keep these 10 high-level design principles in mind. For more information, see [Design principles](./design-principles/).
+We have identified 10 high-level design principles that will make your application more scalable, resilient, and manageable. These design principles apply to any architecture style. Throughout the design process, keep these 10 high-level design principles in mind. For more information, see [Design principles](/design-principles/design-principles).
 
 ### Design patterns
 
