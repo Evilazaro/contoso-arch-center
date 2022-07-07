@@ -79,5 +79,5 @@ Review the following resources to learn more about organizing and managing your 
 
 Review [recommended naming and tagging conventions](./naming-and-tagging.md) to follow when deploying your Azure resources.
 
-> [!div class="nextstepaction"]
+
 > [Recommended naming and tagging conventions](./naming-and-tagging.md)

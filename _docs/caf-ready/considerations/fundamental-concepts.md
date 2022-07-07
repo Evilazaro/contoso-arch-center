@@ -92,5 +92,5 @@ The following resources provide detailed information about the concepts discusse
 
 Now that you understand fundamental Azure concepts, learn how to scale with multiple Azure subscriptions.
 
-> [!div class="nextstepaction"]
+
 > [Scale with multiple Azure subscriptions](../azure-best-practices/scale-subscriptions.md)

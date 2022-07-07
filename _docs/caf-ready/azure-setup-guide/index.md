@@ -36,7 +36,7 @@ You'll learn how to:
 
 **Next steps:**
 
-> [!div class="nextstepaction"]
+
 > [Organize your resources to simplify how you apply settings](./organize-resources.md)
 
 ::: zone-end

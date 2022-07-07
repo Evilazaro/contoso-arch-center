@@ -18,7 +18,7 @@ A migration landing zone is an environment that's been provisioned and prepared 
 
 Before you use the Cloud Adoption Framework Migration landing zone blueprint, review the following design principles, assumptions, decisions, and implementation guidance. Make sure that this guidance aligns with the cloud adoption plan you want. If so, you can deploy the [Cloud Adoption Framework Migration landing zone blueprint](/azure/governance/blueprints/samples/caf-migrate-landing-zone/) using the deployment steps.
 
-> [!div class="nextstepaction"]
+
 > [Deploy the blueprint sample](/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy)
 
 ## Design principles
@@ -109,7 +109,7 @@ The following decisions are represented in the landing zone blueprint.
 
 Learn more and download a reference sample of the Cloud Adoption Framework Migration landing zone blueprint. Use this blueprint for deployment or customization from the Azure blueprint samples.
 
-> [!div class="nextstepaction"]
+
 > [Deploy the blueprint sample](/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy)
 
 For guidance on customizations that should be made to this blueprint or the resulting landing zone, see the [landing zone considerations](../considerations/index.md).
@@ -118,5 +118,5 @@ For guidance on customizations that should be made to this blueprint or the resu
 
 After deploying your first landing zone, you're ready to expand your landing zone.
 
-> [!div class="nextstepaction"]
+
 > [Expand your landing zone](../considerations/index.md)

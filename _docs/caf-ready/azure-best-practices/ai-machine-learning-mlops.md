@@ -220,10 +220,10 @@ Not every organization's machine learning DevOps (MLOps) requirements are the sa
 
 To learn more about how to organize and set up Azure Machine Learning environments, see [Organize and set up Azure Machine Learning environments](./ai-machine-learning-resource-organization.md). Also, you can watch hands-on [Azure MLOps video series](https://www.youtube.com/playlist?list=PLiQS6N-W1p3m9squzZ2cPgGdH5SBhjY6f).
 
-> [!div class="nextstepaction"]
+
 > [Organize and set up Azure Machine Learning environments](./ai-machine-learning-resource-organization.md)
 
 To learn more about how to manage budgets, quota and cost with Azure Machine Learning, see [Manage budgets, costs, and quota for Azure Machine Learning at organizational scale](./optimize-ai-machine-learning-cost.md).
 
-> [!div class="nextstepaction"]
+
 > [Manage budgets, costs, and quota for Azure Machine Learning at organizational scale](./optimize-ai-machine-learning-cost.md)

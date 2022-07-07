@@ -54,5 +54,5 @@ If you're planning to host **more than 1,000 VMs or compute instances in the clo
 
 Review the reasons why you might want to [create additional Azure subscriptions](./scale-subscriptions.md) to meet your requirements.
 
-> [!div class="nextstepaction"]
+
 > [Create additional subscriptions to scale your Azure environment](./scale-subscriptions.md)

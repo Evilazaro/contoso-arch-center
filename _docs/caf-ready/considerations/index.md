@@ -39,5 +39,5 @@ To better align with the methodologies of the Cloud Adoption Framework, the prin
 
 Before refactoring your first landing zone, it is important to understand [test-driven development of landing zones](./test-driven-development.md).
 
-> [!div class="nextstepaction"]
+
 > [Test-driven development of landing zones](./test-driven-development.md)

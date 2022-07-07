@@ -297,7 +297,7 @@ For an enterprise-scale implementation, you can also adopt a low-risk workload i
 
 Choose a landing zone implementation option:
 
-> [!div class="nextstepaction"]
+
 > [Start small and expand](./migrate-landing-zone.md)
 >
 > [Start with enterprise-scale](../enterprise-scale/index.md)

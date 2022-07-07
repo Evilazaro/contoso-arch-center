@@ -41,5 +41,5 @@ Learn more about the [guest configuration feature of Azure Policy](/azure/govern
 
 Learn how workload teams can use a federated model and operationally maintain their workloads.
 
-> [!div class="nextstepaction"]
+
 > [Workloads](management-workloads.md)

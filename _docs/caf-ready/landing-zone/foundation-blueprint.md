@@ -20,7 +20,7 @@ The CAF Foundation blueprint does not deploy a landing zone. Instead, it deploys
 
 Before you use the CAF Foundation blueprint in the Cloud Adoption Framework, review the following design principles, assumptions, decisions, and implementation guidance. If this guidance aligns with the desired cloud adoption plan, the [CAF Foundation blueprint](/azure/governance/blueprints/samples/caf-foundation/) can be deployed using the deployment steps.
 
-> [!div class="nextstepaction"]
+
 > [Deploy the blueprint sample](/azure/governance/blueprints/samples/caf-foundation/deploy)
 
 ## Design principles
@@ -93,12 +93,12 @@ If these assumptions align with your current adoption needs, then this blueprint
 
 Learn more and download a reference sample of the CAF Foundation blueprint for deployment or customization from the Azure blueprint samples.
 
-> [!div class="nextstepaction"]
+
 > [Deploy the blueprint sample](/azure/governance/blueprints/samples/caf-foundation/deploy)
 
 ## Next steps
 
 After deploying your first landing zone, you're ready to expand your landing zone.
 
-> [!div class="nextstepaction"]
+
 > [Expand your landing zone](../considerations/index.md)

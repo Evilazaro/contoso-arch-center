@@ -135,5 +135,5 @@ If you determine that a self-service approach to Azure landing zone deployment i
 
 Learn about the process for refactoring landing zones.
 
-> [!div class="nextstepaction"]
+
 > [Refactor landing zones](./refactor.md)

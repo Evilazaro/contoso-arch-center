@@ -73,5 +73,5 @@ The above examples are basic samples to help develop a *definition of done* for 
 
 To accelerate test-driven development in Azure, review [test-driven development features of Azure](./azure-test-driven-development.md).
 
-> [!div class="nextstepaction"]
+
 > [Test-driven development in Azure](./azure-test-driven-development.md)

@@ -55,5 +55,5 @@ Review the [resource naming and tagging decision guide](../../decision-guides/re
 
 Learn how to move resource groups and assets between subscriptions in Azure.
 
-> [!div class="nextstepaction"]
+
 > [Move resource groups and assets between subscriptions](/azure/azure-resource-manager/management/move-resource-group-and-subscription)

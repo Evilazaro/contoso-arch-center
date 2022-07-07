@@ -53,5 +53,5 @@ The Cloud Solution Provider (CSP) service gives Microsoft partners access to Mic
 
 Learn how to improve your security posture by defining your Azure AD tenants.
 
-> [!div class="nextstepaction"]
+
 > [Define Azure AD tenants](azure-ad-define.md)

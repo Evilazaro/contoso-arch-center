@@ -36,5 +36,5 @@ Before beginning any security improvements, it's important to understand the "de
 
 Understand how to [improve landing zone operations](./landing-zone-operations.md) to support critical applications.
 
-> [!div class="nextstepaction"]
+
 > [Improve landing zone operations](./landing-zone-operations.md)

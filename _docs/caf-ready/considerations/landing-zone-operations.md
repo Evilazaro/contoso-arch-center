@@ -51,5 +51,5 @@ Before beginning any security improvements, it's important to understand the "de
 
 Understand how to [improve landing zone governance](./landing-zone-governance.md) to support adoption at scale.
 
-> [!div class="nextstepaction"]
+
 > [Improve landing zone governance](./landing-zone-governance.md)

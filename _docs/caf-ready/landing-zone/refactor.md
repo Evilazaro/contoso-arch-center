@@ -110,5 +110,5 @@ Each subsection of [expand your landing zone](../considerations/index.md) maps t
 
 To get started on a refactoring process, get started using [Azure landing zones](./index.md).
 
-> [!div class="nextstepaction"]
+
 > [Azure landing zones](./index.md)

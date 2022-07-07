@@ -60,5 +60,5 @@ As your subscription model grows, you might decide that some resources belong in
 
 Create a management group hierarchy to help [organize and manage your subscriptions and resources](./organize-subscriptions.md).
 
-> [!div class="nextstepaction"]
+
 > [Organize and manage your subscriptions and resources](./organize-subscriptions.md)

@@ -60,5 +60,5 @@ Alternately, there are rich, opinionated implementation options that start with 
 
 With an understanding of the modular design areas, your next step is to choose the landing zone implementation option that best aligns with your cloud adoption plan and requirements.
 
-> [!div class="nextstepaction"]
+
 > [Choose an implementation option](./implementation-options.md)

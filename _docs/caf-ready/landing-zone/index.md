@@ -49,10 +49,10 @@ There are other deployment options available, some that deliver the full archite
 
 Organizations may be at different stages of their cloud journey when reviewing this guidance. As a result, the actions and recommendations required to progress toward the outcome detailed above may vary. To understand best next actions in relation to where you are in your cloud adoption, review the journey to the target architecture content.
 
-> [!div class="nextstepaction"]
+
 > [Journey to the target architecture](./landing-zone-journey.md)
 
 When you're choosing the right Azure landing zone implementation option, you should understand the [Azure landing zone design areas](./design-areas.md).
 
-> [!div class="nextstepaction"]
+
 > [Review design areas](./design-areas.md)

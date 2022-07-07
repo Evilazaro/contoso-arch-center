@@ -132,5 +132,5 @@ Policies for online and corporate-connected landing zones:
 
 Learn how to secure privileged access for hybrid and cloud deployments in Azure AD.
 
-> [!div class="nextstepaction"]
+
 > [Secure privileged access](/azure/active-directory/roles/security-planning)

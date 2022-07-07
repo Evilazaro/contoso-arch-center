@@ -198,5 +198,5 @@ It's a good practice to layer your landing zones. That practice helps decouple s
 
 Future reference architectures will demonstrate this concept for a hub and spoke topology.
 
-> [!div class="nextstepaction"]
+
 > [Review the sample foundation Terraform landing zone](https://github.com/azure/caf-terraform-landingzones)

@@ -75,5 +75,5 @@ Many industries require Azure traffic to be mirrored to a network packet collect
 
 This overview summarized articles about key networking topology and connectivity considerations. Start your deeper investigation with the first article in the series:
 
-> [!div class="nextstepaction"]
+
 > [Plan for IP addressing](../azure-best-practices/plan-for-ip-addressing.md)

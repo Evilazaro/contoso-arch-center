@@ -8,7 +8,7 @@ permalink: /building-blocks-overview/
 
 Building Blocks are the output of a multisubscription Azure environment that accounts for scale, security governance, networking, and identity. Building Blocks enable application migration, modernization, and innovation at enterprise-scale in Azure. These zones consider all platform resources that are required to support the customer's application portfolio and don't differentiate between infrastructure as a service or platform as a service.
 
-![Diagram that shows a Building Block design.]({{ site.baseurl }}/assets/img/media/media/lz-design.png)
+![Diagram that shows a Building Block design.](../assets/img/media/ns-arch-cust-expanded.png)
 
 A Building Block is an environment for hosting your workloads, preprovisioned through code. Watch the following video to learn more.
 
@@ -29,9 +29,7 @@ This conceptual architecture represents scale and maturity decisions based on a 
 
 While your specific implementation might vary, as a result of specific business decisions or existing investments in tools that need to persist in your cloud environment, this conceptual architecture will help set a direction for the overall approach your organization takes to designing and implementing a Building Block.
 
-Use this architecture as a starting point. Download the [Visio file](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.vsdx) and modify it to fit your specific business and technical requirements when planning your Building Block implementation.
-
-:::image type="content" source="../enterprise-scale/media/ns-arch-cust-expanded.png" alt-text="A conceptual architecture diagram of an Building Block." lightbox="../enterprise-scale/media/ns-arch-cust-expanded.png":::
+Use this architecture as a starting point. Download the [Visio file](../assets/files/enterprise-scale-architecture.vsdx) and modify it to fit your specific business and technical requirements when planning your Building Block implementation.
 
 ## Building Block accelerator
 
@@ -49,12 +47,12 @@ There are other deployment options available, some that deliver the full archite
 
 Organizations may be at different stages of their cloud journey when reviewing this guidance. As a result, the actions and recommendations required to progress toward the outcome detailed above may vary. To understand best next actions in relation to where you are in your cloud adoption, review the journey to the target architecture content.
 
-> [!div class="nextstepaction"]
+
 > [Journey to the target architecture](./landing-zone-journey.md)
 
 When you're choosing the right Building Block implementation option, you should understand the [Building Block design areas](./design-areas.md).
 
-> [!div class="nextstepaction"]
+
 > [Review design areas](./design-areas.md)
 
 

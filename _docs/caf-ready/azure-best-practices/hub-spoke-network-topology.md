@@ -107,5 +107,5 @@ hub and spoke virtual network topologies for central management of connectivity 
 
 Now that you've explored the best practices for networking, learn how to approach identity and access controls.
 
-> [!div class="nextstepaction"]
+
 > [Identity Management and access control security best practices](/azure/security/fundamentals/identity-management-best-practices)
