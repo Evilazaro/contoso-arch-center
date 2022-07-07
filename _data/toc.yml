@@ -5,10 +5,6 @@
   links:
     - title: Kubernestes as a Service Accelerator
       url: aks-accelerator-lz-overview
-    - title: Contoso Single-sign on
-      url: single-sign-on-overview
-    - title: Common Data Platform
-      url: 
 - title: Business Units
   url: business-units-overview
   links:
