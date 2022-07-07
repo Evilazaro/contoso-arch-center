@@ -1,3 +1,8 @@
+---
+title: Architecture Styles
+permalink: /best-practices-content/
+---
+
 # Best practices in cloud applications
 
 These best practices can help you build reliable, scalable, and secure applications in the cloud. They offer guidelines and tips for designing and implementing efficient and robust systems, mechanisms, and approaches. Many also include code examples that you can use with Azure services. The practices apply to any distributed system, whether your host is Azure or a different cloud platform.

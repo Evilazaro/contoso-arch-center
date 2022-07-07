@@ -1,26 +1,6 @@
 ---
-title: Web API design best practices
-titleSuffix: Azure Architecture Center
-description: Learn the best practices for designing web APIs that support platform independence and service evolution.
-author: EdPrice-MSFT
-ms.author: pnp
-ms.date: 01/12/2018
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: best-practice
-products:
-  - aspnet
-  - seo-aac-fy21q3
-ms.custom:
-  - best-practice
-keywords:
-  - "What is a web api"
-  - "REST APIs"
-  - "REST web services"
-  - "API design"
-  - "RESTful web services"
-  - "API standards"
-categories: featured
+title: API Design
+permalink: /api-design/
 ---
 
 <!-- cSpell:ignore HATEOAS -->

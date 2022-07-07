@@ -1,23 +1,6 @@
 ---
-title: Web API implementation
-titleSuffix: Best practices for cloud applications
-description: Learn about best practices for implementing a web API and publishing it to make it available to client applications.
-author: EdPrice-MSFT
-ms.author: pnp
-categories: azure
-ms.date: 07/13/2016
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: best-practice
-azureCategories: 
-  - compute
-  - web
-products:
-  - aspnet
-  - azure-encoding
-ms.custom:
-  - best-practice
-social_image_url: /azure/architecture/best-practices/media types that the client can handle, such as `image/jpeg, image/gif, image/png
+title: API Implementation
+permalink: /api-implementation/
 ---
 
 <!-- cSpell:ignore CNAME HATEOAS WADL hashedOrderEtag nonMatchEtags matchEtags -->

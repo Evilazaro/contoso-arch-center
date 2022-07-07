@@ -38,7 +38,7 @@
         - title: Multitenancy checklist
           url: checklist
         - title: Architecture styles
-          url: architecture-styles
+          url: architecture-styles-content
           children:
             - title: Microservices
               url: ./microservices-content/
