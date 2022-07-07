@@ -23,4 +23,4 @@ permalink: /building-blocks-overview/
 
 [AKS Landing Zone - 9](docs/building-blocks-docs/aks-accelerator-lz/aks-accelerator-lz-overview)
 
-{% include doc.html name="AKS Accelerator" path="building-blocks-docs/aks-accelerator-lz/aks-accelerator-lz-overview" %}
+{% include doc.html name="AKS Accelerator" path="aks-accelerator-lz-overview" %}
