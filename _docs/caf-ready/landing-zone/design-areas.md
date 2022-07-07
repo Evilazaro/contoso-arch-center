@@ -1,9 +1,3 @@
----
-layout: page
-title: Building Blocks Overview
-permalink: /building-blocks-overview/
----
-
 # Building Blocks design areas
 
 Each Building Blocks implementation option provides a deployment approach and defined design principles. Before choosing an implementation option, use this article to learn about the design areas listed in the following table.
