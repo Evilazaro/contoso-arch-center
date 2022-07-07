@@ -1,14 +1,3 @@
----
-title: Landing zone implementation options
-description: Determine which landing zone implementation option best fits your requirements.
-author: BrianBlanchard
-ms.author: brblanch
-ms.date: 08/23/2021
-ms.topic: conceptual
-ms.service: cloud-adoption-framework
-ms.subservice: ready
-ms.custom: internal
----
 
 # Landing zone implementation options
 
