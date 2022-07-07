@@ -3,8 +3,10 @@
 - title: Building Blocks
   url: building-blocks-overview
   links:
-    - title: Kubernestes as a Service Accelerator
+    - title: AKS Accelerator Landing Zone
       url: aks-accelerator-lz-overview
+    - title: Enterprise-Scale Landing Zone
+      url: es-lz
 - title: Business Units
   url: business-units-overview
   links:
