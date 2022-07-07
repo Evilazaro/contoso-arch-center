@@ -12,7 +12,7 @@ permalink: /building-blocks-overview/
 
 [AKS Landing Zone - 3](aks-accelerator-lz/aks-accelerator-lz-overview)
 
-[AKS Landing Zone - 4](aks-accelerator-lz-overview)
+[AKS Landing Zone - 4](./aks-accelerator-lz-overview)
 
 [AKS Landing Zone - 5](../_docs/building-blocks-docs/aks-accelerator-lz/aks-accelerator-lz-overview.md)
 
