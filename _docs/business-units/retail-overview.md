@@ -4,19 +4,17 @@ title: Retail Overview
 permalink: /retail-overview/
 ---
 
-# Welcome to the business units
-
 <a href="https://dot.net/architecture">
-   <img src="https://github.com/dotnet-architecture/eShopOnContainers/raw/dev/img/eshop_logo.png" alt="eShop logo" title="eShopOnContainers" align="right" height="60" />
+   <img src="https://github.com/dotnet-architecture/eShopOnContainers/raw/dev/../../assets/img/eshop_logo.png" alt="eShop logo" title="eShopOnContainers" align="right" height="60" />
 </a>
 
-# .NET Microservices eCommerce Application (Retail Business Unit)
+# .NET Microservices Sample Reference Application
 
-.NET Core reference application, powered by Contoso, based on a simplified microservices architecture and Docker containers.
+Sample .NET Core reference application, powered by Microsoft, based on a simplified microservices architecture and Docker containers.
 
 ## SPA Application (Angular)
 
-![](img/eshop-spa-app-home.png)
+![](../../assets/img/eshop-spa-app-home.png)
 
 ## Build Status (GitHub Actions)
 
@@ -97,8 +95,8 @@ eShopOnContainers is updated to .NET 6 "wave" of technologies. Not just compilat
 This reference application is cross-platform at the server and client-side, thanks to .NET 6 services capable of running on Linux or Windows containers depending on your Docker host, and to Xamarin for mobile apps running on Android, iOS, or Windows/UWP plus any browser for the client web apps.
 The architecture proposes a microservice oriented architecture implementation with multiple autonomous microservices (each one owning its own data/db) and implementing different approaches within each microservice (simple CRUD vs. DDD/CQRS patterns) using HTTP as the communication protocol between the client apps and the microservices and supports asynchronous communication for data updates propagation across multiple services based on Integration Events and an Event Bus (a light message broker, to choose between RabbitMQ or Azure Service Bus, underneath) plus other features defined at the [roadmap](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Roadmap).
 
-![](img/eshop_logo.png)
-![](img/eShopOnContainers-architecture.png)
+![](../../assets/img/eshop_logo.png)
+![](../../assets/img/eShopOnContainers-architecture.png)
 
 ## Related documentation and guidance
 
@@ -106,6 +104,16 @@ You can find the related reference **Guide/eBook** focusing on **architecting an
 
 There are also additional eBooks focusing on Containers/Docker lifecycle (DevOps, CI/CD, etc.) with Microsoft Tools, already published plus an additional eBook focusing on Enterprise Apps Patterns with Xamarin.Forms.
 You can download them and start reviewing these Guides/eBooks here:
+
+| Architecting & Developing | Containers Lifecycle & CI/CD | App patterns with Xamarin.Forms |
+| ------------ | ------------|  ------------|
+| [![](../../assets/img/architecture-book-cover-large-we.png)](https://aka.ms/microservicesebook) | [![](../../assets/img/devops-book-cover-large-we.png)](https://aka.ms/dockerlifecycleebook) | [![](../../assets/img/xamarin-enterprise-patterns-ebook-cover-large-we.png)](https://aka.ms/xamarinpatternsebook) |
+| <sup> <a href='https://aka.ms/microservicesebook'>**Download PDF**</a> </sup>  | <sup> <a href='https://aka.ms/dockerlifecycleebook'>**Download PDF** </a>  </sup> | <sup> <a href='https://aka.ms/xamarinpatternsebook'>**Download PDF**  </a>  </sup> |
+
+For more free e-Books check out [.NET Architecture center](https://dot.net/architecture). If you have an e-book feedback, let us know by creating a new issue here: <https://github.com/dotnet-architecture/ebooks/issues>
+
+## Are you new to **microservices** and **cloud-native development**? 
+Take a look at the free course [Create and deploy a cloud-native ASP.NET Core microservice](https://docs.microsoft.com/en-us/learn/modules/microservices-aspnet-core/) on MS Learn.  This module explains microservices concepts, cloud-native technologies, and reduces the friction in getting started with `eShopOnContainers`.
 
 ## Read further
 
@@ -115,4 +123,3 @@ You can download them and start reviewing these Guides/eBooks here:
 ## Sending feedback and pull requests
 
 Read the planned [Roadmap](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Roadmap) within the Wiki for further info about possible new implementations and provide feedback at the [ISSUES section](https://github.com/dotnet/eShopOnContainers/issues) if you'd like to see any specific scenario implemented or improved. Also, feel free to discuss on any current issue.
-
