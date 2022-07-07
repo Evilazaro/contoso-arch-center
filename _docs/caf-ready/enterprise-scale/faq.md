@@ -14,7 +14,7 @@ ms.custom: think-tank
 
 This article answers frequently asked questions about enterprise-scale architecture.
 
-For FAQs about **implementing enterprise-scale architecture**, see [Enterprise-scale implementation FAQ](https://github.com/Azure/Enterprise-Scale/wiki/FAQ).
+For FAQs about **implementing enterprise-scale architecture**, see [Enterprise-scale implementation FAQ](https://github.com/Azure/Enterprise-scale/wiki/FAQ).
 
 <!-- GENERAL -->
 

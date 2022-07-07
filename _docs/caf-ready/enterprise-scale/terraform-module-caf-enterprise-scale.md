@@ -67,7 +67,7 @@ There are many benefits of using the caf-enterprise-scale module:
   - Integration between resources to reduce management overhead and provide an improved end-user experience, like automatic creation of virtual network links for Azure Private DNS.
 
 > [!TIP]
-> The template library is updated programmatically from the [Azure/Enterprise-Scale][gh-es] GitHub repository.
+> The template library is updated programmatically from the [Azure/Enterprise-scale][gh-es] GitHub repository.
 > To stay up to date with the latest archetype configuration, policies, and roles, make sure you're using the latest version of the module.
 
 ## Capabilities
@@ -239,7 +239,7 @@ variable "root_id" {
 
 variable "root_name" {
   type    = string
-  default = "Enterprise-Scale"
+  default = "Enterprise-scale"
 }
 
 # Declare the Terraform Module for Cloud Adoption Framework
@@ -270,14 +270,14 @@ It also provides the flexibility to expand and customize your deployment while m
 To find out more, [review the module on Terraform Registry][caf-enterprise-scale], and explore the [module documentation][gh-wiki] on GitHub.
 We'll post more examples and tutorials there that will cover how to customize your deployment.
 
-Learn how to [Deploy the Microsoft Cloud Adoption Framework Enterprise-Scale Module][hcl-deploy-es] through HashiCorp Learn.
+Learn how to [Deploy the Microsoft Cloud Adoption Framework Enterprise-scale Module][hcl-deploy-es] through HashiCorp Learn.
 Once there, you can also discover how some parts of the module work.
 
 <!-- Common links -->
 
 [terraform]: https://www.terraform.io/ "Terraform by HashiCorp"
 
-[hcl-deploy-es]: https://learn.hashicorp.com/tutorials/terraform/microsoft-caf-enterprise-scale "Deploy the Microsoft Cloud Adoption Framework Enterprise-Scale Module."
+[hcl-deploy-es]: https://learn.hashicorp.com/tutorials/terraform/microsoft-caf-enterprise-scale "Deploy the Microsoft Cloud Adoption Framework Enterprise-scale Module."
 
 [caf-enterprise-scale]: https://registry.terraform.io/modules/Azure/caf-enterprise-scale/azurerm/latest "See the Terraform Module for Cloud Adoption Framework Enterprise-scale on Terraform Registry."
 [caf-es-dependencies]: https://registry.terraform.io/modules/Azure/caf-enterprise-scale/azurerm/latest?tab=dependencies "See dependencies for the Terraform Module for Cloud Adoption Framework Enterprise-scale on Terraform Registry."
@@ -292,7 +292,7 @@ Once there, you can also discover how some parts of the module work.
 [es-identity]:     ../landing-zone/design-area/identity-access.md "Identity and access management for enterprise-scale on the Cloud Adoption Framework."
 [es-ref-arch]:     ../landing-zone/index.md#azure-landing-zone-conceptual-architecture "Enterprise-scale reference architecture."
 
-[gh-es]: https://github.com/Azure/Enterprise-Scale "GitHub repository for Enterprise-Scale."
+[gh-es]: https://github.com/Azure/Enterprise-scale "GitHub repository for Enterprise-scale."
 [gh-wiki]: https://github.com/Azure/terraform-azurerm-caf-enterprise-scale/wiki "Module documentation on the GitHub Wiki."
 
 [wiki_provider_configuration]:        https://github.com/Azure/terraform-azurerm-caf-enterprise-scale/wiki/%5BUser-Guide%5D-Provider-Configuration "Provider configuration guide on the GitHub Wiki."

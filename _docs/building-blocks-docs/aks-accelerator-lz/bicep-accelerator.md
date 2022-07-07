@@ -8,7 +8,7 @@ permalink: /bicep-accelerator/
 
 Building Kubernetes clusters can be hard work! The AKS Bicep Accelerator focuses on expediting customers onboarding of Azure Kubernetes Service workloads using best practices and a flexible templating approach to suit differing requirements.
 
-This project unifies guidance provided by the [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/) and [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
+This project unifies guidance provided by the [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/) and [Enterprise-scale](https://github.com/Azure/Enterprise-scale) by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
 
 The AKS Bicep Accelerator is part of the official [Contoso AKS Landing Zone Accelerator (Enterprise Scale)](https://github.com/Evilazaro/kaas-lz) architectural approach. To read more about this project and how the AKS Bicep Accelerator fits with Enterprise Scale and the AKS Secure Baseline, look [here](referencearchs.md).
 
