@@ -1,30 +1,24 @@
 - title: Architecture Center
   url: docs
+- title: Building Blocks
+  url: .
   links:
-    - title: Building Blocks
+    - title: Kubernestes as a Service Accelerator
       url: 
-      links:
-        - title: Kubernestes as a Service Accelerator
-          url: 
-        - title: Contoso Single-sign on
-          url: 
-        - title: Common Data Platform
-          url: 
-    - title: Reference Architectures
+    - title: Contoso Single-sign on
       url: 
-      links:
-        - title: Microservices
-          url:
-        - title: Containers
-          url:
-    - title: "About"
-      url: "about"
-    - title: "News"
-      url: "news"
+    - title: Common Data Platform
+      url: 
+- title: Reference Architectures
+  url: 
+  links:
+    - title: Microservices
+      url:
+    - title: Containers
+      url: .
+- title: "About"
+  url: "about"
+- title: "News"
+  url: "news"
 - title: "Extras"
   url: "docs/extras"
-  links:
-    - title: Quizzes
-      url: "docs/extras/example-quiz"
-    - title: Tags Page
-      url: "tags"
