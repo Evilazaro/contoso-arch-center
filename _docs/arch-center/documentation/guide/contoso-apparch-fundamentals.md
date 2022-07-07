@@ -35,6 +35,8 @@ The Azure application architecture fundamentals guidance is organized as a serie
 The first decision point is the most fundamental. What kind of architecture are you building? It might be a microservices architecture, a more traditional N-tier application, or a big data solution. We have identified several distinct architecture styles. There are benefits and challenges to each.
 
 Learn more: [Architecture styles](architecture-styles-content)
+Learn more Alterado: [Architecture styles](architecture-styles/architecture-styles-content)
+Learn more Alterado: [Architecture styles](arch-center/documentation/guide/architecture-styles/architecture-styles-content.md)
 
 ## Technology choices
 

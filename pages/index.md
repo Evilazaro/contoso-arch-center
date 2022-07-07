@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contoso Architecture Center
-permalink: /
+permalink: /index/
 ---
 
 ![](../assets//img/contoso-logo.png)
