@@ -4,7 +4,7 @@
   url: building-blocks-overview
   links:
     - title: Kubernestes as a Service Accelerator
-      url: building-blocks/aks-accelerator-content/
+      url: aks-accelerator-content
     - title: Contoso Single-sign on
       url: 
     - title: Common Data Platform
