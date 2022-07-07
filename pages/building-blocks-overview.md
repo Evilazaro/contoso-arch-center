@@ -29,7 +29,7 @@ This conceptual architecture represents scale and maturity decisions based on a 
 
 While your specific implementation might vary, as a result of specific business decisions or existing investments in tools that need to persist in your cloud environment, this conceptual architecture will help set a direction for the overall approach your organization takes to designing and implementing a Building Block.
 
-![Diagram that shows a Building Block design.](../_docs/caf-ready/enterprise-scale/media/
+![Diagram that shows a Building Block design.](../_docs/caf-ready/enterprise-scale/media/ns-arch-cust-expanded.png)
 
 Use this architecture as a starting point. Download the [Visio file](../assets/files/enterprise-scale-architecture.vsdx) and modify it to fit your specific business and technical requirements when planning your Building Block implementation.
 
@@ -43,24 +43,30 @@ Find below the main Contoso Building Blocks Accelerators
 
 The following table describes some of the implementation options for landing zones and the variables that might drive your decision.
 
-| Implementation option                                                                                      | Description                                                                                                                                                               | Deployment velocity | Deeper design principles                                         | Deployment instructions                                                                               |   |
-|------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|---|
-| ---                                                                                                        | ---                                                                                                                                                                       | ---                 | ---                                                              | ---                                                                                                   |   |
-| [CAF Migration landing zone blueprint](./migrate-landing-zone.md)                                          | Deploys the basic foundation for migrating low risk assets.                                                                                                               | Start small         | [Design principles](./migrate-landing-zone.md#design-principles) | [Deploy](./migrate-landing-zone.md)                                                                   |   |
-| [CAF Foundation blueprint](./foundation-blueprint.md)                                                      | Adds the minimum tools need to begin developing a governance strategy.                                                                                                    | Start small         | [Design principles](./foundation-blueprint.md#design-principles) | [Deploy](./foundation-blueprint.md)                                                                   |   |
-| [CAF enterprise-scale landing zone (hybrid connectivity with Virtual WAN)](../enterprise-scale/index.md)   | Deploys an enterprise-ready platform foundation with all the necessary shared services to support the full IT portfolio, including hybrid connectivity (Virtual WAN).     | Enterprise-scale    | [Design principles](../enterprise-scale/design-principles.md)    | [Deploy](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md)        |   |
-| [CAF enterprise-scale landing zone (hybrid connectivity with hub and spoke)](../enterprise-scale/index.md) | Deploys an enterprise-ready platform foundation with all the necessary shared services to support the full IT portfolio, including hybrid connectivity (hub and spoke).   | Enterprise-scale    | [Design principles](../enterprise-scale/design-principles.md)    | [Deploy](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/adventureworks/README.md) |   |
-| [CAF enterprise-scale landing zone (foundation)](../enterprise-scale/index.md)                             | Deploys an enterprise-ready platform foundation with all the necessary shared services to support the full IT portfolio, where connectivity can be added later as needed. | Enterprise-scale    | [Design principles](../enterprise-scale/design-principles.md)    | [Deploy](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/wingtip/README.md)        |   |
+# Implement Contoso Building Blocks
 
-The following table looks at some of these implementation options from a slightly different perspective to guide more technical decision processes.
+Does your business require an initial implementation of landing zones? And do these landing zones need fully integrated governance, security, and an operations control plane from the start? With the following examples, you can use the Azure portal or infrastructure as code to set up and configure your Azure environment. It's also possible to transition between the portal and infrastructure as code (recommended) when your organization is ready.
 
-| Implementation option                                                                  | Hub               | Spoke    | Deployment technology                                                   | Deployment instructions                         |   |
-|----------------------------------------------------------------------------------------|-------------------|----------|-------------------------------------------------------------------------|-------------------------------------------------|---|
-| ---                                                                                    | ---               | ---      | ---                                                                     | ---                                             |   |
-| [Cloud Adoption Framework enterprise-scale landing zone](../enterprise-scale/index.md) | Included          | Included | Azure Resource Manager templates, Azure portal, Azure Policy and GitHub | [Deploy](../enterprise-scale/implementation.md) |   |
-| [CAF Migration landing zone blueprint](./migrate-landing-zone.md)                      | Refactor required | Included | Azure Resource Manager templates, Azure portal, and Azure Blueprints    | [Deploy](./migrate-landing-zone.md)             |   |
+## Reference implementation
 
-There are other deployment options available, some that deliver the full architecture using third-party deployment technologies, and others that start from a smaller footprint. For more information, see [Implementation options](./implementation-options.md).
+The following table lists example reference implementations based on the recommended enterprise-scale architecture.
+
+| Example deployment | Description | GitHub repo | Deploy to Azure |
+|---------|---------|---------|---------|
+| Enterprise-scale foundation | The suggested foundation for enterprise-scale adoption. | [Example in GitHub][GitHub-WingTip] | [![Dta-button-wingtip]][dta-wingtip] |
+| Enterprise-scale hub and spoke | Add a [hub and spoke](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) network module to the enterprise-scale foundation. | [Example in GitHub][GitHub-AdventureWorks] | [![Dta-button-adventureworks]][dta-adventureworks] |
+| Enterprise-scale Virtual WAN | Add a [Virtual WAN](/azure/virtual-wan/virtual-wan-global-transit-network-architecture) network module to the enterprise-scale foundation. | [Example in GitHub][GitHub-Contoso] | [![Dta-button-Contoso]][dta-Contoso] |
+| Enterprise-scale for small enterprises | Add a [hub and spoke](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) network architecture for small organizations. | [Example in GitHub][GitHub-TreyResearch] | [![Dta-button-treyresearch]][dta-treyresearch] |
+| Enterprise-scale for Azure Government | Reference implementation that can be deployed to Azure Government and includes all options in a converged portal experience. | [Example in GitHub][GitHub-AzureGov] | [![Dta-button-azuregov]][dta-azuregov] |
+
+Each reference implementation deploys platform resources to the selected target environment. Deployment details and an overview of the deployed resources can be found using the GitHub link in the table above.
+
+## Next steps
+
+These examples provide an easy deployment option to support continued learning for the enterprise-scale approach. Before you use these examples in a production version of enterprise-scale, review the enterprise-scale architecture.
+
+
+> [Review the enterprise-scale architecture](../landing-zone/index.md)
 
 # Welcome to the Building Blocks
 
