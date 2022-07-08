@@ -42,7 +42,7 @@ After you're familiar with Azure, you can decide whether to follow learning path
 - [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops)
 - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)
 
-> [!div class="nextstepaction"]
+
 > [Browse other Microsoft Learn training materials for DevOps](/search/?terms=devops&category=Learn)
 
 ## Path to production

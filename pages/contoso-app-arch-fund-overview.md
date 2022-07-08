@@ -46,33 +46,19 @@ You will probably have to make additional technology choices along the way, but 
 
 Once you have chosen the architecture style and the major technology components, you are ready to tackle the specific design of your application. Every application is different, but the following resources can help you along the way:
 
-### Reference architectures
-
-Depending on your scenario, one of our [reference architectures](.../_docs/contoso-app-arch-fund/architectures/?filter=reference-architecture) may be a good starting point. Each reference architecture includes recommended practices, along with considerations for scalability, availability, security, resilience, and other aspects of the design. Most also include a deployable solution or reference implementation.
-
 ### Design principles
 
 We have identified 10 high-level design principles that will make your application more scalable, resilient, and manageable. These design principles apply to any architecture style. Throughout the design process, keep these 10 high-level design principles in mind. For more information, see [Design principles](../_docs/contoso-app-arch-fund/design-principles/design-principles-overview.md).
 
 ### Design patterns
 
-Software design patterns are repeatable patterns that are proven to solve specific problems. Our catalog of Cloud design patterns addresses specific challenges in distributed systems. They address aspects such as availability, high availability, operational excellence, resiliency, performance, and security. You can find our catalog of design patterns [here](.../_docs/contoso-app-arch-fund/patterns/patterns-overview.md).
+Software design patterns are repeatable patterns that are proven to solve specific problems. Our catalog of Cloud design patterns addresses specific challenges in distributed systems. They address aspects such as availability, high availability, operational excellence, resiliency, performance, and security. You can find our catalog of design patterns [here](../_docs/contoso-app-arch-fund/patterns/patterns-overview.md)
 
 ### Best practices
 
-Our [best practices](.../_docs/contoso-app-arch-fund/best-practices) articles cover various design considerations including API design, autoscaling, data partitioning, caching, and so forth. Review these and apply the best practices that are appropriate for your application.
-
-### Security best practices
-
-Our [security best practices](/security/compass/applications-services) describe how to ensure that the confidentiality, integrity, and availability of your application aren't compromised by malicious actors.
-
-## Quality pillars
-
-A successful cloud application will focus on five pillars of software quality: Cost optimization, Operational excellence, Performance efficiency, Reliability, and Security.
-
-Leverage the [Microsoft Azure Well-Architected Framework](.../_docs/contoso-app-arch-fund/framework) to assess your architecture across these five pillars.
+Our [best practices](../_docs/contoso-app-arch-fund/best-practices/best-practices-overview.md) articles cover various design considerations including API design, autoscaling, data partitioning, caching, and so forth. Review these and apply the best practices that are appropriate for your application.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Architecture styles](../_docs/contoso-app-arch-fund/architecture-styles/index.md)
+
+> [Architecture styles](../_docs/contoso-app-arch-fund/architecture-styles/architecture-styles-content.md)

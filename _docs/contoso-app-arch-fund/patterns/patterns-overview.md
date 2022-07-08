@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Architecture styles
-permalink: /architecture-styles-content/
+title: patterns-overview
+permalink: /patterns-overview/
 ---
 
 # Cloud Design Patterns

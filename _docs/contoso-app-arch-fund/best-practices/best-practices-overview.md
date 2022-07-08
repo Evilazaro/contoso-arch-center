@@ -1,23 +1,7 @@
 ---
+layout: page
 title: Best practices in cloud applications
-titleSuffix: Azure Architecture Center
-description: Learn best practices for building reliable, scalable, and secure applications in the cloud. See resources on caching, partitioning, monitoring, and other areas.
-author: EdPrice-MSFT
-ms.date: 01/04/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: design-pattern
-ms.custom:
-  - design-pattern
-keywords:
-  - Azure
-categories:
-  - devops
-  - management-and-governance
-  - security
-  - storage
-products:
-  - azure
+permalink: /best-practices-overview/
 ---
 
 # Best practices in cloud applications
