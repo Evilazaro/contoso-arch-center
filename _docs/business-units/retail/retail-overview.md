@@ -4,7 +4,7 @@ title: Retail Overview
 permalink: /retail-overview/
 ---
 
-# .NET Microservices Sample Reference Application
+# eShop e-commerce
 
 Sample .NET Core reference application, powered by Microsoft, based on a simplified microservices architecture and Docker containers.
 
