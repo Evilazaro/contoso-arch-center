@@ -1,3 +1,37 @@
+---
+layout: page
+title: Contibuting to Contoso Architecture Center
+permalink: /contributing-to-arch-center/
+---
+
+# Contibuting to Contoso Architecture Center
+
+## Principles
+
+- **Real**. A reference architecture shows an architecture that a customer can deploy today on Azure.
+
+- **Concrete**. Our reference architectures show specific Azure services, as opposed to logical components such as "data store" or "stream processing."
+
+  > We know that more generalized architectures, showing logical components, are also very useful. However, we treat these as a separate type of guidance artifact. For example, see {% include doc.html name="Microservices" path="microservices-content" %} and {% include doc.html name="Event Driven Architecture" path="event-driven-content" %}.
+
+- **Infrastructure**. A reference architecture focuses on infrastructure (what you deploy), rather than application development. It can be IaaS or PaaS, or a mix of both.
+
+- **Audience**. The main audience is architects, developers, and DevOps.
+
+- **Golden path**. A single reference architecture shows one way to do something. The goal is to guide a customer to a solution that works. A reference architecture does _not_ describe every possible option or variation.
+
+- **Best practices**. A reference architecture embodies a set of best practices _for that scenario_. It does not comprehensively describe every feature of every Azure service being used - that's what the product docs are for.
+
+- **Deployable**. In most cases, a reference architecture should include a Resource Manager template or script that deploys the architecture. There are exceptions to this, however.
+
+- **Starting point**. A reference architecture includes pointers to additional guidance, such as relevant product documentation.
+
+## Document Structure
+
+We use a consistent structure for reference architecture documents. That said, if the structure doesn't work for a particular case, we can and should evolve the structure.
+
+> See also: [Markdown template for reference architectures](../_docs/contributing-to/reference-architecture.zip)
+
 ### Title  - State the scenario
 
 > Example: "Connect an on-premises network to Azure using ExpressRoute"

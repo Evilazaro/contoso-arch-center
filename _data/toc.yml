@@ -1,5 +1,8 @@
 - title: Architecture Center
   url: .
+  links:
+    - title: Contributing to Contoso Architecture Center
+      url: contributing-to-arch-center
 - title: Building Blocks
   url: building-blocks-overview
   links:

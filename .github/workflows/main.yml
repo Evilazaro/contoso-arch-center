@@ -2,7 +2,7 @@ name: check-spelling
 
 on:
   push:
-    branches: [main]
+    branches: [tyrone]
   pull_request: []
 
 jobs:

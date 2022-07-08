@@ -36,7 +36,7 @@ In other cases, the series contains a set of recommended alternatives for a sing
 
 - **Concrete**. Our reference architectures show specific Azure services, as opposed to logical components such as "data store" or "stream processing."
 
-  > We know that more generalized architectures, showing logical components, are also very useful. However, we treat these as a separate type of guidance artifact. For example, see {% include doc.html name="Microservices" path="microservices-content" %} here and {% include doc.html name="Event Driven Architecture" path="event-driven-content" %} here.
+  > We know that more generalized architectures, showing logical components, are also very useful. However, we treat these as a separate type of guidance artifact. For example, see {% include doc.html name="Microservices" path="microservices-content" %} and {% include doc.html name="Event Driven Architecture" path="event-driven-content" %}.
 
 - **Infrastructure**. A reference architecture focuses on infrastructure (what you deploy), rather than application development. It can be IaaS or PaaS, or a mix of both.
 

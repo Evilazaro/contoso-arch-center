@@ -1,3 +1,9 @@
+---
+layout: page
+title: Event Driven Architecture
+permalink: /event-driven-content/
+---
+
 An event-driven architecture consists of **event producers** that generate a stream of events, and **event consumers** that listen for the events.
 
 ![Diagram of an event-driven architecture style](./images/event-driven.svg)
