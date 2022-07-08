@@ -32,6 +32,8 @@ We use a consistent structure for reference architecture documents. That said, i
 
 > See also: [Markdown template for reference architectures](../../assets/files/reference-architecture.zip)
 
+> {% include doc.html name="Markdown template for reference architectures" path="/assets/files/reference-architecture.zip" %}
+
 ### Title  - State the scenario
 
 > Example: "Connect an on-premises network to Azure using ExpressRoute"
