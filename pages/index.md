@@ -36,7 +36,7 @@ In other cases, the series contains a set of recommended alternatives for a sing
 
 - **Concrete**. Our reference architectures show specific Azure services, as opposed to logical components such as "data store" or "stream processing."
 
-  > We know that more generalized architectures, showing logical components, are also very useful. However, we treat these as a separate type of guidance artifact. For example, see [here](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/web-queue-worker) and [here](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/web-queue-worker).
+  > We know that more generalized architectures, showing logical components, are also very useful. However, we treat these as a separate type of guidance artifact. For example, see [here](../_docs/contoso-app-arch-fund/architecture-styles/microservices-content.md) and [here](../_docs/contoso-app-arch-fund/architecture-styles/event-driven-content.md).
 
 - **Infrastructure**. A reference architecture focuses on infrastructure (what you deploy), rather than application development. It can be IaaS or PaaS, or a mix of both.
 
@@ -54,7 +54,7 @@ In other cases, the series contains a set of recommended alternatives for a sing
 
 We use a consistent structure for reference architecture documents. That said, if the structure doesn't work for a particular case, we can and should evolve the structure.
 
-> See also: [Markdown template for reference architectures](./templates/reference-architecture.md)
+> See also: [Markdown template for reference architectures](../_docs/contributing-to/reference-architecture.zip)
 
 ### Title  - State the scenario
 
