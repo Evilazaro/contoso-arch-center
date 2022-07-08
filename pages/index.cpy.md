@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Docsy Jekyll Theme
+permalink: /index-copy/
 ---
 
 # Welcome to Docsy Jekyll
