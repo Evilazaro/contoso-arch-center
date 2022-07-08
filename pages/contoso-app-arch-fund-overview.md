@@ -14,16 +14,9 @@ The cloud is changing how applications are designed and secured. Instead of mono
 
 These trends bring new challenges. Application states are distributed. Operations are done in parallel and asynchronously. Applications must be resilient when failures occur. Malicious actors continuously target applications. Deployments must be automated and predictable. Monitoring and telemetry are critical for gaining insight into the system. This guide is designed to help you navigate these changes.
 
-<table>
-<thead>
-    <tr><th>Traditional on-premises</th><th>Modern cloud</th></tr>
-</thead>
-<tbody>
-<tr><td>Monolithic<br/> Designed for predictable scalability<br/> Relational database<br/> Synchronized processing<br/> Design to avoid failures (MTBF)<br/> Occasional large updates<br/> Manual management<br/> Snowflake servers</td>
-<td> Decomposed<br/> Designed for elastic scale<br/> Polyglot persistence (mix of storage technologies)<br/> Asynchronous processing<br/> Design for failure (MTTR)<br/> Frequent small updates<br/> Automated self-management<br/> Immutable infrastructure<br/>
-</td>
-</tbody>
-</table>
+|                                                                                                Traditional on-premises                                                                                               	|                                                                                                                      Modern cloud                                                                                                                      	|
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
+| Monolithic<br> Designed for predictable scalability<br> Relational database<br> Synchronized processing<br> Design to avoid failures (MTBF)<br> Occasional large updates<br> Manual management<br> Snowflake servers 	|  Decomposed<br> Designed for elastic scale<br> Polyglot persistence (mix of storage technologies)<br> Asynchronous processing<br> Design for failure (MTTR)<br> Frequent small updates<br> Automated self-management<br> Immutable infrastructure<br>  	|
 
 ## How this guidance is structured
 
@@ -35,7 +28,7 @@ The Contoso application architecture fundamentals guidance is organized as a ser
 
 The first decision point is the most fundamental. What kind of architecture are you building? It might be a microservices architecture, a more traditional N-tier application, or a big data solution. We have identified several distinct architecture styles. There are benefits and challenges to each.
 
-Learn more: [Architecture styles](../_docs/contoso-app-arch-fund/architecture-styles/index.md)
+Learn more: [Architecture styles](../_docs/contoso-app-arch-fund/architecture-styles/architecture-styles-content.md)
 
 ## Technology choices
 
