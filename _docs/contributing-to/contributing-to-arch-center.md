@@ -30,7 +30,7 @@ permalink: /contributing-to-arch-center/
 
 We use a consistent structure for reference architecture documents. That said, if the structure doesn't work for a particular case, we can and should evolve the structure.
 
-> See also: [Markdown template for reference architectures](../_docs/contributing-to/reference-architecture.zip)
+> See also: [Markdown template for reference architectures](../../assets/files/reference-architecture.zip)
 
 ### Title  - State the scenario
 
