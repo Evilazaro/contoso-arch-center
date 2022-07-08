@@ -6,7 +6,7 @@ permalink: /microservices-content/
 
 A microservices architecture consists of a collection of small, autonomous services. Each service is self-contained and should implement a single business capability within a bounded context. A bounded context is a natural division within a business and provides an explicit boundary within which a domain model exists.
 
-![Logical diagram of microservices architecture style.](./images/microservices-logical.png)
+![Logical diagram of microservices architecture style.]({{site.baseurl}}/docs/contoso-app-arch-fund/architecture-styles/images/microservices-logical.png)
 
 ## What are microservices?
 
@@ -64,7 +64,7 @@ The benefits of microservices don't come for free. Here are some of the challeng
 
 - **Lack of governance**. The decentralized approach to building microservices has advantages, but it can also lead to problems. You may end up with so many different languages and frameworks that the application becomes hard to maintain. It may be useful to put some project-wide standards in place, without overly restricting teams' flexibility. This especially applies to cross-cutting functionality such as logging.
 
-- **Network congestion and latency**. The use of many small, granular services can result in more interservice communication. Also, if the chain of service dependencies gets too long (service A calls B, which calls C...), the additional latency can become a problem. You will need to design APIs carefully. Avoid overly chatty APIs, think about serialization formats, and look for places to use asynchronous communication patterns like [queue-based load leveling](../patterns/queue-based-load-leveling-content/).
+- **Network congestion and latency**. The use of many small, granular services can result in more interservice communication. Also, if the chain of service dependencies gets too long (service A calls B, which calls C...), the additional latency can become a problem. You will need to design APIs carefully. 
 
 - **Data integrity**. With each microservice responsible for its own data persistence. As a result, data consistency can be a challenge. Embrace eventual consistency where possible.
 
@@ -93,11 +93,10 @@ The benefits of microservices don't come for free. Here are some of the challeng
 
 - Services should have loose coupling and high functional cohesion. Functions that are likely to change together should be packaged and deployed together. If they reside in separate services, those services end up being tightly coupled, because a change in one service will require updating the other service. Overly chatty communication between two services may be a symptom of tight coupling and low cohesion.
 
-- Isolate failures. Use resiliency strategies to prevent failures within a service from cascading. See [Resiliency patterns](/azure/architecture/framework/resiliency/reliability-patterns) and [Designing reliable applications](/azure/architecture/framework/resiliency/principles).
 
 ## Next steps
 
-For detailed guidance about building a microservices architecture on Azure, see [Designing, building, and operating microservices on Azure](../../microservices/index-content/).
+For detailed guidance about building a microservices architecture on Azure, see {% include doc.html name="Designing, building, and operating microservices on Azure" path="microservices-on-azure-content" %} 
 
 <!-- links -->
 

@@ -6,9 +6,9 @@ permalink: /event-driven-content/
 
 An event-driven architecture consists of **event producers** that generate a stream of events, and **event consumers** that listen for the events.
 
-![Diagram of an event-driven architecture style](./images/event-driven.svg)
+![Diagram of an event-driven architecture style]({{site.baseurl}}/docs/contoso-app-arch-fund/architecture-styles/images/event-driven.svg)
 
-Events are delivered in near real time, so consumers can respond immediately to events as they occur. Producers are decoupled from consumers &mdash; a producer doesn't know which consumers are listening. Consumers are also decoupled from each other, and every consumer sees all of the events. This differs from a [Competing Consumers][competing-consumers] pattern, where consumers pull messages from a queue and a message is processed just once (assuming no errors). In some systems, such as IoT, events must be ingested at very high volumes.
+Events are delivered in near real time, so consumers can respond immediately to events as they occur. Producers are decoupled from consumers &mdash; a producer doesn't know which consumers are listening. Consumers are also decoupled from each other, and every consumer sees all of the events. This differs from a {% include doc.html name="Competing Consumers" path="competing-consumers" %} pattern, where consumers pull messages from a queue and a message is processed just once (assuming no errors). In some systems, such as IoT, events must be ingested at very high volumes.
 
 An event driven architecture can use a pub/sub model or an event stream model.
 
@@ -26,7 +26,7 @@ On the consumer side, there are some common variations:
 
 The source of the events may be external to the system, such as physical devices in an IoT solution. In that case, the system must be able to ingest the data at the volume and throughput that is required by the data source.
 
-In the logical diagram above, each type of consumer is shown as a single box. In practice, it's common to have multiple instances of a consumer, to avoid having the consumer become a single point of failure in system. Multiple instances might also be necessary to handle the volume and frequency of events. Also, a single consumer might process events on multiple threads. This can create challenges if events must be processed in order or require exactly-once semantics. See [Minimize Coordination][minimize-coordination].
+In the logical diagram above, each type of consumer is shown as a single box. In practice, it's common to have multiple instances of a consumer, to avoid having the consumer become a single point of failure in system. Multiple instances might also be necessary to handle the volume and frequency of events. Also, a single consumer might process events on multiple threads. This can create challenges if events must be processed in order or require exactly-once semantics. See {% include doc.html name="Minimize Coordination" path="minimize-coordination-content" %}.
 
 ## When to use this architecture
 
@@ -48,11 +48,7 @@ In the logical diagram above, each type of consumer is shown as a single box. In
 - Guaranteed delivery. In some systems, especially in IoT scenarios, it's crucial to guarantee that events are delivered.
 - Processing events in order or exactly once. Each consumer type typically runs in multiple instances, for resiliency and scalability. This can create a challenge if the events must be processed in order (within a consumer type), or if the processing logic is not idempotent.
 
-### Additional considerations
-
-- The amount of data to include in an event can be a significant consideration that affects both performance and cost. Putting all the relevant information needed for processing in the event itself can simplify the processing code and save additional lookups. Putting the minimal amount of information in an event, like just a couple of identifiers, will reduce transport time and cost, but requires the processing code to look up any additional information it needs. For more information on this, take a look at [this blog post](https://particular.net/blog/putting-your-events-on-a-diet).
-
  <!-- links -->
 
-[competing-consumers]: ../../patterns/competing-consumers.yml
-[minimize-coordination]: ../design-principles/minimize-coordination.yml
+[competing-consumers]:       ../../patterns/competing-consumers-content
+[minimize-coordination]: ../design-principles/minimize-coordination-content

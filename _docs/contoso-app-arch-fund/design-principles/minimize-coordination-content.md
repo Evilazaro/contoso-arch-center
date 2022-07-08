@@ -1,3 +1,8 @@
+---
+layout: page
+title: Minimize Coordination
+permalink: /minimize-coordination-content/
+---
 <!--cSpell:ignore CQRS Etags -->
 
 ## Minimize coordination between application services to achieve scalability
