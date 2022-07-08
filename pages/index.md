@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Guidelines for Reference Architectures on Contoso Architecture Center
+permalink: /contoso-architecture-center/
 ---
 
 ![](../assets/img/contoso-logo.png)
