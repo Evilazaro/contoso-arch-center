@@ -15,7 +15,12 @@
     - title: Insurance
       url: insurance-overview
 - title: Contoso application architecture fundamentals
-  url: contoso-app-arch-fund
+  url: contoso-app-arch-fund-overview
+  links:
+    - title: Architecture styles
+      url: architecture-styles-content
+    - title: Insurance
+      url: insurance-overview
 - title: Getting Started
   url: getting-started
 - title: "About"
