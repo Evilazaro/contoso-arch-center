@@ -4,6 +4,8 @@ title: Contibuting to Contoso Architecture Center
 permalink: /contributing-to-arch-center/
 ---
 
+![](./images/contoso-logo.png)
+
 # Contibuting to Contoso Architecture Center
 
 ## Principles

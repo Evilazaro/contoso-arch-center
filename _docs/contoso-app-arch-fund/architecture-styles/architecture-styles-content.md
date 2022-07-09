@@ -7,7 +7,7 @@ permalink: /architecture-styles-content/
 
 # Architecture styles
 
-An *architecture style* is a family of architectures that share certain characteristics. For example, [N-tier][n-tier] is a common architecture style. More recently, [microservice architectures][microservices] have started to gain favor. Architecture styles don't require the use of particular technologies, but some technologies are well-suited for certain architectures. For example, containers are a natural fit for microservices.
+An *architecture style* is a family of architectures that share certain characteristics. For example, {% include doc.html name="N-tier" path="n-tier-content" %} is a common architecture style. More recently, {% include doc.html name="Microservices architecture" path="n-tier-content" %} have started to gain favor. Architecture styles don't require the use of particular technologies, but some technologies are well-suited for certain architectures. For example, containers are a natural fit for microservices.
 
 We have identified a set of architecture styles that are commonly found in cloud applications. The article for each style includes:
 
@@ -22,7 +22,7 @@ This section gives a quick tour of the architecture styles that we've identified
 
 ### N-tier
 
-![Logical diagram of an N-tier architecture style.](./images/n-tier-logical.svg)
+![Logical diagram of an N-tier architecture style.](../images/n-tier-logical.svg)
 
 **[N-tier][n-tier]** is a traditional architecture for enterprise applications. Dependencies are managed by dividing the application into *layers* that perform logical functions, such as presentation, business logic, and data access. A layer can only call into layers that sit below it. However, this horizontal layering can be a liability. It can be hard to introduce changes in one part of the application without touching the rest of the application. That makes frequent updates a challenge, limiting how quickly new features can be added.
 
@@ -38,7 +38,8 @@ Web-queue-worker is suitable for relatively simple domains with some resource-in
 
 ### Microservices
 
-![Logical diagram of microservices architecture style.](../../includes/images/microservices-logical.png)
+
+![Logical diagram of microservices architecture style.](./images/microservices-logical.png)
 
 If your application has a more complex domain, consider moving to a **[Microservices][microservices]** architecture. A microservices application is composed of many small, independent services. Each service implements a single business capability. Services are loosely coupled, communicating through API contracts.
 
@@ -76,7 +77,7 @@ The following table summarizes how each style manages dependencies, and the type
 
 | Architecture style | Dependency management | Domain type |
 |--------------------|------------------------|-------------|
-| [N-tier][n-tier] | Horizontal tiers divided by subnet | Traditional business domain. Frequency of updates is low. |
+| {% include doc.html name="N-tier" path="n-tier-content" %} | Horizontal tiers divided by subnet | Traditional business domain. Frequency of updates is low. |
 | [Web-queue-worker](./web-queue-worker-content/) | Front and backend jobs, decoupled by async messaging. | Relatively simple domain with some resource intensive tasks. |
 | [Microservices][microservices] | Vertically (functionally) decomposed services that call each other through APIs. | Complicated domain. Frequent updates. |
 | [Event-driven architecture](./event-driven-content/) | Producer/consumer. Independent view per sub-system. | IoT and real-time systems. |
