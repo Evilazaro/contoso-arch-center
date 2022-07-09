@@ -75,14 +75,14 @@ Before choosing an architecture style, make sure that you understand the underly
 
 The following table summarizes how each style manages dependencies, and the types of domain that are best suited for each.
 
-| Architecture style | Dependency management | Domain type |
-|--------------------|------------------------|-------------|
-| {% include doc.html name="N-tier" path="n-tier-content" %} | Horizontal tiers divided by subnet | Traditional business domain. Frequency of updates is low. |
-| {% include doc.html name="Web-queue worker" path="web-queue-worker-content" %} | Front and backend jobs, decoupled by async messaging. | Relatively simple domain with some resource intensive tasks. |
-| {% include doc.html name="Microservices" path="microservices-content" %} | Vertically (functionally) decomposed services that call each other through APIs. | Complicated domain. Frequent updates. |
-| {% include doc.html name="Event-driven architecture" path="event-driven-content" %} | Producer/consumer. Independent view per sub-system. | IoT and real-time systems. |
-| {% include doc.html name="Big Data" path="big-data-content" %} | Divide a huge dataset into small chunks. Parallel processing on local datasets. | Batch and real-time data analysis. Predictive analysis using ML. |
-| {% include doc.html name="Big Compute" path="big-compute-content" %} | Data allocation to thousands of cores. | Compute intensive domains such as simulation. |
+| **Architecture style**                                                              	| **Dependency management**                                                        	| **Domain type**                                                  	|
+|-------------------------------------------------------------------------------------	|----------------------------------------------------------------------------------	|------------------------------------------------------------------	|
+| {% include doc.html name="N-tier" path="n-tier-content" %}                          	| Horizontal tiers divided by subnet                                               	| Traditional business domain. Frequency of updates is low.        	|
+| {% include doc.html name="Web-queue worker" path="web-queue-worker-content" %}      	| Front and backend jobs, decoupled by async messaging.                            	| Relatively simple domain with some resource intensive tasks.     	|
+| {% include doc.html name="Microservices" path="microservices-content" %}            	| Vertically (functionally) decomposed services that call each other through APIs. 	| Complicated domain. Frequent updates.                            	|
+| {% include doc.html name="Event-driven architecture" path="event-driven-content" %} 	| Producer/consumer. Independent view per sub-system.                              	| IoT and real-time systems.                                       	|
+| {% include doc.html name="Big Data" path="big-data-content" %}                      	| Divide a huge dataset into small chunks. Parallel processing on local datasets.  	| Batch and real-time data analysis. Predictive analysis using ML. 	|
+| {% include doc.html name="Big Compute" path="big-compute-content" %}                	| Data allocation to thousands of cores.                                           	| Compute intensive domains such as simulation.                    	|
 
 ## Consider challenges and benefits
 
