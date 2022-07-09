@@ -22,7 +22,7 @@ This section gives a quick tour of the architecture styles that we've identified
 
 ### N-tier
 
-![Logical diagram of an N-tier architecture style.]({{site.url}}/images/n-tier-logical.svg)
+![Logical diagram of an N-tier architecture style.]({{site.baseurl}}/images/n-tier-logical.svg)
 
 **[N-tier][n-tier]** is a traditional architecture for enterprise applications. Dependencies are managed by dividing the application into *layers* that perform logical functions, such as presentation, business logic, and data access. A layer can only call into layers that sit below it. However, this horizontal layering can be a liability. It can be hard to introduce changes in one part of the application without touching the rest of the application. That makes frequent updates a challenge, limiting how quickly new features can be added.
 
@@ -30,7 +30,7 @@ N-tier is a natural fit for migrating existing applications that already use a l
 
 ### Web-Queue-Worker
 
-![Logical diagram of Web-Queue-Worker architecture style.]({{site.url}}/images/web-queue-worker-logical.svg)
+![Logical diagram of Web-Queue-Worker architecture style.]({{site.baseurl}}/images/web-queue-worker-logical.svg)
 
 For a purely PaaS solution, consider a **[Web-Queue-Worker](./web-queue-worker-content/)** architecture. In this style, the application has a web front end that handles HTTP requests and a back-end worker that performs CPU-intensive tasks or long-running operations. The front end communicates to the worker through an asynchronous message queue.
 
@@ -39,7 +39,7 @@ Web-queue-worker is suitable for relatively simple domains with some resource-in
 ### Microservices
 
 
-![Logical diagram of microservices architecture style.]({{site.url}}/images/microservices-logical.png)
+![Logical diagram of microservices architecture style.]({{site.baseurl}}/images/microservices-logical.png)
 
 If your application has a more complex domain, consider moving to a **[Microservices][microservices]** architecture. A microservices application is composed of many small, independent services. Each service implements a single business capability. Services are loosely coupled, communicating through API contracts.
 
@@ -47,7 +47,7 @@ Each service can be built by a small, focused development team. Individual servi
 
 ### Event-driven architecture
 
-![Diagram of an event-driven architecture style.]({{site.url}}/images/event-driven.svg)
+![Diagram of an event-driven architecture style.]({{site.baseurl}}/images/event-driven.svg)
 
 **[Event-Driven Architectures](./event-driven-content/)** use a publish-subscribe (pub-sub) model, where producers publish events, and consumers subscribe to them. The producers are independent from the consumers, and consumers are independent from each other.
 
@@ -55,7 +55,7 @@ Consider an event-driven architecture for applications that ingest and process a
 
 ### Big Data, Big Compute
 
-![Logical diagram of a big data architecture style.]({{site.url}}/images/big-data-logical.svg)
+![Logical diagram of a big data architecture style.]({{site.baseurl}}/images/big-data-logical.svg)
 
 **[Big Data](./big-data-content/)** and **[Big Compute](./big-compute-content/)** are specialized architecture styles for workloads that fit certain specific profiles. Big data divides a very large dataset into chunks, performing parallel processing across the entire set, for analysis and reporting. Big compute, also called high-performance computing (HPC), makes parallel computations across a large number (thousands) of cores. Domains include simulations, modeling, and 3-D rendering.
 
