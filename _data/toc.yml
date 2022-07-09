@@ -22,6 +22,9 @@
   links:
     - title: Architecture styles
       url: architecture-styles-content
+      children:
+        - title: Microservices
+          url: microservices-content
     - title: Design Principles
       url: design-principles-overview
 - title: Getting Started
