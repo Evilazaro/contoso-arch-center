@@ -25,6 +25,12 @@
       children:
         - title: Microservices
           url: microservices-content
+        - title: Event-driven architecture
+          url: event-driven-content
+        - title: N-tier Applications
+          url: n-tier-content
+        - title: Big Data
+          url: big-data-content
     - title: Design Principles
       url: design-principles-overview
 - title: Getting Started
