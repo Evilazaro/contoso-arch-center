@@ -6,7 +6,7 @@ permalink: /microservices-content/
 
 A microservices architecture consists of a collection of small, autonomous services. Each service is self-contained and should implement a single business capability within a bounded context. A bounded context is a natural division within a business and provides an explicit boundary within which a domain model exists.
 
-![Logical diagram of microservices architecture style.](./images/microservices-logical.png)
+![Logical diagram of microservices architecture style.]({{site.baseurl}}/assets/img/microservices-logical.png)
 
 
 ## What are microservices?
@@ -95,9 +95,29 @@ The benefits of microservices don't come for free. Here are some of the challeng
 - Services should have loose coupling and high functional cohesion. Functions that are likely to change together should be packaged and deployed together. If they reside in separate services, those services end up being tightly coupled, because a change in one service will require updating the other service. Overly chatty communication between two services may be a symptom of tight coupling and low cohesion.
 
 
-## Next steps
+## Process for building a microservices architecture
 
-For detailed guidance about building a microservices architecture on Azure, see {% include doc.html name="Designing, building, and operating microservices on Azure" path="microservices-on-azure-content" %} 
+The articles listed here present a structured approach for designing, building, and operating a microservices architecture.
+
+**Domain analysis.** To avoid some common pitfalls when designing microservices, use domain analysis to define your microservice boundaries. Follow these steps:
+
+1. [Use domain analysis to model microservices](./model/domain-analysis.md).
+1. [Use tactical DDD to design microservices](./model/tactical-ddd.yml).
+1. [Identify microservice boundaries](./model/microservice-boundaries.yml).
+
+**Design the services**. Microservices require a different approach to designing and building applications. For more information, see [Designing a microservices architecture](./design/index.yml).
+
+**Operate in production**. Because microservices architectures are distributed, you must have robust operations for deployment and monitoring.
+
+- [CI/CD for microservices architectures](./ci-cd.yml)
+- [Build a CI/CD pipeline for microservices on Kubernetes](./ci-cd-kubernetes.yml)
+- [Monitor microservices running on Azure Kubernetes Service (AKS)](./logging-monitoring.yml)
+
+## Microservices reference architectures for Azure
+
+- [Microservices architecture on Azure Kubernetes Service (AKS)](../reference-architectures/containers/aks-microservices/aks-microservices.yml)
+- [Microservices architecture on Azure Service Fabric](../reference-architectures/microservices/service-fabric.yml)
+
 
 <!-- links -->
 
