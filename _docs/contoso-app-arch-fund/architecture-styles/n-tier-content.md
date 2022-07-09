@@ -1,3 +1,9 @@
+---
+layout: page
+title: N-Tier
+permalink: /n-tier-content/
+---
+
 An N-tier architecture divides an application into **logical layers** and **physical tiers**.
 
 ![Logical diagram of an N-tier architecture style](./images/n-tier-logical.svg)

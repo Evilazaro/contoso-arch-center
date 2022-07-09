@@ -7,7 +7,7 @@ permalink: /architecture-styles-content/
 
 # Architecture styles
 
-An *architecture style* is a family of architectures that share certain characteristics. For example, {% include doc.html name="N-tier" path="n-tier-content" %} is a common architecture style. More recently, {% include doc.html name="Microservices architecture" path="n-tier-content" %} have started to gain favor. Architecture styles don't require the use of particular technologies, but some technologies are well-suited for certain architectures. For example, containers are a natural fit for microservices.
+An *architecture style* is a family of architectures that share certain characteristics. For example, {% include doc.html name="N-tier" path="n-tier-content" %} is a common architecture style. More recently, {% include doc.html name="Microservices" path="microservices-content" %} have started to gain favor. Architecture styles don't require the use of particular technologies, but some technologies are well-suited for certain architectures. For example, containers are a natural fit for microservices.
 
 We have identified a set of architecture styles that are commonly found in cloud applications. The article for each style includes:
 
@@ -32,7 +32,7 @@ N-tier is a natural fit for migrating existing applications that already use a l
 
 ![Logical diagram of Web-Queue-Worker architecture style.]({{site.baseurl}}/assets/img/web-queue-worker-logical.svg)
 
-For a purely PaaS solution, consider a **[Web-Queue-Worker](./web-queue-worker-content/)** architecture. In this style, the application has a web front end that handles HTTP requests and a back-end worker that performs CPU-intensive tasks or long-running operations. The front end communicates to the worker through an asynchronous message queue.
+For a purely PaaS solution, consider a {% include doc.html name="Web-queue worker" path="web-queue-worker-content" %} architecture. In this style, the application has a web front end that handles HTTP requests and a back-end worker that performs CPU-intensive tasks or long-running operations. The front end communicates to the worker through an asynchronous message queue.
 
 Web-queue-worker is suitable for relatively simple domains with some resource-intensive tasks. Like N-tier, the architecture is easy to understand. The use of managed services simplifies deployment and operations. But with complex domains, it can be hard to manage dependencies. The front end and the worker can easily become large, monolithic components that are hard to maintain and update. As with N-tier, this can reduce the frequency of updates and limit innovation.
 
@@ -41,7 +41,7 @@ Web-queue-worker is suitable for relatively simple domains with some resource-in
 
 ![Logical diagram of microservices architecture style.]({{site.baseurl}}/assets/img/microservices-logical.png)
 
-If your application has a more complex domain, consider moving to a **{% include doc.html name="Microservices" path="microservices-content" %}** architecture. A microservices application is composed of many small, independent services. Each service implements a single business capability. Services are loosely coupled, communicating through API contracts.
+If your application has a more complex domain, consider moving to a {% include doc.html name="Microservices" path="microservices-content" %} architecture. A microservices application is composed of many small, independent services. Each service implements a single business capability. Services are loosely coupled, communicating through API contracts.
 
 Each service can be built by a small, focused development team. Individual services can be deployed without a lot of coordination between teams, which encourages frequent updates. A microservice architecture is more complex to build and manage than either N-tier or web-queue-worker. It requires a mature development and DevOps culture. But done right, this style can lead to higher release velocity, faster innovation, and a more resilient architecture.
 
@@ -49,7 +49,7 @@ Each service can be built by a small, focused development team. Individual servi
 
 ![Diagram of an event-driven architecture style.]({{site.baseurl}}/assets/img/event-driven.svg)
 
-**{% include doc.html name="Event-driven architecture" path="event-driven-content" %}** use a publish-subscribe (pub-sub) model, where producers publish events, and consumers subscribe to them. The producers are independent from the consumers, and consumers are independent from each other.
+{% include doc.html name="Event-driven architecture" path="event-driven-content" %} use a publish-subscribe (pub-sub) model, where producers publish events, and consumers subscribe to them. The producers are independent from the consumers, and consumers are independent from each other.
 
 Consider an event-driven architecture for applications that ingest and process a large volume of data with very low latency, such as IoT solutions. The style is also useful when different subsystems must perform different types of processing on the same event data.
 
@@ -57,7 +57,7 @@ Consider an event-driven architecture for applications that ingest and process a
 
 ![Logical diagram of a big data architecture style.]({{site.baseurl}}/assets/img/big-data-logical.svg)
 
-**{% include doc.html name="Big Data" path="big-data-content" %}** and **{% include doc.html name="Big Compute" path="big-compute-content" %}** are specialized architecture styles for workloads that fit certain specific profiles. Big data divides a very large dataset into chunks, performing parallel processing across the entire set, for analysis and reporting. Big compute, also called high-performance computing (HPC), makes parallel computations across a large number (thousands) of cores. Domains include simulations, modeling, and 3-D rendering.
+{% include doc.html name="Big Data" path="big-data-content" %} and {% include doc.html name="Big Compute" path="big-compute-content" %} are specialized architecture styles for workloads that fit certain specific profiles. Big data divides a very large dataset into chunks, performing parallel processing across the entire set, for analysis and reporting. Big compute, also called high-performance computing (HPC), makes parallel computations across a large number (thousands) of cores. Domains include simulations, modeling, and 3-D rendering.
 
 ## Architecture styles as constraints
 
@@ -78,7 +78,7 @@ The following table summarizes how each style manages dependencies, and the type
 | Architecture style | Dependency management | Domain type |
 |--------------------|------------------------|-------------|
 | {% include doc.html name="N-tier" path="n-tier-content" %} | Horizontal tiers divided by subnet | Traditional business domain. Frequency of updates is low. |
-| {% include doc.html name="Web-queue worker" path="web-queue-worker-content" %}) | Front and backend jobs, decoupled by async messaging. | Relatively simple domain with some resource intensive tasks. |
+| {% include doc.html name="Web-queue worker" path="web-queue-worker-content" %} | Front and backend jobs, decoupled by async messaging. | Relatively simple domain with some resource intensive tasks. |
 | {% include doc.html name="Microservices" path="microservices-content" %} | Vertically (functionally) decomposed services that call each other through APIs. | Complicated domain. Frequent updates. |
 | {% include doc.html name="Event-driven architecture" path="event-driven-content" %} | Producer/consumer. Independent view per sub-system. | IoT and real-time systems. |
 | {% include doc.html name="Big Data" path="big-data-content" %} | Divide a huge dataset into small chunks. Parallel processing on local datasets. | Batch and real-time data analysis. Predictive analysis using ML. |
