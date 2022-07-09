@@ -190,5 +190,5 @@ It's expected that most requests will create a new entity, so the method optimis
 
 Learn about using an API gateway at the boundary between client applications and microservices.
 
-> [!div class="nextstepaction"]
+
 > [API gateways](./gateway.yml)

@@ -42,5 +42,5 @@ Our reference implementation uses Kubernetes with [Azure Kubernetes Service](/az
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+
 > [Choose a compute option](./compute-options.md)

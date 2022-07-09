@@ -81,5 +81,5 @@ The development team identified one more area of functionality, which doesn't fi
 
 The next step is to define the boundaries for each microservice.
 
-> [!div class="nextstepaction"]
+
 > [Identify microservice boundaries](./microservice-boundaries.yml)

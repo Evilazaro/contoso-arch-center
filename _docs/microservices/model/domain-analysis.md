@@ -101,5 +101,5 @@ For the rest of this journey, we will focus on the Shipping bounded context.
 
 After completing a domain analysis, the next step is to apply tactical DDD, to define your domain models with more precision.
 
-> [!div class="nextstepaction"]
+
 > [Tactical DDD](./tactical-ddd.yml)
