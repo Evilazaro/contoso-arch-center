@@ -72,7 +72,7 @@ With these considerations in mind, the development team made the following desig
 
 - When the status of a delivery changes, the Delivery service sends a delivery status event, such as `DeliveryCreated` or `DeliveryCompleted`. Any service can subscribe to these events. In the current design, the Delivery History service is the only subscriber, but there might be other subscribers later. For example, the events might go to a real-time analytics service. And because the Scheduler doesn't have to wait for a response, adding more subscribers doesn't affect the main workflow path.
 
-![Diagram of drone communication](../images/drone-communication.png)
+![Diagram of drone communication](.{{site.baseurl}}/assets/img/drone-communication.png)
 
 Notice that delivery status events are derived from drone location events. For example, when a drone reaches a delivery location and drops off a package, the Delivery service translates this into a DeliveryCompleted event. This is an example of thinking in terms of domain models. As described earlier, Drone Management belongs in a separate bounded context. The drone events convey the physical location of a drone. The delivery events, on the other hand, represent changes in the status of a delivery, which is a different business entity.
 
@@ -113,7 +113,7 @@ After a nontransient failure, the current transaction might be in a *partially f
 
 If the logic for compensating transactions is complex, consider creating a separate service that is responsible for this process. In the Drone Delivery application, the Scheduler service puts failed operations onto a dedicated queue. A separate microservice, called the Supervisor, reads from this queue and calls a cancellation API on the services that need to compensate. This is a variation of the [Scheduler Agent Supervisor pattern](../../patterns/scheduler-agent-supervisor.yml). The Supervisor service might take other actions as well, such as notify the user by text or email, or send an alert to an operations dashboard.
 
-![Diagram showing the Supervisor microservice](../images/supervisor.png)
+![Diagram showing the Supervisor microservice](.{{site.baseurl}}/assets/img/supervisor.png)
 
 The Scheduler service itself might fail (for example, because a node crashes). In that case, a new instance can spin up and take over. However, any transactions that were already in progress must be resumed.
 

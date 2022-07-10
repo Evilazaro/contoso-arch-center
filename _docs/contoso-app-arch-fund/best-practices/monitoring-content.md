@@ -371,7 +371,7 @@ Monitoring a large-scale distributed system poses a significant challenge. Each 
 
 You can envisage the entire monitoring and diagnostics process as a pipeline that comprises the stages shown in Figure 1.
 
-![Stages in the monitoring and diagnostics pipeline](./images/monitoring/Pipeline.png)
+![Stages in the monitoring and diagnostics pipeline]({{site.baseurl}}/assets/img/monitoring/Pipeline.png)
 
 *Figure 1 - The stages in the monitoring and diagnostics pipeline.*
 
@@ -508,7 +508,7 @@ The collection stage of the monitoring process is concerned with retrieving the 
 
 Data collection is often performed through a collection service that can run autonomously from the application that generates the instrumentation data. Figure 2 illustrates an example of this architecture, highlighting the instrumentation data-collection subsystem.
 
-![Example of collecting instrumentation data](./images/monitoring/TelemetryService.png)
+![Example of collecting instrumentation data]({{site.baseurl}}/assets/img/monitoring/TelemetryService.png)
 
 *Figure 2 - Collecting instrumentation data.*
 
@@ -540,7 +540,7 @@ The instrumentation data-collection subsystem can actively retrieve instrumentat
 
 One approach to implementing the pull model is to use monitoring agents that run locally with each instance of the application. A monitoring agent is a separate process that periodically retrieves (pulls) telemetry data collected at the local node and writes this information directly to centralized storage that all instances of the application share. This is the mechanism that Azure Diagnostics implements. Each instance of an Azure web or worker role can be configured to capture diagnostic and other trace information that's stored locally. The monitoring agent that runs alongside each instance copies the specified data to Azure Storage. The article [Enabling Diagnostics in Azure Cloud Services and Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics) provides more details on this process. Some elements, such as IIS logs, crash dumps, and custom error logs, are written to blob storage. Data from the Windows event log, ETW events, and performance counters is recorded in table storage. Figure 3 illustrates this mechanism.
 
-![Illustration of using a monitoring agent to pull information and write to shared storage](./images/monitoring/PullModel.png)
+![Illustration of using a monitoring agent to pull information and write to shared storage]({{site.baseurl}}/assets/img/monitoring/PullModel.png)
 
 *Figure 3 - Using a monitoring agent to pull information and write to shared storage.*
 
@@ -551,7 +551,7 @@ It's feasible to use the approach just described to store telemetry data for a s
 
 To address these issues, you can implement queuing, as shown in Figure 4. In this architecture, the local monitoring agent (if it can be configured appropriately) or custom data-collection service (if not) posts data to a queue. A separate process running asynchronously (the storage writing service in Figure 4) takes the data in this queue and writes it to shared storage. A message queue is suitable for this scenario because it provides "at least once" semantics that help ensure that queued data will not be lost after it's posted. You can implement the storage writing service by using a separate worker role.
 
-![Illustration of using a queue to buffer instrumentation data](./images/monitoring/BufferedQueue.png)
+![Illustration of using a queue to buffer instrumentation data]({{site.baseurl}}/assets/img/monitoring/BufferedQueue.png)
 
 *Figure 4 - Using a queue to buffer instrumentation data.*
 
@@ -563,7 +563,7 @@ For scalability, you can run multiple instances of the storage writing service. 
 
 The instrumentation data that the data-collection service retrieves from a single instance of an application gives a localized view of the health and performance of that instance. To assess the overall health of the system, it's necessary to consolidate some aspects of the data in the local views. You can perform this after the data has been stored, but in some cases, you can also achieve it as the data is collected. Rather than being written directly to shared storage, the instrumentation data can pass through a separate data consolidation service that combines data and acts as a filter and cleanup process. For example, instrumentation data that includes the same correlation information such as an activity ID can be amalgamated. (It's possible that a user starts performing a business operation on one node and then gets transferred to another node in the event of node failure, or depending on how load balancing is configured.) This process can also detect and remove any duplicated data (always a possibility if the telemetry service uses message queues to push instrumentation data out to storage). Figure 5 illustrates an example of this structure.
 
-![Example of using a service to consolidate instrumentation data](./images/monitoring/Consolidation.png)
+![Example of using a service to consolidate instrumentation data]({{site.baseurl}}/assets/img/monitoring/Consolidation.png)
 
 *Figure 5 - Using a separate service to consolidate and clean up instrumentation data.*
 
@@ -580,7 +580,7 @@ For example, Azure blob and table storage have some similarities in the way in w
 
 You can implement an additional service that periodically retrieves the data from shared storage, partitions and filters the data according to its purpose, and then writes it to an appropriate set of data stores as shown in Figure 6. An alternative approach is to include this functionality in the consolidation and cleanup process and write the data directly to these stores as it's retrieved rather than saving it in an intermediate shared storage area. Each approach has its advantages and disadvantages. Implementing a separate partitioning service lessens the load on the consolidation and cleanup service, and it enables at least some of the partitioned data to be regenerated if necessary (depending on how much data is retained in shared storage). However, it consumes additional resources. Also, there might be a delay between the receipt of instrumentation data from each application instance and the conversion of this data into actionable information.
 
-![Partitioning and storage of data](./images/monitoring/DataStorage.png)
+![Partitioning and storage of data]({{site.baseurl}}/assets/img/monitoring/DataStorage.png)
 
 *Figure 6 - Partitioning data according to analytical and storage requirements.*
 

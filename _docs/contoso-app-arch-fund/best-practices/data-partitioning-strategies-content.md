@@ -22,15 +22,15 @@ Elastic Database provides two schemes for mapping data to shardlets and storing 
 
 - A **list shard map** associates a single key to a shardlet. For example, in a multitenant system, the data for each tenant can be associated with a unique key and stored in its own shardlet. To guarantee isolation, each shardlet can be held within its own shard.
 
-    ![Using a list shard map to store tenant data in separate shards](./images/data-partitioning/PointShardlet.png)
+    ![Using a list shard map to store tenant data in separate shards]({{site.baseurl}}/assets/img/data-partitioning/PointShardlet.png)
 
 - A **range shard map** associates a set of contiguous key values to a shardlet. For example, you can group the data for a set of tenants (each with their own key) within the same shardlet. This scheme is less expensive than the first, because tenants share data storage, but has less isolation.
 
-    ![Using a range shard map to store data for a range of tenants in a shard](./images/data-partitioning/RangeShardlet.png)
+    ![Using a range shard map to store data for a range of tenants in a shard]({{site.baseurl}}/assets/img/data-partitioning/RangeShardlet.png)
 
 A single shard can contain the data for several shardlets. For example, you can use list shardlets to store data for different non-contiguous tenants in the same shard. You can also mix range shardlets and list shardlets in the same shard, although they will be addressed through different maps. The following diagram shows this approach:
 
-![Implementing multiple shard maps](./images/data-partitioning/MultipleShardMaps.png)
+![Implementing multiple shard maps]({{site.baseurl}}/assets/img/data-partitioning/MultipleShardMaps.png)
 
 Elastic pools make it possible to add and remove shards as the volume of data shrinks and grows. Client applications can create and delete shards dynamically, and transparently update the shard map manager. However, removing a shard is a destructive operation that also requires deleting all the data in that shard.
 
@@ -70,7 +70,7 @@ Microsoft has published [scalability targets] for Azure Storage. If your system 
 
 The following diagram shows the logical structure of an example storage account. The storage account contains three tables: Customer Info, Product Info, and Order Info.
 
-![The tables and partitions in an example storage account](./images/data-partitioning/TableStorage.png)
+![The tables and partitions in an example storage account]({{site.baseurl}}/assets/img/data-partitioning/TableStorage.png)
 
 Each table has multiple partitions.
 
@@ -241,7 +241,7 @@ Consider the following points when deciding how to partition data with Azure Cac
 
 - The aggregate types enable you to associate many related values with the same key. A Redis key identifies a list, set, or hash rather than the data items that it contains. These types are all available with Azure Cache for Redis and are described by the [Data types] page on the Redis website. For example, in part of an e-commerce system that tracks the orders that are placed by customers, the details of each customer can be stored in a Redis hash that is keyed by using the customer ID. Each hash can hold a collection of order IDs for the customer. A separate Redis set can hold the orders, again structured as hashes, and keyed by using the order ID. Figure 8 shows this structure. Note that Redis does not implement any form of referential integrity, so it is the developer's responsibility to maintain the relationships between customers and orders.
 
-![Suggested structure in Redis storage for recording customer orders and their details](./images/data-partitioning/RedisCustomersAndOrders.png)
+![Suggested structure in Redis storage for recording customer orders and their details]({{site.baseurl}}/assets/img/data-partitioning/RedisCustomersAndOrders.png)
 
 _Figure 8. Suggested structure in Redis storage for recording customer orders and their details._
 

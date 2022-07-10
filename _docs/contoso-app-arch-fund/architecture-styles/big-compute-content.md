@@ -6,7 +6,7 @@ permalink: /big-compute-content/
 
 The term *big compute* describes large-scale workloads that require a large number of cores, often numbering in the hundreds or thousands. Scenarios include image rendering, fluid dynamics, financial risk modeling, oil exploration, drug design, and engineering stress analysis, among others.
 
-![Logical diagram for big compute architecture style](./images/big-compute-logical.png)
+![Logical diagram for big compute architecture style]({{site.baseurl}}/assets/img/big-compute-logical.png)
 
 Here are some typical characteristics of big compute applications:
 
@@ -44,7 +44,7 @@ Here are some typical characteristics of big compute applications:
 
 Using Azure Batch, you configure a VM pool, and upload the applications and data files. Then the Batch service provisions the VMs, assign tasks to the VMs, runs the tasks, and monitors the progress. Batch can automatically scale out the VMs in response to the workload. Batch also provides job scheduling.
 
-![Diagram of big compute using Azure Batch](./images/big-compute-batch.png)
+![Diagram of big compute using Azure Batch]({{site.baseurl}}/assets/img/big-compute-batch.png)
 
 ## Big compute running on Virtual Machines
 
@@ -54,7 +54,7 @@ You can use [Microsoft HPC Pack][hpc-pack] to administer a cluster of VMs, and s
 
 In this scenario, the HPC cluster is created entirely within Azure.
 
-![Diagram of HPC Pack deployed to Azure](./images/big-compute-iaas.png)
+![Diagram of HPC Pack deployed to Azure]({{site.baseurl}}/assets/img/big-compute-iaas.png)
 
 The head node provides management and job scheduling services to the cluster. For tightly coupled tasks, use an RDMA network that provides very high bandwidth, low latency communication between VMs. For more information, see [Deploy an HPC Pack 2016 cluster in Azure][deploy-hpc-azure].
 
@@ -62,7 +62,7 @@ The head node provides management and job scheduling services to the cluster. Fo
 
 In this scenario, an organization is running HPC Pack on-premises, and uses Azure VMs for burst capacity. The cluster head node is on-premises. ExpressRoute or VPN Gateway connects the on-premises network to the Azure VNet.
 
-![Diagram of a hybrid big compute cluster](./images/big-compute-hybrid.png)
+![Diagram of a hybrid big compute cluster]({{site.baseurl}}/assets/img/big-compute-hybrid.png)
 
 ## Next steps
 

@@ -11,13 +11,13 @@ Most cloud applications consist of multiple application services &mdash; web fro
 
 What happens when two instances try to perform concurrent operations that affect some shared state? In some cases, there must be coordination across nodes, for example to preserve ACID guarantees. In this diagram, `Node2` is waiting for `Node1` to release a database lock:
 
-![Database lock diagram](./images/database-lock.svg)
+![Database lock diagram]({{site.baseurl}}/assets/img/database-lock.svg)
 
 Coordination limits the benefits of horizontal scale and creates bottlenecks. In this example, as you scale out the application and add more instances, you'll see increased lock contention. In the worst case, the front-end instances will spend most of their time waiting on locks.
 
 "Exactly once" semantics are another frequent source of coordination. For example, an order must be processed exactly once. Two workers are listening for new orders. `Worker1` picks up an order for processing. The application must ensure that `Worker2` doesn't duplicate the work, but also if `Worker1` crashes, the order isn't dropped.
 
-![Coordination diagram](./images/coordination.svg)
+![Coordination diagram]({{site.baseurl}}/assets/img/coordination.svg)
 
 You can use a pattern such as [Scheduler Agent Supervisor][sas-pattern] to coordinate between the workers, but in this case a better approach might be to partition the work. Each worker is assigned a certain range of orders (say, by billing region). If a worker crashes, a new instance picks up where the previous instance left off, but multiple instances aren't contending.
 

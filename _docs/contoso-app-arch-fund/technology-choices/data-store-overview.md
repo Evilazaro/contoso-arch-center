@@ -62,7 +62,7 @@ A key/value store associates each data value with a unique key. Most key/value s
 
 An application can store arbitrary data as a set of values. Any schema information must be provided by the application. The key/value store simply retrieves or stores the value by key.
 
-![Diagram of a key-value store](./images/key-value.png)
+![Diagram of a key-value store]({{site.baseurl}}/assets/img/key-value.png)
 
 Key/value stores are highly optimized for applications performing simple lookups, but are less suitable if you need to query data across different key/value stores. Key/value stores are also not optimized for querying by value.
 
@@ -100,7 +100,7 @@ A document database stores a collection of *documents*, where each document cons
 
 Typically, a document contains the data for single entity, such as a customer or an order. A document may contain information that would be spread across several relational tables in an RDBMS. Documents don't need to have the same structure. Applications can store different data in documents as business requirements change.
 
-![Diagram of a document store](./images/document.png)
+![Diagram of a document store]({{site.baseurl}}/assets/img/document.png)
 
 ### Azure service
 
@@ -133,7 +133,7 @@ A graph database stores two types of information, nodes and edges. Edges specify
 
 Graph databases can efficiently perform queries across the network of nodes and edges and analyze the relationships between entities. The following diagram shows an organization's personnel database structured as a graph. The entities are employees and departments, and the edges indicate reporting relationships and the departments in which employees work.
 
-![Diagram of a document database](./images/graph.png)
+![Diagram of a document database]({{site.baseurl}}/assets/img/graph.png)
 
 This structure makes it straightforward to perform queries such as "Find all employees who report directly or indirectly to Sarah" or "Who works in the same department as John?" For large graphs with lots of entities and relationships, you can perform very complex analyses very quickly. Many graph databases provide a query language that you can use to traverse a network of relationships efficiently.
 
@@ -199,7 +199,7 @@ You can think of a column-family database as holding tabular data with rows and 
 
 The following diagram shows an example with two column families, `Identity` and `Contact Info`. The data for a single entity has the same row key in each column-family. This structure, where the rows for any given object in a column family can vary dynamically, is an important benefit of the column-family approach, making this form of data store highly suited for storing structured, volatile data.
 
-![Diagram of a column-family database](./images/column-family.png)
+![Diagram of a column-family database]({{site.baseurl}}/assets/img/column-family.png)
 
 Unlike a key/value store or a document database, most column-family databases store data in key order, rather than by computing a hash. Many implementations allow you to create indexes over specific columns in a column-family. Indexes let you retrieve data by columns value, rather than row key.
 

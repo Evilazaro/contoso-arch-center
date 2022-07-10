@@ -6,7 +6,7 @@ permalink: /n-tier-content/
 
 An N-tier architecture divides an application into **logical layers** and **physical tiers**.
 
-![Logical diagram of an N-tier architecture style](./images/n-tier-logical.svg)
+![Logical diagram of an N-tier architecture style]({{site.baseurl}}/assets/img/n-tier-logical.svg)
 
 Layers are a way to separate responsibilities and manage dependencies. Each layer has a specific responsibility. A higher layer can use services in a lower layer, but not the other way around.
 
@@ -61,7 +61,7 @@ N-tier architectures are very common in traditional on-premises applications, so
 
 This section describes a recommended N-tier architecture running on VMs.
 
-![Physical diagram of an N-tier architecture](./images/n-tier-physical-bastion.png)
+![Physical diagram of an N-tier architecture]({{site.baseurl}}/assets/img/n-tier-physical-bastion.png)
 
 Each tier consists of two or more VMs, placed in an availability set or virtual machine scale set. Multiple VMs provide resiliency in case one VM fails. Load balancers are used to distribute requests across the VMs in a tier. A tier can be scaled horizontally by adding more VMs to the pool.
 

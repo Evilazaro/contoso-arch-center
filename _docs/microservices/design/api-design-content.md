@@ -1,6 +1,6 @@
 Good API design is important in a microservices architecture, because all data exchange between services happens either through messages or API calls. APIs must be efficient to avoid creating [chatty I/O](../../antipatterns/chatty-io/index.md). Because services are designed by teams working independently, APIs must have well-defined semantics and versioning schemes, so that updates don't break other services.
 
-![API design for microservices](../images/api-design.png)
+![API design for microservices](.{{site.baseurl}}/assets/img/api-design.png)
 
 It's important to distinguish between two types of API:
 
@@ -81,11 +81,11 @@ These sorts of coding practices are particularly important when building a tradi
 
 Another example is the Repository pattern, which ensures that other parts of the application do not make direct reads or writes to the data store:
 
-![Diagram of a Drone Repository](../images/repository.png)
+![Diagram of a Drone Repository](.{{site.baseurl}}/assets/img/repository.png)
 
 In a microservices architecture, however, services don't share the same code base and don't share data stores. Instead, they communicate through APIs. Consider the case where the Scheduler service requests information about a drone from the Drone service. The Drone service has its internal model of a drone, expressed through code. But the Scheduler doesn't see that. Instead, it gets back a *representation* of the drone entity &mdash; perhaps a JSON object in an HTTP response.
 
-![Diagram of the Drone Service](../images/ddd-rest.png)
+![Diagram of the Drone Service](.{{site.baseurl}}/assets/img/ddd-rest.png)
 
 The Scheduler service can't modify the Drone service's internal models, or write to the Drone service's data store. That means the code that implements the Drone service has a smaller exposed surface area, compared with code in a traditional monolith. If the Drone service defines a Location class, the scope of that class is limited &mdash; no other service will directly consume the class.
 
@@ -123,7 +123,7 @@ Whenever possible, make API changes backward compatible. For example, avoid remo
 
 Support versioning in your API contract. If you introduce a breaking API change, introduce a new API version. Continue to support the previous version, and let clients select which version to call. There are a couple of ways to do this. One is simply to expose both versions in the same service. Another option is to run two versions of the service side-by-side, and route requests to one or the other version, based on HTTP routing rules.
 
-:::image type="complex" source="../images/versioning.png" alt-text="Diagram showing two options for supporting versioning.":::
+:::image type="complex" source=".{{site.baseurl}}/assets/img/versioning.png" alt-text="Diagram showing two options for supporting versioning.":::
    The diagram has two parts. "Service supports two versions" shows the v1 Client and the v2 Client both pointing to one Service. "Side-by-side deployment" shows the v1 Client pointing to a v1 Service, and the v2 Client pointing to a v2 Service.
 :::image-end:::
 

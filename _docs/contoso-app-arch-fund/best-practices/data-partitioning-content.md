@@ -35,7 +35,7 @@ These strategies can be combined, and we recommend that you consider them all wh
 
 Figure 1 shows horizontal partitioning or sharding. In this example, product inventory data is divided into shards based on the product key. Each shard holds the data for a contiguous range of shard keys (A-G and H-Z), organized alphabetically. Sharding spreads the load over more computers, which reduces contention and improves performance.
 
-![Horizontally partitioning (sharding) data based on a partition key](./images/data-partitioning/DataPartitioning01.png)
+![Horizontally partitioning (sharding) data based on a partition key]({{site.baseurl}}/assets/img/data-partitioning/DataPartitioning01.png)
 
 *Figure 1 - Horizontally partitioning (sharding) data based on a partition key.*
 
@@ -55,7 +55,7 @@ For more information about horizontal partitioning, see [sharding pattern](../pa
 
 The most common use for vertical partitioning is to reduce the I/O and performance costs associated with fetching items that are frequently accessed. Figure 2 shows an example of vertical partitioning. In this example, different properties of an item are stored in different partitions. One partition holds data that is accessed more frequently, including product name, description, and price. Another partition holds inventory data: the stock count and last-ordered date.
 
-![Vertically partitioning data by its pattern of use](./images/data-partitioning/DataPartitioning02.png)
+![Vertically partitioning data by its pattern of use]({{site.baseurl}}/assets/img/data-partitioning/DataPartitioning02.png)
 
 *Figure 2 - Vertically partitioning data by its pattern of use.*
 
@@ -75,7 +75,7 @@ Vertical partitioning operates at the entity level within a data store, partiall
 
 When it's possible to identify a bounded context for each distinct business area in an application, functional partitioning is a way to improve isolation and data access performance. Another common use for functional partitioning is to separate read-write data from read-only data. Figure 3 shows an overview of functional partitioning where inventory data is separated from customer data.
 
-![Functionally partitioning data by bounded context or subdomain](./images/data-partitioning/DataPartitioning03.png)
+![Functionally partitioning data by bounded context or subdomain]({{site.baseurl}}/assets/img/data-partitioning/DataPartitioning03.png)
 
 *Figure 3 - Functionally partitioning data by bounded context or subdomain.*
 

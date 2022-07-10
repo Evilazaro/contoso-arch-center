@@ -1,6 +1,6 @@
 In a microservices architecture, a client might interact with more than one front-end service. Given this fact, how does a client know what endpoints to call? What happens when new services are introduced, or existing services are refactored? How do services handle SSL termination, authentication, and other concerns? An *API gateway* can help to address these challenges.
 
-![Diagram of an API gateway](../images/gateway.png)
+![Diagram of an API gateway](.{{site.baseurl}}/assets/img/gateway.png)
 
 ## What is an API gateway?
 

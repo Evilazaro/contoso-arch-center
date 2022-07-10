@@ -2,7 +2,7 @@ This article describes how to use domain-driven design (DDD) to migrate a monoli
 
 A monolithic application is typically an application system in which all of the relevant modules are packaged together as a single deployable unit of execution. For example, it might be a Java Web Application (WAR) running on Tomcat or an ASP<span>.</span>NET application running on IIS. A typical monolithic application uses a layered design, with separate layers for UI, application logic, and data access.
 
-![A typical monolith architecture](./images/monolith/figure1.png)
+![A typical monolith architecture]({{site.baseurl}}/assets/img/monolith/figure1.png)
 
 These systems start small but tend to grow over time to meet business needs. At some point, as new features are added, a monolithic application can begin to suffer from the following problems:
 
@@ -20,7 +20,7 @@ Despite these limitations, a monolithic design can make sense as a starting poin
 
 As the application grows in complexity, however, these advantages can disappear. Large monoliths often become progressively harder to build, debug, and reason about. At some point, the problems outweigh the benefits. This is the point when it can make sense to migrate the application to a microservices architecture. Unlike monoliths, microservices are typically decentralized, loosely coupled units of execution. The following diagram shows a typical microservices architecture:
 
-![A typical microservices architecture](./images/monolith/figure2.png)
+![A typical microservices architecture]({{site.baseurl}}/assets/img/monolith/figure2.png)
 
 Migrating a monolith to a microservice requires significant time and investment to avoid failures or overruns. To ensure that any migration is successful, it's good to understand both the benefits and also challenges that microservices bring. The benefits include:
 
@@ -57,7 +57,7 @@ The DDD approach can be applied retroactively to an existing application, as a w
 
 The bounded contexts identified in step 4 are candidates for refactoring into smaller microservices. The following diagram shows the existing monolith with the bounded contexts overlaid:
 
-![Bounded contexts within a monolith](./images/monolith/figure3.png)
+![Bounded contexts within a monolith]({{site.baseurl}}/assets/img/monolith/figure3.png)
 
 For more information about using a DDD approach for microservices architectures, see [Using domain analysis to model microservices](./model/domain-analysis.md).
 
@@ -65,7 +65,7 @@ For more information about using a DDD approach for microservices architectures,
 
 While this investigative work is carried out to inventory the monolithic application, new functionality can be added by applying the principles of DDD as separate services. "Glue code" allows the monolithic application to proxy calls to the new service to obtain new functionality.
 
-![ Glue Code to allow a monolith to interact with a new service](./images/monolith/figure4.png)
+![ Glue Code to allow a monolith to interact with a new service]({{site.baseurl}}/assets/img/monolith/figure4.png)
 
 The  [glue code](https://en.wikipedia.org/wiki/Glue_code) (adapter pattern) effectively acts as an anti-corruption layer, ensuring that the new service is not polluted by data models required by the monolithic application. The glue code helps to mediate interactions between the two and ensures that only data required by the new service is passed to enable compatibility.
 
@@ -79,7 +79,7 @@ The next step is to separate the presentation layer from the backend layer. In a
 
 The follow diagram shows the presentation layer (UI) split out from the application logic and data access layers.
 
-![API gateway pattern](./images/monolith/figure5.png)
+![API gateway pattern]({{site.baseurl}}/assets/img/monolith/figure5.png)
 
 This diagram also introduces another layer, the API gateway, that sits between the presentation layer and the application logic. The API gateway is a façade layer that provides a consistent and uniform interface for the presentation layer to interact with, while allowing downstream services to evolve independently, without affecting the application. The API Gateway may use a technology such as [Azure API Management](/azure/api-management/), and allows the application to interact in a RESTful manner.
 
@@ -89,7 +89,7 @@ The presentation tier can be developed in any language or framework that the tea
 
 At this stage, the team can begin peeling away the monolithic application and slowly extract the services that have been established by their bounded contexts into their own set of microservices. The microservices can expose a RESTful interface for the application layer to interact with, through the API gateway, with glue code in place to communicate with the monolith in specific circumstances.
 
-![Use API layer](./images/monolith/figure6.png)
+![Use API layer]({{site.baseurl}}/assets/img/monolith/figure6.png)
 
 As you continue to peel away the monolith, eventually there will come the point when it no longer needs to exist, and the microservices have been successfully extracted from the monolith. At this point, the anti-corruption layer (glue code) can safely be removed.
 

@@ -28,7 +28,7 @@ In a traditional monolithic application, there is a single build pipeline whose 
 
 Following the microservices philosophy, there should never be a long release train where every team has to get in line. The team that builds service "A" can release an update at any time, without waiting for changes in service "B" to be merged, tested, and deployed.
 
-![Diagram of a CI/CD monolith](./images/cicd-monolith.png)
+![Diagram of a CI/CD monolith]({{site.baseurl}}/assets/img/cicd-monolith.png)
 
 To achieve a high release velocity, your release pipeline must be automated and highly reliable to minimize risk. If you release to production one or more times daily , regressions or service disruptions must be rare. At the same time, if a bad update does get deployed, you must have a reliable way to quickly roll back or roll forward to a previous version of a service.
 

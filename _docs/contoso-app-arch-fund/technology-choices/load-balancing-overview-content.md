@@ -51,14 +51,14 @@ You can use the Azure Load Balancing page in the Azure portal to help you guide 
 1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com).
 1. In the *Search resources, services, and docs* box at the top of the portal, type *load balancing*. When **Load balancing** appears in the search results, select it.
 
-    [ ![Search for load balancing - Azure portal screenshot](./images/load-balancing-search-1.png) ](./images/load-balancing-search-1.png#lightbox)
+    [ ![Search for load balancing - Azure portal screenshot]({{site.baseurl}}/assets/img/load-balancing-search-1.png) ]({{site.baseurl}}/assets/img/load-balancing-search-1.png#lightbox)
     > [!NOTE]
     > To learn about some of the factors considered in selecting a load-balancing solution, see [Decision tree for load-balancing in Azure](#decision-tree-for-load-balancing-in-azure) in this article.
 
 1. In the **Load balancing - help me choose (Preview)** page, do one of the following:
     - To find the appropriate load-balancing solution for your business, follow instructions in the default **Help me choose** tab.
 
-        [ ![Choose an Azure load balancing solution - Azure portal screenshot](./images/load-balancing-help-me-choose.png) ](./images/load-balancing-help-me-choose.png#lightbox)
+        [ ![Choose an Azure load balancing solution - Azure portal screenshot]({{site.baseurl}}/assets/img/load-balancing-help-me-choose.png) ]({{site.baseurl}}/assets/img/load-balancing-help-me-choose.png#lightbox)
 
     - To learn about the supported protocols and service capabilities of each load balancing service, select the **Service comparisons** tab.
     - To access free training on load balancing services, select the **Tutorial** tab.
@@ -93,7 +93,7 @@ The following flowchart will help you to choose a load-balancing solution for yo
 
 If your application consists of multiple workloads, evaluate each workload separately. A complete solution may incorporate two or more load-balancing solutions.
 
-![Decision tree for load balancing in Azure](./images/load-balancing-decision-tree.png)
+![Decision tree for load balancing in Azure]({{site.baseurl}}/assets/img/load-balancing-decision-tree.png)
 
 ### Definitions
 

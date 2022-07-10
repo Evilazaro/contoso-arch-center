@@ -45,7 +45,7 @@ To recap, this application defines several microservices for scheduling deliveri
 
 The various backend services care about different portions of the information in the request, and also have different read and write profiles.
 
-![Diagram of data considerations](../images/data-considerations.png)
+![Diagram of data considerations](.{{site.baseurl}}/assets/img/data-considerations.png)
 
 ### Delivery service
 

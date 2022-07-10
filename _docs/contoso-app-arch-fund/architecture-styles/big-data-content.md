@@ -6,7 +6,7 @@ permalink: /big-data-content/
 
 A big data architecture is designed to handle the ingestion, processing, and analysis of data that is too large or complex for traditional database systems.
 
-![Logical diagram of a big data architecture style](./images/big-data-logical.svg)
+![Logical diagram of a big data architecture style]({{site.baseurl}}/assets/img/big-data-logical.svg)
 
 Big data solutions typically involve one or more of the following types of workload:
 
@@ -89,7 +89,7 @@ Consider this architecture style when you need to:
 
 Internet of Things (IoT) is a specialized subset of big data solutions. The following diagram shows a possible logical architecture for IoT. The diagram emphasizes the event-streaming components of the architecture.
 
-![Diagram of an IoT architecture](./images/iot.png)
+![Diagram of an IoT architecture]({{site.baseurl}}/assets/img/iot.png)
 
 The **cloud gateway** ingests device events at the cloud boundary, using a reliable, low latency messaging system.
 

@@ -28,7 +28,7 @@ These assumptions drive many of the specific details of the CI/CD pipeline. Howe
 
 Suppose that a developer is working on a microservice called the Delivery Service. While developing a new feature, the developer checks code into a feature branch. By convention, feature branches are named `feature/*`.
 
-![CI/CD workflow](./images/aks-cicd-1.png)
+![CI/CD workflow]({{site.baseurl}}/assets/img/aks-cicd-1.png)
 
 The build definition file includes a trigger that filters by the branch name and the source path:
 
@@ -60,7 +60,7 @@ The goal is to keep build times short so that the developer can get quick feedba
 1. Build the runtime container image.
 1. Run vulnerability scans on the image.
 
-![Diagram showing ci-delivery-full in the Build pipeline.](./images/aks-cicd-2.png)
+![Diagram showing ci-delivery-full in the Build pipeline.]({{site.baseurl}}/assets/img/aks-cicd-2.png)
 
 > [!NOTE]
 > In Azure DevOps Repos, you can define [policies](/azure/devops/repos/git/branch-policies) to protect branches. For example, the policy could require a successful CI build plus a sign-off from an approver in order to merge into master.
@@ -69,7 +69,7 @@ The goal is to keep build times short so that the developer can get quick feedba
 
 At some point, the team is ready to deploy a new version of the Delivery service. The release manager creates a branch from the main branch with this naming pattern: `release/<microservice name>/<semver>`. For example, `release/delivery/v1.0.2`.
 
-![Diagram showing ci-delivery-full in the Build pipeline and cd-delivery in the Release pipeline.](./images/aks-cicd-3.png)
+![Diagram showing ci-delivery-full in the Build pipeline and cd-delivery in the Release pipeline.]({{site.baseurl}}/assets/img/aks-cicd-3.png)
 
 The creation of this branch triggers a full CI build that runs all of the previous steps plus:
 
@@ -378,4 +378,4 @@ For more information about creating a release pipeline, see [Release pipelines, 
 
 The following diagram shows the end-to-end CI/CD process described in this article:
 
-![CD/CD pipeline](./images/aks-cicd-flow.png)
+![CD/CD pipeline]({{site.baseurl}}/assets/img/aks-cicd-flow.png)

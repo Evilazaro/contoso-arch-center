@@ -1,6 +1,6 @@
 The goal of microservices is to increase the velocity of application releases, by decomposing the application into small autonomous services that can be deployed independently. A microservices architecture also brings some challenges. The design patterns shown here can help mitigate these challenges.
 
-![Microservices design patterns](../images/microservices-patterns.png)
+![Microservices design patterns](.{{site.baseurl}}/assets/img/microservices-patterns.png)
 
 [**Ambassador**](../../patterns/ambassador.yml) can be used to offload common client connectivity tasks such as monitoring, logging, routing, and security (such as TLS) in a language agnostic way. Ambassador services are often deployed as a sidecar (see below).
 

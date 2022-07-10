@@ -28,7 +28,7 @@ If you have multiple instances of an application that uses this model running co
 
 Think of a cache as a snapshot of the original data at some point in the past. If this data is not static, it is likely that different application instances hold different versions of the data in their caches. Therefore, the same query performed by these instances can return different results, as shown in Figure 1.
 
-![Using an in-memory cache in different instances of an application](./images/caching/Figure1.png)
+![Using an in-memory cache in different instances of an application]({{site.baseurl}}/assets/img/caching/Figure1.png)
 
 _Figure 1: Using an in-memory cache in different instances of an application._
 
@@ -36,7 +36,7 @@ _Figure 1: Using an in-memory cache in different instances of an application._
 
 Using a shared cache can help alleviate concerns that data might differ in each cache, which can occur with in-memory caching. Shared caching ensures that different application instances see the same view of cached data. It does this by locating the cache in a separate location, typically hosted as part of a separate service, as shown in Figure 2.
 
-![Using a shared cache](./images/caching/Figure2.png)
+![Using a shared cache]({{site.baseurl}}/assets/img/caching/Figure2.png)
 
 _Figure 2: Using a shared cache._
 
@@ -133,7 +133,7 @@ Consider implementing a local, private cache in each instance of an application,
 
 This approach requires careful configuration to prevent the local cache from becoming too stale with respect to the shared cache. However, the local cache acts as a buffer if the shared cache is unreachable. Figure 3 shows this structure.
 
-![Using a local private cache with a shared cache](./images/caching/Caching3.png)
+![Using a local private cache with a shared cache]({{site.baseurl}}/assets/img/caching/Caching3.png)
 
 _Figure 3: Using a local private cache with a shared cache._
 

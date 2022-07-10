@@ -6,7 +6,7 @@ permalink: /event-driven-content/
 
 An event-driven architecture consists of **event producers** that generate a stream of events, and **event consumers** that listen for the events.
 
-![Diagram of an event-driven architecture style](./images/event-driven.svg)
+![Diagram of an event-driven architecture style]({{site.baseurl}}/assets/img/event-driven.svg)
 
 Events are delivered in near real time, so consumers can respond immediately to events as they occur. Producers are decoupled from consumers &mdash; a producer doesn't know which consumers are listening. Consumers are also decoupled from each other, and every consumer sees all of the events. This differs from a {% include doc.html name="Competing Consumers" path="competing-consumers" %} pattern, where consumers pull messages from a queue and a message is processed just once (assuming no errors). In some systems, such as IoT, events must be ingested at very high volumes.
 

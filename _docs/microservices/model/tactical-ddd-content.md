@@ -4,7 +4,7 @@ During the strategic phase of domain-driven design (DDD), you are mapping out th
 
 This section provides a brief summary of the tactical DDD patterns, so if you are already familiar with DDD, you can probably skip this section. The patterns are described in more detail in chapters 5 &ndash; 6 of Eric Evans' book, and in *Implementing Domain-Driven Design* by Vaughn Vernon.
 
-![Diagram of tactical patterns in domain-driven design](../images/ddd-patterns.png)
+![Diagram of tactical patterns in domain-driven design](.{{site.baseurl}}/assets/img/ddd-patterns.png)
 
 **Entities**. An entity is an object with a unique identity that persists over time. For example, in a banking application, customers and accounts would be entities.
 
@@ -63,7 +63,7 @@ The **value objects** in this design include Location, ETA, PackageWeight, and P
 
 To illustrate, here is a UML diagram of the Delivery aggregate. Notice that it holds references to other aggregates, including Account, Package, and Drone.
 
-![UML diagram of the Delivery aggregate](../images/delivery-entity.png)
+![UML diagram of the Delivery aggregate](.{{site.baseurl}}/assets/img/delivery-entity.png)
 
 There are two domain events:
 
@@ -75,7 +75,7 @@ Notice that these events describe things that are meaningful within the domain m
 
 The development team identified one more area of functionality, which doesn't fit neatly into any of the entities described so far. Some part of the system must coordinate all of the steps involved in scheduling or updating a delivery. Therefore, the development team added two **domain services** to the design: a *Scheduler* that coordinates the steps, and a *Supervisor* that monitors the status of each step, in order to detect whether any steps have failed or timed out. This is a variation of the [Scheduler Agent Supervisor pattern](../../patterns/scheduler-agent-supervisor.yml).
 
-![Diagram of the revised domain model](../images/drone-ddd.png)
+![Diagram of the revised domain model](.{{site.baseurl}}/assets/img/drone-ddd.png)
 
 ## Next steps
 

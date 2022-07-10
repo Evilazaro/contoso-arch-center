@@ -1,7 +1,7 @@
 <!-- cSpell:ignore kusto kube kubelet Backoff Fluentd TICK Serilog Telegraf Dropoff Istio linkerd kubectl -->
 This article describes best practices for monitoring a microservices application that runs on Azure Kubernetes Service (AKS). The topics include telemetry collection, monitoring a cluster's status, metrics, logging, structured logging, and distributed tracing. The latter is shown in the following diagram.
 
-![Diagram that shows the architecture of a drone delivery application.](./images/drone-delivery-impl.png)
+![Diagram that shows the architecture of a drone delivery application.]({{site.baseurl}}/assets/img/drone-delivery-impl.png)
 
 ## Telemetry collection
 
@@ -27,7 +27,7 @@ In any complex application, at some point something will go wrong. In a microser
 
 Use [Azure Monitor][azure-monitor] to monitor the overall health of your clusters. The following screenshot shows a cluster with critical errors in user-deployed pods.
 
-![Screenshot of Azure Monitor dashboard](./images/monitoring/pod-status.png)
+![Screenshot of Azure Monitor dashboard]({{site.baseurl}}/assets/img/monitoring/pod-status.png)
 
 From here, you can drill in further to find the issue. For example, if the pod status is `ImagePullBackoff`, it means that Kubernetes couldn't pull the container image from the registry. This issue could be caused by an invalid container tag or an authentication error that tries to pull from the registry.
 
@@ -153,7 +153,7 @@ traces
 
 Viewing the result in the Azure portal shows that `DeliveryInfo` is a structured record that contains the serialized representation of the `DeliveryInfo` model:
 
-![Screenshot of Log Analytics workspace](./images/monitoring/structured-logs.png)
+![Screenshot of Log Analytics workspace]({{site.baseurl}}/assets/img/monitoring/structured-logs.png)
 
 Here's the JSON from this example:
 
@@ -221,7 +221,7 @@ A significant challenge of microservices is to understand the flow of events acr
 
 This example follows a distributed transaction through a set of microservices. The example is taken from a reference implementation described [here](./design/index.yml#reference-implementation).
 
-![Diagram that shows the architecture of a drone delivery application.](./images/drone-delivery-impl.png)
+![Diagram that shows the architecture of a drone delivery application.]({{site.baseurl}}/assets/img/drone-delivery-impl.png)
 
 In this scenario, the distributed transaction has the following steps:
 
@@ -231,25 +231,25 @@ In this scenario, the distributed transaction has the following steps:
 
 The following screenshot shows the [application map](/azure/azure-monitor/app/app-map) for the Drone Delivery application. This map shows calls to the public API endpoint that result in a workflow that involves five microservices.
 
-![Application map](./images/monitoring/application-map.png)
+![Application map]({{site.baseurl}}/assets/img/monitoring/application-map.png)
 
 The arrows from `fabrikam-workflow` and `fabrikam-ingestion` to a Service Bus queue show where the messages are sent and received. You can't tell from the diagram which service is sending messages and which is receiving&mdash;the arrows just show that both services are calling Service Bus&mdash;but this information is available in the details:
 
-![Screenshot of Application map details.](./images/monitoring/application-map-sb-ops.png)
+![Screenshot of Application map details.]({{site.baseurl}}/assets/img/monitoring/application-map-sb-ops.png)
 
 Because every call includes an operation ID, you can also view the end-to-end steps in a single transaction, including timing information and the HTTP calls at each step. Here's the visualization of one such transaction:
 
-![End-to-end transaction](./images/monitoring/transaction.png)
+![End-to-end transaction]({{site.baseurl}}/assets/img/monitoring/transaction.png)
 
 This visualization shows the steps from the ingestion service to the queue, from the queue to the workflow service, and from the workflow service to the other backend services. The last step is the Workflow service marking the Service Bus message as completed.
 
 Next, here's an example when calls to a backend service were failing:
 
-![Application map showing errors](./images/monitoring/application-map-errors.png)
+![Application map showing errors]({{site.baseurl}}/assets/img/monitoring/application-map-errors.png)
 
 This shows that a large fraction (36%) of calls to the Drone Scheduler service failed during the period being queried. In the end-to-end transaction view, it shows that an exception occurs when sending an HTTP PUT request to the service.
 
-![Screenshot of the End-to-end transaction details showing that an exception occurs when sending an HTTP PUT request to the service.](./images/monitoring/transaction-errors.png)
+![Screenshot of the End-to-end transaction details showing that an exception occurs when sending an HTTP PUT request to the service.]({{site.baseurl}}/assets/img/monitoring/transaction-errors.png)
 
 Further drilling in, the exception turns out to be a socket exception, "No such device or address."
 

@@ -27,7 +27,7 @@ Microservices should be designed around business capabilities, not horizontal la
 
 Domain-driven design (DDD) provides a framework that can get you most of the way to a set of well-designed microservices. DDD has two distinct phases, strategic and tactical. In strategic DDD, you are defining the large-scale structure of the system. Strategic DDD helps to ensure that your architecture remains focused on business capabilities. Tactical DDD provides a set of design patterns that you can use to create the domain model. These patterns include entities, aggregates, and domain services. These tactical patterns will help you to design microservices that are both loosely coupled and cohesive.
 
-![Diagram of a domain-driven design (DDD) process](../images/ddd-process.png)
+![Diagram of a domain-driven design (DDD) process](.{{site.baseurl}}/assets/img/ddd-process.png)
 
 In this article and the next, we'll walk through the following steps, applying them to the Drone Delivery application:
 
@@ -64,7 +64,7 @@ As you fill in the diagram, you may start to identify discrete subdomains. Which
 
 After some initial domain analysis, the Fabrikam team came up with a rough sketch that depicts the Drone Delivery domain.
 
-![Diagram of the Drone Delivery domain](../images/ddd1.svg)
+![Diagram of the Drone Delivery domain](.{{site.baseurl}}/assets/img/ddd1.svg)
 
 - **Shipping** is placed in the center of the diagram, because it's core to the business. Everything else in the diagram exists to enable this functionality.
 - **Drone management** is also core to the business. Functionality that is closely related to drone management includes **drone repair** and using **predictive analysis** to predict when drones need servicing and maintenance.
@@ -89,7 +89,7 @@ If we tried to create a single model for both of these subsystems, it would be u
 
 This is where the DDD concept of *bounded contexts* comes into play. A bounded context is simply the boundary within a domain where a particular domain model applies. Looking at the previous diagram, we can group functionality according to whether various functions will share a single domain model.
 
-![Diagram of bounded contexts](../images/ddd2.svg)
+![Diagram of bounded contexts](.{{site.baseurl}}/assets/img/ddd2.svg)
 
 Bounded contexts are not necessarily isolated from one another. In this diagram, the solid lines connecting the bounded contexts represent places where two bounded contexts interact. For example, Shipping depends on User Accounts to get information about customers, and on Drone Management to schedule drones from the fleet.
 

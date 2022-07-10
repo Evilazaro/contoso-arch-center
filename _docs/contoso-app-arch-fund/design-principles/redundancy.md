@@ -16,7 +16,7 @@ A resilient application routes around failure. Identify the critical paths in yo
 
 **Place VMs behind a load balancer**. Don't use a single VM for mission-critical workloads. Instead, place multiple VMs behind a load balancer. If any VM becomes unavailable, the load balancer distributes traffic to the remaining healthy VMs. To learn how to deploy this configuration, see [Multiple VMs for scalability and availability][multi-vm-blueprint].
 
-![Diagram of load-balanced VMs](./images/load-balancing.svg)
+![Diagram of load-balanced VMs]({{site.baseurl}}/assets/img/load-balancing.svg)
 
 **Replicate databases**. Azure SQL Database and Cosmos DB automatically replicate the data within a region, and you can enable geo-replication across regions. If you are using an IaaS database solution, choose one that supports replication and failover, such as [SQL Server Always On availability groups][sql-always-on].
 
@@ -26,7 +26,7 @@ A resilient application routes around failure. Identify the critical paths in yo
 
 **Deploy to more than one region**. For the highest availability, deploy the application to more than one region. That way, in the rare case when a problem affects an entire region, the application can fail over to another region. The following diagram shows a multi-region application that uses Azure Traffic Manager to handle failover.
 
-![Diagram of using Azure Traffic Manager to handle failover](./images/failover.svg)
+![Diagram of using Azure Traffic Manager to handle failover]({{site.baseurl}}/assets/img/failover.svg)
 
 **Synchronize front and backend failover**. Use Azure Traffic Manager to fail over the front end. If the front end becomes unreachable in one region, Traffic Manager will route new requests to the secondary region. Depending on your database solution, you may need to coordinate failing over the database.
 
