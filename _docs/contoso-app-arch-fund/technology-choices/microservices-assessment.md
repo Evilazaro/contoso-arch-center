@@ -1,18 +1,7 @@
 ---
-title: Microservices assessment and readiness 
-description: Use this guide as a checklist of considerations to keep in mind when you move to a microservices architecture. 
-author: ovaismehboob 
-ms.author: ovmehboo
-ms.date: 01/28/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
-  - azure-devops
-  - azure-api-management
-categories:
-  - devops
-ms.custom: fcp
+layout: page
+title: Microservices
+permalink: /microservices-assessment/
 ---
 
 # Microservices assessment and readiness 

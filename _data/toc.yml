@@ -32,7 +32,12 @@
         - title: Big Data
           url: big-data-content
     - title: Technology Choices
-      url: design-principles-overview
+      url: compute-decision-tree-content
+      children:
+        - title: Microservices
+          url: microservices-assessment
+        - title: Data store
+          url: data-store-decision-tree
     - title: Design Principles
       url: design-principles-overview
       children:
