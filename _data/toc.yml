@@ -33,11 +33,28 @@
           url: big-data-content
     - title: Design Principles
       url: design-principles-overview
-- title: Getting Started
-  url: getting-started
+      children:
+        - title: Design for self healing
+          url: self-healing
+        - title: Make all things redundant
+          url: redundancy
+        - title: Minimize coordination
+          url: minimize-coordination-content
+        - title: Design to scale out 
+          url: scale-out
+        - title: Partition around limits
+          url: partition
+        - title: Design for operations
+          url: design-for-operations
+        - title: Use managed services
+          url: managed-services
+        - title: Use the best data store for your data
+          url: use-best-data-store
+        - title: Design for evolution
+          url: design-for-evolution
+        - title: Build for business needs
+          url: build-for-business
 - title: "About"
   url: about
 - title: "News"
   url: "news"
-- title: "Extras"
-  url: "docs/extras"
