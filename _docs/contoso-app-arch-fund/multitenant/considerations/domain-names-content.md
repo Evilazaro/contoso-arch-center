@@ -4,7 +4,7 @@ In many multitenant web applications, a domain name can be used as a way to iden
 
 Each tenant might get a unique subdomain under a common shared domain name. Let's consider an example multitenant solution built by Contoso. Customers purchase Contoso's product to help manage their invoice generation. All of Contoso's tenants might be assigned their own subdomain, under the `contoso.com` domain name. Or, if you use regional deployments, you might assign subdomains under the `us.contoso.com` and `eu.contoso.com` domains. In this article, we refer to these as _stem domains_. Each customer gets their own subdomain under your stem domain. For example, Tailwind Toys might be assigned `tailwind.contoso.com`, and Adventure Works might be assigned `adventureworks.contoso.com`.
 
-> [!NOTE]
+> **NOTE**
 > Many Azure services use this approach. For example, when you create an Azure storage account, it is assigned a set of subdomains for you to use, such as `<your account name>.blob.core.windows.net`.
 
 ### Manage your domain namespace
@@ -15,7 +15,7 @@ When you create subdomains under your own domain name, you need to be mindful th
 
 Consider using wildcard DNS entries to simplify the management of subdomains. Instead of creating DNS entries for `tailwind.contoso.com`, `adventureworks.contoso.com`, and so forth, you could instead create a wildcard entry for `*.contoso.com` and direct all subdomains to single IP address (A record) or canonical name (CNAME record).
 
-> [!NOTE]
+> **NOTE**
 > Make sure that your web-tier services support wildcard DNS, if you plan to rely on this feature. Many Azure services, including Azure Front Door and Azure App Service, support wildcard DNS entries.
 
 ### Subdomains with multipart stem domains

@@ -31,7 +31,7 @@ One solution to this problem is to use HTTP polling. Polling is useful to client
 
 - The API responds synchronously as quickly as possible. It returns an HTTP 202 (Accepted) status code, acknowledging that the request has been received for processing.
 
-    > [!NOTE]
+    > **NOTE**
     > The API should validate both the request and the action to be performed before starting the long running process. If the request is invalid, reply immediately with an error code such as HTTP 400 (Bad Request).
 
 - The response holds a location reference pointing to an endpoint that the client can poll to check for the result of the long running operation.

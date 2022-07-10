@@ -24,7 +24,7 @@ ms.custom:
 
 Azure NAT Gateway provides control over outbound network connectivity from your resources that are hosted within an Azure virtual network. In this article, we review how NAT Gateway can mitigate Source Network Address Translation (SNAT) port exhaustion, which can affect multitenant applications. We also review how NAT Gateway assigns static IP addresses to the outbound traffic from your multitenant solution.
 
-> [!NOTE]
+> **NOTE**
 > Firewalls, like [Azure Firewall](/azure/firewall/overview), enable you to control and log your outbound traffic. Azure Firewall also provides similar SNAT port scale and outbound IP address control to NAT Gateway. NAT Gateway is less costly, but it also has fewer features and is not a security product.
 
 ## Features of NAT Gateway that support multitenancy
@@ -54,7 +54,7 @@ Outbound IP address control can be useful in multitenant applications, when you 
 
 When a NAT Gateway instance is applied to a subnet, any outbound traffic from that subnet uses the public IP addresses that's associated with the NAT gateway.
 
-> [!NOTE]
+> **NOTE**
 > When you associate multiple public IP addresses with a single NAT Gateway, your outbound traffic could come from any of those IP addresses. You might need to configure firewall rules at the destination. You should either allow each IP address, or use a [public IP address prefix](/azure/virtual-network/ip-services/public-ip-address-prefix) resource to use a set of public IP addresses in the same range.
 
 ## Isolation models

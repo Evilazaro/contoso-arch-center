@@ -2,7 +2,7 @@ We recommend that you preserve the original HTTP host name when you use a revers
 
 This guidance applies especially to applications that are hosted in platform as a service (PaaS) offerings like [Azure App Service](/azure/app-service) and [Azure Spring Apps](/azure/spring-cloud). This article provides specific [implementation guidance](#implementation-guidance-for-common-azure-services) for [Azure Application Gateway](/azure/application-gateway), [Azure Front Door](/azure/frontdoor), and [Azure API Management](/azure/api-management), which are commonly used reverse proxy services.
 
-> [!NOTE]
+> **NOTE**
 > Web APIs are generally less sensitive to the problems caused by host name mismatches. They don't usually depend on cookies, unless you [use cookies to secure communications between a single-page app and its back-end API](https://auth0.com/docs/manage-users/cookies/spa-authenticate-with-cookies), for example, in a pattern known as [Backends for Frontends](/azure/architecture/patterns/backends-for-frontends). Web APIs often don't return absolute URLs back to themselves, except in certain API styles, like [OData](https://www.odata.org/) and [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS). If your API implementation depends on cookies or generates absolute URLs, the guidance provided in this article does apply.
 
 If you require end-to-end TLS/SSL (the connection between the reverse proxy and the back-end service uses HTTPS), the back-end service also needs a matching TLS certificate for the original host name. This requirement adds operational complexity when you deploy and renew certificates, but many PaaS services offer free TLS certificates that are fully managed.
@@ -129,7 +129,7 @@ When you define the back ends within the reverse proxy, you can still use the de
 
 Most reverse proxies allow you to configure which host name is passed to the back-end service. The following information explains how to ensure, for the most common Azure services, that the original host name of the incoming request is used.
 
-> [!NOTE]
+> **NOTE**
 > In all cases, you can also choose to override the host name with an explicitly defined custom domain rather than taking it from the incoming request. If the application uses only a single domain, that approach might work fine. If the same application deployment accepts requests from multiple domains (for example, in multitenant scenarios), you can't statically define a single domain. You should take the host name from the incoming request (again, unless the application is explicitly coded to take additional HTTP headers into account). Therefore, the general recommendation is that you shouldn't override the host name at all. Pass the incoming host name unmodified to the back end.
 
 #### Application Gateway

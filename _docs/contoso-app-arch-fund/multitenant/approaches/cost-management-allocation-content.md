@@ -33,7 +33,7 @@ In some solutions, you might deploy dedicates resources for each tenant, such as
 
 In other situations, you might have sets of shared resources. For example, when you apply the [Sharding pattern](../../../patterns/sharding.yml), you might deploy multiple databases and spread your tenants across them. Consider tagging the resources with an identifier for the _group_ of tenants. You might not be able to easily allocate costs to a single tenant, but you can at least narrow down the cost to a set of tenants, when you use this approach. You can also use the consumption information to help you rebalance tenants across the shards, if you notice that a specific shard is accruing higher costs than the others.
 
-> [!NOTE]
+> **NOTE**
 > There is a [limit to the number of tags](/azure/azure-resource-manager/management/tag-resources#limitations) that can be applied to a resource. When you work with shared resources, it's best not to add a tag for every tenant that shares the resource. Instead, consider adding a tag with the shard ID or another way to identify the group of tenants.
 
 Consider an example multitenant solution that's built using the [Deployment Stamps pattern](../../../patterns/deployment-stamp.yml). Each deployment stamp includes a shared web server and sharded databases. Tags can be applied to each of the Azure components, as shown in the following diagram.

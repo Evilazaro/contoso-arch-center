@@ -2,7 +2,7 @@ In many large-scale solutions, data is divided into *partitions* that can be man
 
 However, the partitioning strategy must be chosen carefully to maximize the benefits while minimizing adverse effects.
 
-> [!NOTE]
+> **NOTE**
 > In this article, the term *partitioning* means the process of physically dividing data into separate data stores. It is not the same as SQL Server table partitioning.
 
 ## Why partition data?

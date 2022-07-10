@@ -2,7 +2,7 @@
 
 All solutions deployed to Azure require networking of some kind. Depending on your solution design and the workload, the ways in which you interact with Azure's networking services might be different. In this article, we provide considerations and guidance for the networking aspects of multitenant solutions on Azure. We include information about the lower-level networking components, like virtual networks, through to higher-level and application-tier approaches.
 
-> [!NOTE]
+> **NOTE**
 > Azure itself is a multitenant environment, and Azure's network components are designed for multitenancy. Although it's not required to understand the details in order to design your own solution, you can [learn more about how Azure isolates your virtual network traffic from other customers' traffic](/azure/security/fundamentals/isolation-choices#networking-isolation).
 
 ## Key considerations and requirements

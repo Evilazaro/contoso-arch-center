@@ -41,7 +41,7 @@ In this article and the next, we'll walk through the following steps, applying t
 
 In this article, we cover the first three steps, which are primarily concerned with DDD. In the next article, we'll identify the microservices. However, it's important to remember that DDD is an iterative, ongoing process. Service boundaries aren't fixed in stone. As an application evolves, you may decide to break apart a service into several smaller services.
 
-> [!NOTE]
+> **NOTE**
 > This article doesn't show a complete and comprehensive domain analysis. We deliberately kept the example brief, to illustrate the main points. For more background on DDD, we recommend Eric Evans' *Domain-Driven Design*, the book that first introduced the term. Another good reference is *Implementing Domain-Driven Design* by Vaughn Vernon.
 
 ## Scenario: Drone delivery
@@ -76,7 +76,7 @@ After some initial domain analysis, the Fabrikam team came up with a rough sketc
 
 Notice that at this point in the process, we haven't made any decisions about implementation or technologies. Some of the subsystems may involve external software systems or third-party services. Even so, the application needs to interact with these systems and services, so it's important to include them in the domain model.
 
-> [!NOTE]
+> **NOTE**
 > When an application depends on an external system, there is a risk that the external system's data schema or API will leak into your application, ultimately compromising the architectural design. This is particularly true with legacy systems that may not follow modern best practices, and may use convoluted data schemas or obsolete APIs. In that case, it's important to have a well-defined boundary between these external systems and the application. Consider using the [Strangler Fig pattern](../../patterns/strangler-fig.yml) or the [Anti-Corruption Layer pattern](../../patterns/anti-corruption-layer.yml) for this purpose.
 
 ## Define bounded contexts

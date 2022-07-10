@@ -46,7 +46,7 @@ You also need to consider the following questions from your own perspective:
 - What are the consequences of letting customers fall too far behind the current version? If you release new features on a regular basis, will old versions become obsolete quickly? Also, depending on your upgrade strategy and the types of changes, you might need to maintain separate infrastructures for each version of your solution. So, there might be both operational and financial costs, as you maintain support for older versions.
 - Can your deployment strategy support rollbacks to previous versions? Is this something you want to enable?
 
-> [!NOTE]
+> **NOTE**
 > Consider whether you need to take your solution offline for updates or maintenance. Generally, outage windows are seen as an outdated practice, and modern DevOps practices and cloud technologies enable you to avoid downtime during updates and maintenance. You need to design for this, so it's important to consider your update process when you're designing your solution architecture. Note that even if you don't plan for outages, you might still consider defining a regular maintenance window, so that your customers understand that changes happen during specific times. For more information on achieving zero-downtime deployments, see [Achieving no downtime through versioned service updates](/devops/operate/achieving-no-downtime-versioned-service-updates).
 
 ## Find a balance

@@ -35,7 +35,7 @@ Here are the main load-balancing services currently available in Azure:
 
 [Front Door](/azure/frontdoor/front-door-overview) is an application delivery network that provides global load balancing and site acceleration service for web applications. It offers Layer 7 capabilities for your application like SSL offload, path-based routing, fast failover, caching, etc. to improve performance and high-availability of your applications.
 
-> [!NOTE]
+> **NOTE**
 > At this time, Azure Front Door does not support Web Sockets.
 
 [Traffic Manager](/azure/traffic-manager/traffic-manager-overview) is a DNS-based traffic load balancer that enables you to distribute traffic optimally to services across global Azure regions, while providing high availability and responsiveness. Because Traffic Manager is a DNS-based load-balancing service, it load balances only at the domain level. For that reason, it can't fail over as quickly as Front Door, because of common challenges around DNS caching and systems not honoring DNS TTLs.
@@ -52,7 +52,7 @@ You can use the Azure Load Balancing page in the Azure portal to help you guide 
 1. In the *Search resources, services, and docs* box at the top of the portal, type *load balancing*. When **Load balancing** appears in the search results, select it.
 
     [ ![Search for load balancing - Azure portal screenshot]({{site.baseurl}}/assets/img/load-balancing-search-1.png) ]({{site.baseurl}}/assets/img/load-balancing-search-1.png#lightbox)
-    > [!NOTE]
+    > **NOTE**
     > To learn about some of the factors considered in selecting a load-balancing solution, see [Decision tree for load-balancing in Azure](#decision-tree-for-load-balancing-in-azure) in this article.
 
 1. In the **Load balancing - help me choose (Preview)** page, do one of the following:

@@ -43,7 +43,7 @@ One tenancy model for Cosmos DB involves deploying separate containers for each 
 
 Cosmos DB also provides a serverless tier, which is suited for workloads with intermittent or unpredictable traffic. Alternatively, autoscaling enables you to configure policies to specify the scaling of provisioned throughput. In a multitenant solution, you might combine all of these approaches to support different types of tenant.
 
-> [!NOTE]
+> **NOTE**
 > When planning your Cosmos DB configuration, ensure you consider the [service quotas and limits](/azure/cosmos-db/concepts-limits).
 
 To monitor and manage the costs that are associated with each tenant, every operation using the Cosmos DB API includes the request units consumed. You can use this information to aggregate and compare the actual request units consumed by each tenant, and you can then identify tenants with different performance characteristics.

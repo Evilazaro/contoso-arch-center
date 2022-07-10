@@ -88,7 +88,7 @@ When working with a multitenant system using Azure Storage, you need to make a d
 
 The strongest level of isolation is to deploy a dedicated storage account for a tenant. This ensures that all storage keys are isolated and can be rotated independently. This approach enables you to scale your solution to avoid limits and quotas that are applicable to each storage account, but you also need to consider the maximum number of storage accounts that can be deployed into a single Azure subscription.
 
-> [!NOTE]
+> **NOTE**
 > Azure Storage has many quotas and limits that you should consider when you select an isolation model. These include [Azure service limits](/azure/azure-resource-manager/management/azure-subscription-service-limits#storage-limits), [scalability targets](/azure/storage/blobs/scalability-targets), and [scalability targets for the Azure Storage resource provider](/azure/storage/common/scalability-targets-resource-provider).
 
 Additionally, each component of Azure Storage provides further options for tenant isolation.

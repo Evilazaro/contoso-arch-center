@@ -3,7 +3,7 @@
 
 Almost all multitenant solutions require an identity system. In this article, we discuss common components of identity, including both authentication and authorization, and we discuss how these components can be applied in a multitenant solution.
 
-> [!NOTE]
+> **NOTE**
 > Review [Architectural considerations for identity in a multitenant solution](../considerations/identity.md) to learn more about the key requirements and decisions that you need to make, before you start to build an identity system for a multitenant solution.
 
 ## Authentication

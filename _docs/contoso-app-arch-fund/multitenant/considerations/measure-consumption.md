@@ -34,7 +34,7 @@ By contrast, for a single-tenant solution, you can use Azure Cost Management wit
 
 Therefore, when facing these challenges, it is important to consider how to measure consumption.
 
-> [!NOTE]
+> **NOTE**
 > In some cases, it's commercially acceptable to take a loss on delivering service to a tenant, for example, when you enter a new market or region. This is a commercial choice. Even in these situations, it's still a good idea to measure the consumption of each tenant, so that you can plan for the future.
 
 ## Indicative consumption metrics
@@ -43,7 +43,7 @@ Modern applications (built for the cloud) are usually made up of many different 
 
 For example, in the case of a multitenant solution that shares a single relational database, you might determine that the data stored is a good indicative consumption metric.
 
-> [!NOTE]
+> **NOTE**
 > Even if you use the volume of data stored by a tenant as an indicative consumption measure, it might not be a true representation of consumption for every tenant. For example, if a particular tenant does a lot more reads or runs more reporting from the solution, but it doesn't write a lot of data, then it could use a lot more compute than the storage requirements would indicate.
 
 It is important to occasionally measure and review the actual consumption across your tenants, to determine whether the assumptions you're making about your indicative metrics are correct.
@@ -58,7 +58,7 @@ This method is usually easy and cost effective to implement, as there is usually
 
 In solutions that are primarily API-based, it might make sense to use a consumption metric that is based around the number of API requests being made to the solution. This can often be quite simple to implement, but it does require you to use APIs as the primary interface to the system. There will be an increased operational cost of implementing a per-request metric, especially for high volume services, because of the need to record the request utilization (for audit and billing purposes).
 
-> [!NOTE]
+> **NOTE**
 > User-facing solutions that consist of a single-page application (SPA), or a mobile application that uses the APIs, may not be a good fit for the per-request metric. This is because there is little understanding by the end user of the relationship between the use of the application and the consumption of APIs. Your application might be chatty (it makes many API requests) or chunky (it makes too few API requests), and the user wouldn't notice a difference.
 
 > [!WARNING]
@@ -81,7 +81,7 @@ You might also choose to estimate consumption in combination with [indicative co
 
 In some solutions, you can simply charge your customers the COGS for their tenant's resources. For example, you might use [Azure resource tags](/azure/azure-resource-manager/management/tag-resources) to allocate billable Azure resources to tenants. You can then determine the cost to each tenant for the set of resources that's dedicated to them, plus a margin for profit and operation.
 
-> [!NOTE]
+> **NOTE**
 > Some [Azure services don't support tags](/azure/azure-resource-manager/management/tag-support). For these services, you will need to attribute the costs to a tenant, based on the resource name, resource group, or subscription.
 
 [Azure Cost Analysis](/azure/cost-management-billing/costs/quick-acm-cost-analysis) can be used to analyze Azure resource costs for single tenant solutions that use tags, resource groups, or subscriptions to attribute costs.

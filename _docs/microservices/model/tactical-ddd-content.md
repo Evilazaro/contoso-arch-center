@@ -21,12 +21,12 @@ The purpose of an aggregate is to model transactional invariants. Things in the 
 
 Traditional applications have often used database transactions to enforce consistency. In a distributed application, however, that's often not feasible. A single business transaction may span multiple data stores, or may be long running, or may involve third-party services. Ultimately it's up to the application, not the data layer, to enforce the invariants required for the domain. That's what aggregates are meant to model.
 
-> [!NOTE]
+> **NOTE**
 > An aggregate might consist of a single entity, without child entities. What makes it an aggregate is the transactional boundary.
 
 **Domain and application services**. In DDD terminology, a service is an object that implements some logic without holding any state. Evans distinguishes between *domain services*, which encapsulate domain logic, and *application services*, which provide technical functionality, such as user authentication or sending an SMS message. Domain services are often used to model behavior that spans multiple entities.
 
-> [!NOTE]
+> **NOTE**
 > The term *service* is overloaded in software development. The definition here is not directly related to microservices.
 
 **Domain events**. Domain events can be used to notify other parts of the system when something happens. As the name suggests, domain events should mean something within the domain. For example, "a record was inserted into a table" is not a domain event. "A delivery was cancelled" is a domain event. Domain events are especially relevant in a microservices architecture. Because microservices are distributed and don't share data stores, domain events provide a way for microservices to coordinate with each other. The article [Interservice communication](../design/interservice-communication.yml) discusses asynchronous messaging in more detail.

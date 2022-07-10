@@ -77,7 +77,7 @@ It's important to be aware of the [App Service quotas and limits](/azure/azure-r
 
 To be able to use this model, your application code must be multitenancy-aware.
 
-> [!NOTE]
+> **NOTE**
 > Don't use [deployment slots](/azure/app-service/deploy-staging-slots) for different tenants. Slots don't provide resource isolation. They are designed for deployment scenarios when you need to have multiple versions of your app running for a short time, such as blue-green deployments and a canary rollout strategy.
 
 ## Host APIs

@@ -121,7 +121,7 @@ public async Task UpdateEntityAsync(MyEntity entity)
 }
 ```
 
-> [!NOTE]
+> **NOTE**
 > The order of the steps is important. Update the data store *before* removing the item from the cache. If you remove the cached item first, there is a small window of time when a client might fetch the item before the data store is updated. That will result in a cache miss (because the item was removed from the cache), causing the earlier version of the item to be fetched from the data store and added back into the cache. The result will be stale cache data.
 
 ## Related resources

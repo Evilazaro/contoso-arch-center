@@ -24,7 +24,7 @@ When you're building a solution on Azure, you combine multiple distinct Azure se
 
 In this section, we provide guidance about the features of each service that are helpful for multitenant solutions. We also discuss the levels of tenant isolation that each service supports. Where applicable, we link to more details and sample implementations in the service's documentation.
 
-> [!NOTE]
+> **NOTE**
 > The content in this section focuses specifically on the aspects of each service that are useful when building a multitenant solution on Azure. For comprehensive information about each service and its features, refer to the service's documentation.
 
 ## Intended audience

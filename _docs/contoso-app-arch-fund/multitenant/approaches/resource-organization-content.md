@@ -115,7 +115,7 @@ Azure resources have [limits and quotas](/azure/azure-resource-manager/managemen
 
 The way you configure and use each resource also affects the scalability of that resource. For example, given a certain amount of compute resources, your application can successfully respond to a defined number of transactions per second. Beyond this point, you might need to scale out. Performance testing helps you to identify the point at which your resources no longer meet your requirements.
 
-> [!NOTE]
+> **NOTE**
 > The principle of scaling to multiple resources applies even when you work with services that support multiple instances.
 > 
 > For example, Azure App Service supports scaling out the number of instances of your plan, but there are limits for how far you can scale a single plan. In a high-scale multitenant app, you might exceed these limits and need to deploy additional App Service resources to match your growth.

@@ -66,7 +66,7 @@ Notice that the steps in the compensating transaction might not be the exact opp
 
 ![Generating a compensating transaction to undo a long-running transaction to book a travel itinerary](./_images/compensating-transaction-diagram.png)
 
-> [!NOTE]
+> **NOTE**
 > It might be possible for the steps in the compensating transaction to be performed in parallel, depending on how you've designed the compensating logic for each step.
 
 In many business solutions, failure of a single step doesn't always necessitate rolling back the system by using a compensating transaction. For example, if&mdash;after having booked flights F1, F2, and F3 in the travel website scenario&mdash;the customer is unable to reserve a room at hotel H1, it's preferable to offer the customer a room at a different hotel in the same city rather than canceling the flights. The customer can still decide to cancel (in which case the compensating transaction runs and undoes the bookings made on flights F1, F2, and F3), but this decision should be made by the customer rather than by the system.

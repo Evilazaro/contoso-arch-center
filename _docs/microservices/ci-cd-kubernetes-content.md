@@ -62,7 +62,7 @@ The goal is to keep build times short so that the developer can get quick feedba
 
 ![Diagram showing ci-delivery-full in the Build pipeline.]({{site.baseurl}}/assets/img/aks-cicd-2.png)
 
-> [!NOTE]
+> **NOTE**
 > In Azure DevOps Repos, you can define [policies](/azure/devops/repos/git/branch-policies) to protect branches. For example, the policy could require a successful CI build plus a sign-off from an approver in order to merge into master.
 
 ## Full CI/CD build

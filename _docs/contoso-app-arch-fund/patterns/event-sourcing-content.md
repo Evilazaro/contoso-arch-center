@@ -48,7 +48,7 @@ Consider the following points when deciding how to implement this pattern:
 
 The system will only be eventually consistent when creating materialized views or generating projections of data by replaying events. There's some delay between an application adding events to the event store as the result of handling a request, the events being published, and consumers of the events handling them. During this period, new events that describe further changes to entities might have arrived at the event store.
 
-> [!NOTE]
+> **NOTE**
 > See the [Data Consistency Primer](/previous-versions/msp-n-p/dn589800(v=pandp.10)) for information about eventual consistency.
 
 The event store is the permanent source of information, and so the event data should never be updated. The only way to update an entity to undo a change is to add a compensating event to the event store. If the format (rather than the data) of the persisted events needs to change, perhaps during a migration, it can be difficult to combine existing events in the store with the new version. It might be necessary to iterate through all the events making changes so they're compliant with the new format, or add new events that use the new format. Consider using a version stamp on each version of the event schema to maintain both the old and the new event formats.

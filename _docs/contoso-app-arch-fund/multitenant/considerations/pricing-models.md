@@ -45,7 +45,7 @@ There are some key factors that influence your profitability:
 
 There are a number of common pricing models that are often used with multitenant solutions. Each of these pricing models has associated commercial benefits and risks, and requires additional architectural considerations. It's important to understand the differences between these pricing models, so that you can ensure your solution remains profitable as it evolves.
 
-> [!NOTE]
+> **NOTE**
 > You can offer multiple models for a solution or combine models together. For example, you could provide a per-user model for your customers that have fairly stable user numbers, and you can also offer a consumption model for customers who have fluctuating usage patterns.
 
 ### Consumption-based pricing
@@ -62,7 +62,7 @@ When you measure consumption, you can consider simple factors, such as the amoun
 
 **Risks:** Consumption pricing can motivate your customers to reduce their usage of your system, in order to reduce their costs. Additionally, consumption models result in unpredictable revenue streams. You can mitigate this by offering *capacity reservations*, where customers pay for some level of consumption upfront. You, as the service provider, can use this revenue to invest in improvements in the solution, to reduce the operational cost or to increase the return on value by adding features.
 
-> [!NOTE]
+> **NOTE**
 > Implementing and supporting capacity reservations may increase the complexity of the billing processes within your application. You might also need to consider how customers get refunds or exchange their capacity reservations, and these processes can also add commercial and operational challenges.
 
 ### Per-user pricing
@@ -171,7 +171,7 @@ This is the simplest model to implement and for customers to understand, and it'
 
 Once you've defined your pricing model, you might choose to implement commercial strategies to incentivize growth through discount pricing. _Discount pricing_ can be used with consumption, per-user, and per-unit pricing models.
 
-> [!NOTE]
+> **NOTE**
 > Discount pricing doesn't typically require architectural considerations, beyond adding support for a more complex billing structure. A complete discussion into the commercial benefits of discounting is beyond the scope of this document.
 
 Common discount pricing patterns include:
@@ -191,13 +191,13 @@ In many cases, customers require access to a non-production environment that the
 Equally, customers often expect non-production environments to be significantly cheaper than their production environments. There are several alternatives that might be appropriate, when you provide non-production environments:
 
 - Offer a [freemium tier](#freemium-pricing), like you might already do for paid customers. This should be carefully monitored, as some organizations might create many testing and training environments, which will consume additional resources to operate.
-  > [!NOTE]
+  > **NOTE**
   > Time-limited trials using freemium tiers aren't usually suitable for testing and training environments. Customers usually need their non-production environments to be available for the lifetime of the production service.
 - Offer a testing or training tier of your service, with [lower usage limits](#usage-limits). You may choose to restrict the availability of this tier to customers who have an existing paid tenant.
 - Offer a discounted [per-user](#per-user-pricing), [per-active user](#per-active-user-pricing), or [per-unit](#per-unit-pricing) pricing for non-production tenants, with a lower or no service level agreement.
 - For tenants using [flat-rate pricing](#flat-rate-pricing), non-production environments might be negotiated as part of the agreement.
 
-> [!NOTE]
+> **NOTE**
 > Feature-based pricing is not usually a good option for non-production environments, unless the features offered are the same as what the production environment offers. This is because tenants will usually want to test and provide training on all the same features that are available to them in production.
 
 ## Unprofitable pricing models
@@ -228,7 +228,7 @@ For example, if you introduce a new video upload feature to your solution, which
 
 _Usage limits_ enable you to restrict the usage of your service in order to prevent your pricing models from becoming unprofitable, or to prevent a single tenant from consuming a disproportionate amount of the capacity of your service. This can be especially important in multitenant services, where a single tenant can impact the experience of other tenants by over-consuming resources.
 
-> [!NOTE]
+> **NOTE**
 > It's important to make your customers aware that you apply usage limits. If you implement usage limits without making your customers aware of the limit, then it will result in customer dissatisfaction. This means that it's important to identify and plan usage limits ahead of time. The goal should be to plan for the limit, and to then communicate the limits to customers before they become necessary.
 
 Usage limits are often used in combination with [feature and service-level pricing](#feature--and-service-level-based-pricing), to provide a higher amount of usage at higher tiers. Limits are also commonly used to protect core components that will cause system bottlenecks or performance issues, if they are over-consumed.
@@ -261,7 +261,7 @@ Like any other part of your solution, pricing models have a lifecycle. As your a
 
 It is usually complex to implement and manage many different pricing models at once. It's also confusing to your customers. So, it's better to implement only one or two models, with a small number of tiers. This makes your solution more accessible and easier to manage.
 
-> [!NOTE]
+> **NOTE**
 > Pricing models and billing functions should be tested, ideally using automated testing, just like any other part of your system. The more complex the pricing models, the more testing is required, and so the cost of development and new features will increase.
 
 When changing pricing models, you will need to consider the following factors:

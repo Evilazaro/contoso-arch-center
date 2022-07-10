@@ -342,7 +342,7 @@ A subsequent request from the client application can retrieve the remainder of t
 
 One of the primary motivations behind REST is that it should be possible to navigate the entire set of resources without requiring prior knowledge of the URI scheme. Each HTTP GET request should return the information necessary to find the resources related directly to the requested object through hyperlinks included in the response, and it should also be provided with information that describes the operations available on each of these resources. This principle is known as HATEOAS, or Hypertext as the Engine of Application State. The system is effectively a finite state machine, and the response to each request contains the information necessary to move from one state to another; no other information should be necessary.
 
-> [!NOTE]
+> **NOTE**
 > Currently there are no general-purpose standards that define how to model the HATEOAS principle.  The examples shown in this section illustrate one possible, proprietary solution.
 
 For example, to handle the relationship between an order and a customer, the representation of an order could include links that identify the available operations for the customer of the order. Here is a possible representation:
@@ -418,7 +418,7 @@ Content-Type: application/json; charset=utf-8
 {"id":3,"name":"Contoso LLC","address":"1 Microsoft Way Redmond WA 98053"}
 ```
 
-> [!NOTE]
+> **NOTE**
 > For simplicity, the example responses shown in this section do not include HATEOAS links.
 
 If the `DateCreated` field is added to the schema of the customer resource, then the response would look like this:
@@ -453,7 +453,7 @@ Rather than providing multiple URIs, you can specify the version of the resource
 
 This approach has the semantic advantage that the same resource is always retrieved from the same URI, but it depends on the code that handles the request to parse the query string and send back the appropriate HTTP response. This approach also suffers from the same complications for implementing HATEOAS as the URI versioning mechanism.
 
-> [!NOTE]
+> **NOTE**
 > Some older web browsers and web proxies will not cache responses for requests that include a query string in the URI. This can degrade performance for web applications that use a web API and that run from within such a web browser.
 
 ### Header versioning
@@ -514,7 +514,7 @@ If the Accept header does not specify any known media types, the web server coul
 
 This approach is arguably the purest of the versioning mechanisms and lends itself naturally to HATEOAS, which can include the MIME type of related data in resource links.
 
-> [!NOTE]
+> **NOTE**
 > When you select a versioning strategy, you should also consider the implications on performance, especially caching on the web server. The URI versioning and Query String versioning schemes are cache-friendly inasmuch as the same URI/query string combination refers to the same data each time.
 >
 > The Header versioning and Media Type versioning mechanisms typically require additional logic to examine the values in the custom header or the Accept header. In a large-scale environment, many clients using different versions of a web API can result in a significant amount of duplicated data in a server-side cache. This issue can become acute if a client application communicates with a web server through a proxy that implements caching, and that only forwards a request to the web server if it does not currently hold a copy of the requested data in its cache.
