@@ -26,7 +26,7 @@ Here's an example: Contoso publishes a multitenant application for its four cust
 
 If Contoso chose to use a single stem domain, **contoso.com**, for all their customers, here's what this might look like:
 
-![Diagram that shows US and EU deployments of a web app, with a single stem domain for each customer's subdomain.](media/domain-names/subdomains-single-stem.png)
+![Diagram that shows US and EU deployments of a web app, with a single stem domain for each customer's subdomain.]({{site.baseurl}}/assets/img/media/domain-names/subdomains-single-stem.png)
 
 The DNS entries (that are required to support this configuration) might look like this:
 
@@ -41,7 +41,7 @@ Each new customer that is onboarded requires a new subdomain, and the number of 
 
 Alternatively, Contoso could use deployment- or region-specific stem domains, like this:
 
-![Diagram that shows US and EU deployments of a web app, with multiple stem domains.](media/domain-names/subdomains-multiple-stem.png)
+![Diagram that shows US and EU deployments of a web app, with multiple stem domains.]({{site.baseurl}}/assets/img/media/domain-names/subdomains-multiple-stem.png)
 
 The DNS entries for this deployment might look like this:
 

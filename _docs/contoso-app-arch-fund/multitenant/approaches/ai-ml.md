@@ -1,26 +1,3 @@
----
-title: Architectural approaches for AI and ML in multitenant solutions
-titleSuffix: Azure Architecture Center
-description: This article describes approaches to support multitenancy for the artificial intelligence (AI) and machine learning (ML) components of your solution.
-author: kevinash
-ms.author: kevinash
-ms.date: 04/11/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
-  - azure
-  - azure-cognitive-services
-  - azure-machine-learning
-categories:
-  - ai-machine-learning
-ms.category:
-  - fcp
-ms.custom:
-  - guide
-  - fcp
----
-
 # Architectural approaches for AI and ML in multitenant solutions
 
 An ever-increasing number of multitenant solutions are built around artificial intelligence (AI) and machine learning (ML). A multitenant AI/ML solution is one that provides similar ML-based capabilities to any number of tenants. Tenants generally can't see or share the data of any other tenant, but in some situations, tenants might use the same models as other tenants.
@@ -41,17 +18,17 @@ There are three common approaches for working with ML models in multitenant solu
 
 Tenant-specific models are trained only on the data for a single tenant, and then they are applied to that single tenant. Tenant-specific models are appropriate when your tenants' data is sensitive, or when there's little scope to learn from the data that's provided by one tenant, and you apply the model to another tenant. The following diagram illustrates how you might build a solution with tenant-specific models for two tenants:
 
-![Diagram that shows two tenant-specific models. Each model is trained with data from a single tenant. The models are used for inference by that tenant's users.](media/ai-ml/tenant-specific-models.png)
+![Diagram that shows two tenant-specific models. Each model is trained with data from a single tenant. The models are used for inference by that tenant's users.]({{site.baseurl}}/assets/img/media/ai-ml/tenant-specific-models.png)
 
 #### Shared models
 
 In solutions that use shared models, all tenants perform inference based on the same shared model. Shared models might be pretrained models that you acquire or obtain from a community source. The following diagram illustrates how a single pretrained model can be used for inference by all tenants:
 
-![Diagram that shows a single pretrained model. The model is used for inference by users from all tenants.](media/ai-ml/shared-pretrained-models.png)
+![Diagram that shows a single pretrained model. The model is used for inference by users from all tenants.]({{site.baseurl}}/assets/img/media/ai-ml/shared-pretrained-models.png)
 
 You also can build your own shared models by training them from the data provided by all of your tenants. The following diagram illustrates a single shared model, which is trained on data from all tenants:
 
-![Diagram that shows a single shared model that's trained on the data from multiple tenants. The model is used for inference by users from all tenants.](media/ai-ml/shared-tenant-trained-models.png)
+![Diagram that shows a single shared model that's trained on the data from multiple tenants. The model is used for inference by users from all tenants.]({{site.baseurl}}/assets/img/media/ai-ml/shared-tenant-trained-models.png)
 
 > [!IMPORTANT]
 > If you train a shared model from your tenants' data, ensure that your tenants understand and agree to the use of their data. Ensure identifying information is removed from your tenants' data.
@@ -62,7 +39,7 @@ You also can build your own shared models by training them from the data provide
 
 You also might choose to acquire a pretrained base model, and then perform further model tuning to make it applicable to each of your tenants, based on their own data. The following diagram illustrates this approach:
 
-![Diagram that shows a pretrained base model that is specialized for each tenant, with their own data. The models are used for inference by that tenant's users.](media/ai-ml/specialized-shared-models.png)
+![Diagram that shows a pretrained base model that is specialized for each tenant, with their own data. The models are used for inference by that tenant's users.]({{site.baseurl}}/assets/img/media/ai-ml/specialized-shared-models.png)
 
 ### Scalability
 
@@ -138,7 +115,7 @@ When you use open-source models, you might need to retrain these models by using
 
 The following diagram illustrates an example architecture that uses Azure Machine Learning. The example uses the [tenant-specific models](#tenant-specific-models) isolation approach.
 
-![Diagram that shows an architecture that uses Azure Machine Learning. A workspace, which contains projects and experiments, builds the models for tenants A, B, and C. The users for each tenant access a shared API layer, which performs inference by using the relevant ML model for their tenant,](media/ai-ml/approach-azure-ml.png)
+![Diagram that shows an architecture that uses Azure Machine Learning. A workspace, which contains projects and experiments, builds the models for tenants A, B, and C. The users for each tenant access a shared API layer, which performs inference by using the relevant ML model for their tenant,]({{site.baseurl}}/assets/img/media/ai-ml/approach-azure-ml.png)
 
 ### Integrated AI/ML solutions
 

@@ -52,7 +52,7 @@ There are a number of common pricing models that are often used with multitenant
 
 A consumption model is sometimes referred to as _pay-as-you-go_, or _PAYG_. As the use of your service increases, your revenue increases:
 
-![Diagram showing revenue increase, as the level of consumption increases.](media/pricing-models/consumption.png)
+![Diagram showing revenue increase, as the level of consumption increases.]({{site.baseurl}}/assets/img/media/pricing-models/consumption.png)
 
 When you measure consumption, you can consider simple factors, such as the amount of data being added to the solution. Alternatively, you might consider a combination of usage attributes together. Consumption models offer a number of benefits, but they can be difficult to implement in a multitenant solution.
 
@@ -69,7 +69,7 @@ When you measure consumption, you can consider simple factors, such as the amoun
 
 A per-user pricing model involves charging your customers based on the number of people using your service, as demonstrated in the following diagram.
 
-![Diagram showing revenue increasing as the number of users increases.](media/pricing-models/per-user.png)
+![Diagram showing revenue increasing as the number of users increases.]({{site.baseurl}}/assets/img/media/pricing-models/per-user.png)
 
 Per-user pricing models are very common, due to their simplicity to implement in a multitenant solution. However, they are associated with several commercial risks.
 
@@ -83,7 +83,7 @@ Per-user pricing models are very common, due to their simplicity to implement in
 
 This model is similar to [per-user pricing](#per-user-pricing), but rather than requiring an upfront commitment from the customer on the number of expected users, the customer is only charged for users that actually log into and use the solution over a period (as shown in the following diagram).
 
-![Diagram showing revenue increasing as the number of active users increases, and not as the number of users increases.](media/pricing-models/per-active-user.png)
+![Diagram showing revenue increasing as the number of active users increases, and not as the number of users increases.]({{site.baseurl}}/assets/img/media/pricing-models/per-active-user.png)
 
 You can measure this in whatever period makes sense. Monthly periods are common, and then this metric is often recorded as _monthly active users_ or _MAU_.
 
@@ -97,7 +97,7 @@ You can measure this in whatever period makes sense. Monthly periods are common,
 
 In many systems, the number of users isn't the element that has the greatest effect on the overall COGS. For example, in device-oriented solutions, also referred to as the _internet of things_ or _IoT_, the number of devices often has the greatest impact on COGS. In these systems, a per-unit pricing model can be used, where you define what a _unit_ is, such as a device. See the following diagram.
 
-![Diagram showing revenue increase, as the number of devices increases.](media/pricing-models/per-unit.png)
+![Diagram showing revenue increase, as the number of devices increases.]({{site.baseurl}}/assets/img/media/pricing-models/per-unit.png)
 
 Additionally, some solutions have highly variable usage patterns, where a small number of users has a disproportionate impact on the COGS. For example, in a solution sold to brick-and-mortar retailers, a per-store pricing model might be appropriate.
 
@@ -111,7 +111,7 @@ Additionally, some solutions have highly variable usage patterns, where a small 
 
 You may choose to offer your solution with different tiers of functionality at different price points. For example, you might provide two monthly flat-rate or per-unit prices, one being a basic offering with a subset of features available, and the other presenting the comprehensive set of your solution's features. See the following diagram.
 
-![Diagram showing revenue increasing in steps between three tiers.](media/pricing-models/feature-service-level.png)
+![Diagram showing revenue increasing in steps between three tiers.]({{site.baseurl}}/assets/img/media/pricing-models/feature-service-level.png)
 
 This model may also offer different service-level agreements for different tiers. For example, your basic tier may offer 99.9% uptime, whereas a premium tier may offer 99.99%. The higher service-level agreement (SLA) could be implemented by using services and features that enable higher [availability targets](/azure/architecture/framework/resiliency/business-metrics#workload-availability-targets).
 
@@ -127,7 +127,7 @@ Although this model can be commercially beneficial, it does require mature engin
 
 You might choose to offer a free tier of your service, with basic functionality and no service-level guarantees. You then might offer a separate paid tier, with additional features and a formal service-level agreement (as shown in the following diagram).
 
-![Diagram showing revenue increasing from zero, at a free tier, to a higher amount at a paid tier.](media/pricing-models/freemium.png)
+![Diagram showing revenue increasing from zero, at a free tier, to a higher amount at a paid tier.]({{site.baseurl}}/assets/img/media/pricing-models/freemium.png)
 
 The free tier may also be offered as a time-limited trial, and during the trial your customers might have full or limited functionality available. This is referred to as a freemium model, which is effectively an extension of the [feature-based pricing model](#feature--and-service-level-based-pricing).
 
@@ -141,7 +141,7 @@ The free tier may also be offered as a time-limited trial, and during the trial 
 
 You might choose to price your solution so that each tenant only pays the cost of operating their share of the Azure services, with no added profit margin. This model - also called *pass through cost or pricing* - is sometimes used for multitenant solutions that are not intended to be a profit center.
 
-![Diagram showing revenue varying over time with amount of use changing to match.](media/pricing-models/cost-of-goods-sold.png)
+![Diagram showing revenue varying over time with amount of use changing to match.]({{site.baseurl}}/assets/img/media/pricing-models/cost-of-goods-sold.png)
 
 The cost of goods sold model is a good fit for internally facing multitenant solutions. Each organizational unit corresponds to a tenant, and the costs of your Azure resources need to be spread between them. It might also be appropriate where revenue is derived from sales of other products and services that consume or augment the multitenant solution.
 
@@ -157,7 +157,7 @@ For internally facing multitenant solutions, tenants might accept approximate co
 
 In this model, you charge a flat rate to a tenant for access to your solution, for a given period of time. The same pricing applies regardless of how much they use the service, the number of users, the number of devices they connect, or any other metric. See the following diagram.
 
-![Diagram showing revenue that remains consistent, regardless of the amount of use.](media/pricing-models/flat-rate.png)
+![Diagram showing revenue that remains consistent, regardless of the amount of use.]({{site.baseurl}}/assets/img/media/pricing-models/flat-rate.png)
 
 This is the simplest model to implement and for customers to understand, and it's often requested by enterprise customers. However, it can easily become unprofitable if you need to continue to add new features or if tenant consumption increases without any additional revenue.
 
@@ -182,7 +182,7 @@ Common discount pricing patterns include:
 
 The following diagram illustrates these pricing patterns.
 
-![Diagram showing the different discount pricing that can be applied to a price model.](media/pricing-models/discount-pricing.png)
+![Diagram showing the different discount pricing that can be applied to a price model.]({{site.baseurl}}/assets/img/media/pricing-models/discount-pricing.png)
 
 ## Non-production environment discounts
 

@@ -1,24 +1,3 @@
----
-title: Multitenancy checklist on Azure
-titleSuffix: Azure Architecture Center
-description: Multitenancy enables you to serve multiple distinct tenants in your Azure-hosted solution. Use this checklist to assess your multitenancy requirements and architecture. 
-author: arsenvlad
-ms.author: arsenv
-ms.date: 02/14/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
-  - azure
-categories:
-  - management-and-governance
-ms.category:
-  - fcp
-ms.custom:
-  - checklist
-  - guide
----
-
 # Checklist for architecting and building multitenant solutions on Azure
 
 When you build your multitenant solution in Azure, there are many elements that you need to consider. Use this checklist as a starting point to help you design and build your multitenant solution. This checklist is a companion resource to the [Architecting multitenant solutions on Azure](./overview.md) series of articles. The checklist is structured around the business and technical considerations, and the five pillars of the [Azure Well-Architected Framework](/azure/architecture/framework).

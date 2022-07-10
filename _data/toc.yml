@@ -20,6 +20,8 @@
 - title: Contoso application architecture fundamentals
   url: contoso-app-arch-fund-overview
   links:
+    - title: Multitenant Architecture
+      url: multi-tenant-overview
     - title: Architecture styles
       url: architecture-styles-content
       children:
@@ -36,6 +38,8 @@
       children:
         - title: Microservices
           url: microservices-assessment
+        - title: DevOps
+          url: devops-start-here
         - title: Data store
           url: data-store-decision-tree
     - title: Design Principles

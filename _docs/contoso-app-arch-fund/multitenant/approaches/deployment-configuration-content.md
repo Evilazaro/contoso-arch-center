@@ -100,7 +100,7 @@ When considering the two approaches, you should distinguish between treating you
 
 When you treat your tenant list as a configuration, you deploy all your resources from your deployment pipeline. When new tenants are onboarded, you reconfigure the pipeline or its parameters. Typically, the reconfiguration happens through manual changes, as illustrated in the following diagram.
 
-![Diagram showing the process of onboarding a tenant when the tenant list is maintained as a pipeline configuration.](media/deployment-configuration/tenants-configuration.png)
+![Diagram showing the process of onboarding a tenant when the tenant list is maintained as a pipeline configuration.]({{site.baseurl}}/assets/img/media/deployment-configuration/tenants-configuration.png)
 
 The process to onboard a new tenant might be similar to the following:
 
@@ -116,7 +116,7 @@ However, when you approach a larger number of tenants, say 5 to 10 or more, it b
 
 When you treat your tenant list as data, you still deploy your shared components by using a pipeline. However, for resources and configuration settings that need to be deployed for each tenant, you imperatively deploy or configure your resources. For example, you can use the [Azure SDKs](https://azure.microsoft.com/downloads) to create a specific resource or to initiate the deployment of a parameterized template.
 
-![Diagram showing the process of onboarding a tenant, when the tenant list is maintained as data.](media/deployment-configuration/tenants-data.png)
+![Diagram showing the process of onboarding a tenant, when the tenant list is maintained as data.]({{site.baseurl}}/assets/img/media/deployment-configuration/tenants-data.png)
 
 The process to onboard a new tenant might be similar to the following, and would happen asynchronously:
 
@@ -136,7 +136,7 @@ However, this approach is often much more time-consuming to build, and the effor
 
 Contoso runs a multitenant solution for their customers. Currently, they have six tenants, and they expect to grow to 300 tenants within the next 18 months. Contoso follows the [Multitenant app with dedicated databases for each tenant](storage-data.yml#multitenant-app-with-dedicated-databases-for-each-tenant) approach. They have deployed a single set of App Service resources and an Azure SQL logical server that are shared between all of their tenants, and they deploy a dedicated Azure SQL database for each tenant, as shown in the following diagram.
 
-![Architecture diagram showing shared resources and dedicated resources for each tenant.](media/deployment-configuration/example-architecture.png)
+![Architecture diagram showing shared resources and dedicated resources for each tenant.]({{site.baseurl}}/assets/img/media/deployment-configuration/example-architecture.png)
 
 Contoso uses Bicep to deploy their Azure resources.
 
@@ -144,7 +144,7 @@ Contoso uses Bicep to deploy their Azure resources.
 
 Contoso might consider deploying all of their resources by using a deployment pipeline. Their pipeline deploys a Bicep file that includes all of their Azure resources, including the Azure SQL databases for each tenant. A parameter file defines the list of tenants, and the Bicep file uses a [resource loop](/azure/azure-resource-manager/bicep/loop-resources) to deploy a database for each of the listed tenants, as shown in the following diagram.
 
-![Diagram showing a pipeline deploying both shared and tenant-specific resources.](media/deployment-configuration/example-configuration.png)
+![Diagram showing a pipeline deploying both shared and tenant-specific resources.]({{site.baseurl}}/assets/img/media/deployment-configuration/example-configuration.png)
 
 If Contoso follows this model, then they need to update their parameter file as part of the onboarding of a new tenant. Then they need to re-run their pipeline. Also, they need to manually keep track of whether they are near any limits, such as if they grow at an unexpectedly high rate and approach the maximum number of databases that are supported on a single Azure SQL logical server.
 
@@ -154,7 +154,7 @@ Alternatively, Contoso might consider separating the responsibility for the Azur
 
 Contoso uses a Bicep file that defines the shared resources that should be deployed. The shared resources support all of their tenants and include a tenant map database, as shown in the following diagram.
 
-![Diagram showing the workflow to deploy the shared resources by using a pipeline.](media/deployment-configuration/example-data-pipeline.png)
+![Diagram showing the workflow to deploy the shared resources by using a pipeline.]({{site.baseurl}}/assets/img/media/deployment-configuration/example-data-pipeline.png)
 
 The Contoso team then builds a tenant onboarding API. When their sales team has completed the sale to a new customer, Microsoft Dynamics triggers the API to begin the onboarding process. Contoso also provides a self-service web interface for customers to use, and that triggers the API too.
 
@@ -165,7 +165,7 @@ The API asynchronously starts a workflow that onboards their new tenants. The wo
 
 After the database is deployed, the workflow adds the tenant to the tenant list database, as shown in the following diagram.
 
-![Diagram showing the workflow to deploy a database for a new tenant.](media/deployment-configuration/example-data-workflow.png)
+![Diagram showing the workflow to deploy a database for a new tenant.]({{site.baseurl}}/assets/img/media/deployment-configuration/example-data-workflow.png)
 
 Ongoing database schema updates are initiated by their application tier.
 

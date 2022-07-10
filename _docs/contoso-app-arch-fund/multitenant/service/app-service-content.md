@@ -16,7 +16,7 @@ App Service and Azure Functions integrate with [Azure Front Door](/azure/frontdo
 
 Azure Front Door enables you to add a web application firewall (WAF) and edge caching, and it provides other performance optimizations. You can easily reconfigure your traffic flows to direct traffic to different backends, based on changing business or technical requirements. When you use Azure Front Door with a multitenant app, you can use it to manage your custom domain names and to terminate your TLS connections. Your App Service application is then configured with a single hostname, and all traffic flows through to that application, which helps you avoid managing custom domain names in multiple places.
 
-![Diagram showing requests coming into Front Door using a variety of host names. The requests are passed to the App Service app using a single host name.](media/app-service/host-front-door.png)
+![Diagram showing requests coming into Front Door using a variety of host names. The requests are passed to the App Service app using a single host name.]({{site.baseurl}}/assets/img/media/app-service/host-front-door.png)
 
 As in the above example, [Azure Front Door can be configured to modify the request's `Host` header](/azure/frontdoor/front-door-backend-pool#backend-host-header). The original `Host` header sent by the client is propagated through the `X-Forwarded-Host` header, and your application code can use this header to [map the request to the correct tenant](../considerations/map-requests.yml).
 

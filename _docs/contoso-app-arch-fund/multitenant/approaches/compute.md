@@ -1,28 +1,3 @@
----
-title: Architectural approaches for compute in multitenant solutions
-titleSuffix: Azure Architecture Center
-description: This article describes approaches to support multitenancy for the compute components of your solution.
-author: DixitArora-MSFT
-ms.author: dixitaro
-ms.date: 04/11/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
- - azure
- - azure-app-service
- - azure-functions
- - azure-kubernetes-service
-categories:
- - compute
- - web
-ms.category:
-  - fcp
-ms.custom:
-  - guide
-  - fcp
----
-
 # Architectural approaches for compute in multitenant solutions
 
 Most cloud-based solutions are composed of compute resources of some kind, such as web and application tiers, batch processors, scheduled jobs, and even specialized resources like GPUs and high-performance compute (HPC). Multitenant solutions often benefit from shared compute resources, because a higher density of tenants to infrastructure reduces the operational cost and management. You should consider the isolation requirements and the implications of shared infrastructure.

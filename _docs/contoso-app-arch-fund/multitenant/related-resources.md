@@ -1,24 +1,3 @@
----
-title: Related resources for multitenancy
-titleSuffix: Azure Architecture Center
-description: This article provides a set of links and resources for architects and developers of multitenant solutions.
-author: johndowns
-ms.author: jodowns
-ms.date: 08/16/2021
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
-  - azure
-categories:
-  - management-and-governance
-  - security
-ms.category:
-  - fcp
-ms.custom:
-  - guide
----
-
 # Resources for architects and developers of multitenant solutions
 
 ## Architectures for multitenant applications

@@ -38,7 +38,7 @@ In other situations, you might have sets of shared resources. For example, when 
 
 Consider an example multitenant solution that's built using the [Deployment Stamps pattern](../../../patterns/deployment-stamp.yml). Each deployment stamp includes a shared web server and sharded databases. Tags can be applied to each of the Azure components, as shown in the following diagram.
 
-![Diagram showing two stamps, with tags added to each component.](media/cost-management-allocation/tags.png)
+![Diagram showing two stamps, with tags added to each component.]({{site.baseurl}}/assets/img/media/cost-management-allocation/tags.png)
 
 The tagging strategy employed here is as follows:
 - Every resource has a `stamp-id` tag.

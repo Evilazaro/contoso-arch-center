@@ -62,7 +62,7 @@ For more information about how the [Deployment Stamps pattern](../../../patterns
 
 You might consider deploying a shared multitenant database, storage account, or file share, and sharing it across all of your tenants.
 
-![Diagram showing a single shared multitenant database for all tenants' data.](media/storage-data/shared-database.png)
+![Diagram showing a single shared multitenant database for all tenants' data.]({{site.baseurl}}/assets/img/media/storage-data/shared-database.png)
 
 This approach provides the highest density of tenants to infrastructure, so it tends to come at the lowest cost of any approach. It also often reduces the management overhead, since there's a single database or resource to manage, back up, and secure.
 
@@ -78,7 +78,7 @@ However, when you work with shared infrastructure, there are several caveats to 
 
 The [Sharding pattern](../../../patterns/sharding.yml) involves deploying multiple separate databases, called *shards*, that contain one or more tenants' data. Unlike deployment stamps, shards don't imply that the entire infrastructure is duplicated. You might shard databases without also duplicating or sharding other infrastructure in your solution.
 
-![Diagram showing a sharded database. One database contains the data for tenants A and B, and the other contains the data for tenant C.](media/storage-data/sharding.png)
+![Diagram showing a sharded database. One database contains the data for tenants A and B, and the other contains the data for tenant C.]({{site.baseurl}}/assets/img/media/storage-data/sharding.png)
 
 Sharding is closely related to *partitioning*, and the terms are often used interchangeably. Consider the [Horizontal, vertical, and functional data partitioning guidance](../../../best-practices/data-partitioning.yml).
 
@@ -90,7 +90,7 @@ Some data stores, such as Azure Cosmos DB, provide native support for sharding o
 
 Another common approach is to deploy a single multitenant application, with dedicated databases for each tenant.
 
-![Diagram showing different databases for each tenant.](media/storage-data/dedicated-databases.png)
+![Diagram showing different databases for each tenant.]({{site.baseurl}}/assets/img/media/storage-data/dedicated-databases.png)
 
 In this model, each tenant's data is isolated from the others, and you might be able to support some degree of customization for each tenant.
 
@@ -104,7 +104,7 @@ It's important to use automated deployment approaches when you provision databas
 
 The [Geode pattern](../../../patterns/geodes.yml) is designed specifically for geographically distributed solutions, including multitenant solutions. It supports high load and high levels of resiliency. When working with the Geode pattern, the data tier must be able to replicate the data across geographic regions, and it should support multi-geography writes.
 
-![Diagram showing the Geode pattern, with databases deployed across multiple regions that synchronize together.](media/storage-data/geodes.png)
+![Diagram showing the Geode pattern, with databases deployed across multiple regions that synchronize together.]({{site.baseurl}}/assets/img/media/storage-data/geodes.png)
 
 Azure Cosmos DB provides [multi-master writes](/azure/cosmos-db/sql/how-to-multi-master) to support this pattern, and Cassandra supports multi-region clusters. Other data services are generally not able to support this pattern, without significant customization.
 

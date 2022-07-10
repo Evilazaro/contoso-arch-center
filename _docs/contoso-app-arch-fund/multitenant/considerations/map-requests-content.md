@@ -1,6 +1,6 @@
 Whenever a request arrives into your application, you need to determine the tenant that the request is intended for. When you have tenant-specific infrastructure that may even be hosted in different geographic regions, you need to match the incoming request to a tenant. Then, you must forward the request to the physical infrastructure that hosts that tenant's resources, as illustrated below:
 
-![Diagram showing mapping a request from a logical tenant to physical tenant infrastructure.](media/map-requests/map-logical-physical.png)
+![Diagram showing mapping a request from a logical tenant to physical tenant infrastructure.]({{site.baseurl}}/assets/img/media/map-requests/map-logical-physical.png)
 
 On this page, we provide guidance for technical decision-makers about the approaches you can consider to map requests to the appropriate tenant, and the tradeoffs involved in the approaches.
 

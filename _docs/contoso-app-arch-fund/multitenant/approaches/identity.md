@@ -1,24 +1,3 @@
----
-title: Architectural approaches for identity in multitenant solutions
-titleSuffix: Azure Architecture Center
-description: This article describes the approaches for managing identities in a multitenant solution.
-author: johndowns
-ms.author: jodowns
-ms.date: 06/16/2022
-ms.topic: conceptual
-ms.service: architecture-center
-ms.subservice: azure-guide
-products:
-  - azure
-  - azure-active-directory
-  - azure-active-directory-b2c
-categories:
-  - identity
-ms.category:
-  - fcp
-ms.custom:
-  - guide
----
 
 # Architectural approaches for identity in multitenant solutions
 
