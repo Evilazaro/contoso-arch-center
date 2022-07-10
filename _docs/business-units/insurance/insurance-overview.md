@@ -22,7 +22,7 @@ You work for Humongous Insurance. One of their products provides customers the o
 
 The TripInsights application, once a monolith, has been refactored into a number of microservices:
 
-![ApplicationArchitecture.png](./images/ApplicationArchitecture.png)
+![ApplicationArchitecture.png]({{site.baseurl}}/assets/img/ApplicationArchitecture.png)
 
 - **Trip Viewer WebApp (`.NET Core`)**: Your customers use this web application to review their driving scores and trips. The trips are being simulated against the APIs within the OpenHack environment.
 - **Trip API (`Go`)**: The mobile application sends the vehicle's on-board diagnostics (OBD) trip data to this API to be stored.

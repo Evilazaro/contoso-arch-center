@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Compute Options
-permalink: /compute-decision-tree-content/
+title: Compute Decisio Tree
+permalink: compute-decision-tree-content/
 ---
 
 Azure offers a number of ways to host your application code. The term *compute* refers to the hosting model for the computing resources that your application runs on. The following flowchart will help you to choose a compute service for your application.
@@ -12,7 +12,7 @@ If your application consists of multiple workloads, evaluate each workload separ
 
 Use the following flowchart to select a candidate compute service.
 
-![Decision tree for Azure compute services](images/compute-choices.png)
+![Decision tree for Azure compute services]({{site.baseurl}}/assets/img/compute-choices.png)
 
 Definitions:
 

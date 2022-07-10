@@ -22,7 +22,7 @@
   links:
     - title: Architecture styles
       url: architecture-styles-content
-      links:
+      children:
         - title: Microservices
           url: microservices-content
         - title: Event-driven architecture
