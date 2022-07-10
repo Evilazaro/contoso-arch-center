@@ -22,7 +22,7 @@
   links:
     - title: Architecture styles
       url: architecture-styles-content
-      children:
+      links:
         - title: Microservices
           url: microservices-content
         - title: Event-driven architecture
@@ -31,6 +31,8 @@
           url: n-tier-content
         - title: Big Data
           url: big-data-content
+    - title: Technology Choices
+      url: design-principles-overview
     - title: Design Principles
       url: design-principles-overview
       children:
