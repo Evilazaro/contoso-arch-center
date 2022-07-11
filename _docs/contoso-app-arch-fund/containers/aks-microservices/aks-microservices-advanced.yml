@@ -1,9 +1,3 @@
----
-layout: page
-title: Microservices
-permalink: /microservices-assessment/
----
-
 ### YamlMime:Architecture
 metadata:
   title: Advanced Azure Kubernetes Service (AKS) microservices architecture

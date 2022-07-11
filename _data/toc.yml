@@ -37,7 +37,7 @@
       url: compute-decision-tree-content
       children:
         - title: Microservices
-          url: microservices-assessment
+          url: aks-microservices-advanced-content
         - title: DevOps
           url: devops-start-here
         - title: Data store
