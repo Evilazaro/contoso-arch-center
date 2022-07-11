@@ -34,6 +34,11 @@ Each tenant will have the following containers:
 
 - **Content service**: The API that handles content for the conference, such as speakers, sessions, workshops, and sponsors.
 
+## Source Code
+
+| Source Code                       	| GitHub repo                                                                           	|
+|------------------------------------------	|---------------------------------------------------------------------------------------	|
+| Fabrikam Medical Conferences (FabMedical) 	| ![GitHub logo]({{site.baseurl}}/assets/img/github.png) [GitHub Repo](https://github.com/microsoft/MCW-Cloud-native-applications) 	|
 
 **Contents**
 
