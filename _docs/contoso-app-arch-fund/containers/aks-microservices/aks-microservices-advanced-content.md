@@ -7,17 +7,22 @@ This reference architecture details several configurations to consider when runn
 
 This architecture builds on the [AKS Baseline architecture](../aks/secure-baseline-aks.yml), Microsoft's recommended starting point for AKS infrastructure. The AKS baseline details infrastructural features like Azure Active Directory (Azure AD) pod identity, ingress and egress restrictions, resource limits, and other secure AKS infrastructure configurations. These infrastructural details are not covered in this document. It is recommended that you become familiar with the AKS baseline before proceeding with the microservices content.
 
-![GitHub logo]({{site.baseurl}}/assets/img/github.png) A reference implementation of this architecture is available on [GitHub](https://github.com/mspnp/aks-fabrikam-dronedelivery).
+# Example deployment
 
-## Architecture
+| Example deployment                       	| GitHub repo                                                                           	|
+|------------------------------------------	|---------------------------------------------------------------------------------------	|
+| Fabrikam Drone Delivery arch implementation 	| ![GitHub logo]({{site.baseurl}}/assets/img/github.png) [GitHub Repo](https://github.com/mspnp/aks-fabrikam-dronedelivery) 	|
 
-:::image type="content" border="false" source="{{site.baseurl}}/assets/img/aks-production-deployment.png" alt-text="Network diagram showing the hub-spoke network with two peered virtual networks and the Azure resources this implementation uses." lightbox="{{site.baseurl}}/assets/img/aks-production-deployment.png":::
+
+# Architecture
+
+{{site.baseurl}}/assets/img/aks-production-deployment.png
 
 *Download a [Visio file](https://arch-center.azureedge.net/aks-microservices-advanced-production-deployment.vsdx) of this architecture.*
 
 If you would prefer to start with a more basic microservices example on AKS, see [Microservices architecture on AKS](./aks-microservices.yml).
 
-### Workflow
+## Workflow
 
 The example [Fabrikam Drone Delivery Shipping App](https://github.com/mspnp/aks-fabrikam-dronedelivery) shown in the preceding diagram implements the architectural components and practices discussed in this article. In this example, Fabrikam, Inc., a fictitious company, manages a fleet of drone aircraft. Businesses register with the service, and users can request a drone to pick up goods for delivery. When a customer schedules a pickup, the backend system assigns a drone and notifies the user with an estimated delivery time. While the delivery is in progress, the customer can track the drone's location with a continuously updated ETA.
 
