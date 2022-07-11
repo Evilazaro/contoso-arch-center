@@ -4,6 +4,12 @@ title: Architecture styles
 permalink: /architecture-styles-content/
 ---
 
+# Example deployment
+
+| Example deployment                       	| GitHub repo                                                                           	|
+|------------------------------------------	|---------------------------------------------------------------------------------------	|
+| Container Apps Store Microservice Sample 	| [GitHub Repo](https://github.com/Azure-Samples/container-apps-store-api-microservice) 	|
+| ACI Event Driven Worker Queue            	| [GitHub Repo](https://github.com/Azure-Samples/aci-event-driven-worker-queue)         	|
 
 # Architecture styles
 
@@ -15,13 +21,6 @@ We have identified a set of architecture styles that are commonly found in cloud
 - Recommendations for when to choose this style.
 - Benefits, challenges, and best practices.
 - A recommended deployment using relevant Azure services.
-
-## Example deployment
-
-| Example deployment                       	| GitHub repo                                                                           	|
-|------------------------------------------	|---------------------------------------------------------------------------------------	|
-| Container Apps Store Microservice Sample 	| [GitHub Repo](https://github.com/Azure-Samples/container-apps-store-api-microservice) 	|
-| ACI Event Driven Worker Queue            	| [GitHub Repo](https://github.com/Azure-Samples/aci-event-driven-worker-queue)         	|
 
 ## A quick tour of the styles
 
