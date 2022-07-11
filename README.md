@@ -1,24 +1,25 @@
 ![](./assets//img/contoso-logo.png)
 
-# Architecture Center  
+# Guidelines for Reference Architectures on Contoso Architecture Center
 
-Contoso patterns & practices
+## What is a Reference Architecture?
 
-<https://aka.ms/architecture>
+The term *reference architecture* means a lot of things, but in the context of the Contoso Architecture Center, it refers to a specific type of guidance artifact, found [here](https://docs.microsoft.com/azure/architecture/reference-architectures).
 
-## Legal Notices
+Our reference architectures focus on real-world scenarios. Each reference architecture consists of:
 
-Contoso and any contributors grant you a license to the Contoso documentation and other content
-in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
-see the [LICENSE](LICENSE) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the
-[LICENSE-CODE](LICENSE-CODE) file.
+- A diagram of the architecture.
+- A set of recommendations and best practices.
+- A deployable solution.
 
-Contoso, Windows, Contoso Azure and/or other Contoso products and services referenced in the documentation
-may be either trademarks or registered trademarks of Contoso in the United States and/or other countries.
-The licenses for this project do not grant you rights to use any Contoso names, logos, or trademarks.
-Contoso's general trademark guidelines can be found at <http://go.Contoso.com/fwlink/?LinkID=254653>.
+Some reference architectures are part of a series. Within a series, the architectures may build on each other. For example:
 
-Privacy information can be found at <https://privacy.Contoso.com>.
+1. Single VM
+2. Load balanced VMs
+3. N-tier architecture
+4. Multi-region n-tier architecture
 
-Contoso and any contributors reserve all others rights, whether under their respective copyrights, patents,
-or trademarks, whether by implication, estoppel or otherwise.
+In other cases, the series contains a set of recommended alternatives for a single scenario. In that case, we include additional guidance to help customers select which reference architecture meets their needs. For example:
+
+1. Hybrid network with VPN Gateway
+2. Hybrid network with ExpressRoute
