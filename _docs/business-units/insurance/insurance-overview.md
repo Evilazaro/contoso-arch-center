@@ -30,7 +30,13 @@ The TripInsights application, once a monolith, has been refactored into a number
 - **User Profile API (`NodeJS`)**: This API is used by the application to read the user's profile information.
 - **User API (`Java`)**: This API is used by the application to create and modify the users.
 
-The source code of all the microservices is available [here](https://github.com/Microsoft-Trip Insights/containers_artifacts).
+
+## Source Code
+
+| Source Code                       	| GitHub repo                                                                           	|
+|------------------------------------------	|---------------------------------------------------------------------------------------	|
+| Trip Insights 	| ![GitHub logo]({{site.baseurl}}/assets/img/github.png) [GitHub Repo](https://github.com/Microsoft-OpenHack/containers_artifacts) 	|
+
 
 ## The Challenges
 
