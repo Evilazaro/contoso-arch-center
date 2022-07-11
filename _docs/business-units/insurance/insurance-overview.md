@@ -4,9 +4,9 @@ title: Insurance Overview
 permalink: /insurance-overview/
 ---
 
-# OpenHack
+# Trip Insights
 
-Hello and welcome to OpenHack, a challenge oriented hack event from Microsoft. You will be presented with a series of challenges, each one more difficult than the one before.
+Hello and welcome to Trip Insights, a challenge oriented hack event from Microsoft. You will be presented with a series of challenges, each one more difficult than the one before.
 
 You should already be assigned to and seated with a team, with whom you will attempt to solve as many challenges as you can within today's hack time.
 
@@ -14,7 +14,7 @@ You have been assigned a coach who will be your first point of contact, and is h
 
 You may notice a resource group called **teamResources** in your Azure subscription. This resource group contains any pre-provisioned resources referenced in the challenges.
 
-> **Note:** Be sure to review the [Getting Ready to Go](#getting-ready-to-go) section to ensure you have your environment prepared for the OpenHack.
+> **Note:** Be sure to review the [Getting Ready to Go](#getting-ready-to-go) section to ensure you have your environment prepared for the Trip Insights.
 
 ## The Premise
 
@@ -24,23 +24,23 @@ The TripInsights application, once a monolith, has been refactored into a number
 
 ![ApplicationArchitecture.png]({{site.baseurl}}/assets/img/ApplicationArchitecture.png)
 
-- **Trip Viewer WebApp (`.NET Core`)**: Your customers use this web application to review their driving scores and trips. The trips are being simulated against the APIs within the OpenHack environment.
+- **Trip Viewer WebApp (`.NET Core`)**: Your customers use this web application to review their driving scores and trips. The trips are being simulated against the APIs within the Trip Insights environment.
 - **Trip API (`Go`)**: The mobile application sends the vehicle's on-board diagnostics (OBD) trip data to this API to be stored.
 - **Points of Interest API (`.NET Core`)**: This API is used to collect the points of the trip when a hard stop or hard acceleration was detected.
 - **User Profile API (`NodeJS`)**: This API is used by the application to read the user's profile information.
 - **User API (`Java`)**: This API is used by the application to create and modify the users.
 
-The source code of all the microservices is available [here](https://github.com/Microsoft-OpenHack/containers_artifacts).
+The source code of all the microservices is available [here](https://github.com/Microsoft-Trip Insights/containers_artifacts).
 
 ## The Challenges
 
 Each challenge will lead you through a stage of the technical investigation as briefly laid out by your fictional CTO. These investigations become more technically challenging as you progress.
 
-We do not provide guides or instructions to solve the challenges, just a few hints and documentation references that you may find useful. There are multiple ways to solve each challenge, and very likely some we haven't thought of. We're interested in seeing your own unique solutions to each problem, and you should absolutely work with your coaches and the OpenHack Team to validate your solution as correct.
+We do not provide guides or instructions to solve the challenges, just a few hints and documentation references that you may find useful. There are multiple ways to solve each challenge, and very likely some we haven't thought of. We're interested in seeing your own unique solutions to each problem, and you should absolutely work with your coaches and the Trip Insights Team to validate your solution as correct.
 
 ### One final tip: Read everything very carefully
 
-The OpenHack team have worked hard to ensure each problem is solvable. All the details you should need are within the challenge briefs, which are very carefully written and worded to give you clues toward the solution. Reading them fully is the best way to figure out a solution, as small points can be easily missed. Your coaches will help to fill gaps in your understanding, provided you ask them the right questions.
+The Trip Insights team have worked hard to ensure each problem is solvable. All the details you should need are within the challenge briefs, which are very carefully written and worded to give you clues toward the solution. Reading them fully is the best way to figure out a solution, as small points can be easily missed. Your coaches will help to fill gaps in your understanding, provided you ask them the right questions.
 
 ## Getting Ready to Go
 
@@ -104,13 +104,13 @@ You should perform the following tasks after you have ensured your development e
     docker pull mcr.microsoft.com/mssql/server:2017-latest
     ```
 
-1. **Clone the Source Code Repository**: The source code for the applications you'll be working with in this hack can be found at [Microsoft-OpenHack/containers_artifacts on GitHub](https://github.com/Microsoft-OpenHack/containers_artifacts).
+1. **Clone the Source Code Repository**: The source code for the applications you'll be working with in this hack can be found at [Microsoft-Trip Insights/containers_artifacts on GitHub](https://github.com/Microsoft-Trip Insights/containers_artifacts).
 
     - [Clone the repository from the command line](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) or [use VS Code to clone a GitHub repository](https://code.visualstudio.com/docs/editor/github#_setting-up-a-repository).
 
     >**TIP**: If you're working with a team, it's highly recommended to create a new Git repository or [create a fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of the hack source code repository in order to have a way to collaborate and share files as you progress.
 
-1. **Useful Add-Ons**: Consider installing the following tools to help you through this OpenHack.
+1. **Useful Add-Ons**: Consider installing the following tools to help you through this Trip Insights.
 
     - [Kubectx / Kubens](https://github.com/ahmetb/kubectx) allow for quick switching between Kubernetes contexts and namespaces
     - [Visual Studio Kubernetes Tools](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools) can be helpful, especially to quickly create templated YAML files (**Note**: This is pre-installed in the remote container development option)
@@ -143,4 +143,4 @@ Working with Git
 
 Project Source Code
 
-- [Microsoft-OpenHack/containers_artifacts on GitHub](https://github.com/Microsoft-OpenHack/containers_artifacts)
+- [Microsoft-Trip Insights/containers_artifacts on GitHub](https://github.com/Microsoft-Trip Insights/containers_artifacts)
