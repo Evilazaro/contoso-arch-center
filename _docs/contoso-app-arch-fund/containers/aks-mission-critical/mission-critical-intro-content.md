@@ -167,7 +167,7 @@ Operational data from application and infrastructure must be available to allow 
 - **Azure Log Analytics** is used as a unified sink to store logs and metrics for all application and infrastructure components. 
 - **Azure Application Insights** is used as an Application Performance Management (APM) tool to collect all application monitoring data and store it directly within Log Analytics.
 
-![Diagram that shows the monitoring resources.](./{{site.baseurl}}/assets/img/mission-critical-monitoring-resources.svg)
+![Diagram that shows the monitoring resources.]({{site.baseurl}}/assets/img/mission-critical-monitoring-resources.svg)
 
 Monitoring data for global resources and regional resources should be stored independently. A single, centralized observability store isn't recommended to avoid a single point of failure. Cross-workspace querying is used to achieve a single pane of glass.
 
@@ -184,7 +184,7 @@ Operational data that isn't required for active operations is exported from Log 
 
 This image shows the request and background processor flow of the reference implementation.
 
-:::image type="content" source="./{{site.baseurl}}/assets/img/request-flow.png" alt-text="Diagram of the request flow." lightbox="./{{site.baseurl}}/assets/img/request-flow.png":::
+![]({{site.baseurl}}/assets/img/request-flow.png)
 
 The description of this flow is in the following sections.
 

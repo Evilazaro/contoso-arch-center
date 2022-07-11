@@ -41,7 +41,7 @@ Compliance must be systematically monitored and maintained. Regular compliance a
 
 Take advantage the regulatory compliance dashboard in Microsoft Defender for Cloud. By continuously monitoring the dashboard, you can keep track of the compliance status of your workload.
 
-:::image type="content" source="./{{site.baseurl}}/assets/img/regulatory-compliance-pci.png" alt-text="Example compliance monitoring" border ="true":::
+![]()]{{site.baseurl}}/assets/img/regulatory-compliance-pci.png)
 
 ### Network security
 

@@ -36,7 +36,7 @@ A global load balancer is required to route traffic to healthy stamps and provid
 
 Optionally, it should be able to perform caching at the edge. Also, provide some security assurance for ingress through the use of web application firewall (WAF).
 
-:::image type="content" source="./{{site.baseurl}}/assets/img/network-diagram-all-standard.png" alt-text="Diagram of network for reference architecture.":::
+![]({{site.baseurl}}/assets/img/network-diagram-all-standard.png)
 
 ## Traffic ingress
 
@@ -56,7 +56,7 @@ Azure Front Door integration with Azure Monitor provides near real-time monitori
 
 Azure Web Application Firewall, integrated with Azure Front Door, is used to prevent attacks at the edge before they enter the network.
 
-:::image type="content" source="./{{site.baseurl}}/assets/img/network-diagram-ingress-standard.png" alt-text="Diagram of network ingress for reference architecture.":::
+![]({{site.baseurl}}/assets/img/network-diagram-ingress-standard.png)
 
 ## Isolated virtual network - API
 
@@ -78,7 +78,7 @@ The application platform used with the individual stamps in the infrastructure, 
 
 The architecture as defined uses Azure Key Vault to store secrets, such as connection strings and API keys, to securely communicate over the internet to Azure PaaS services. There are possible risks to exposing the application platform over the internet for this communication. Secrets can be compromised and increased security and monitoring of the public endpoints is recommended.
 
-:::image type="content" source="./{{site.baseurl}}/assets/img/network-diagram-vnet-paas-dependencies-standard.png" alt-text="Diagram of the application platform communication dependencies.":::
+![]({{site.baseurl}}/assets/img/network-diagram-vnet-paas-dependencies-standard.png)
 
 ## Extended networking considerations
 
@@ -102,7 +102,7 @@ The increased security must be weighed versus the increased reliability effort, 
 
 Self-hosted build agents must be used for the stamp deployment. The management of these agents comes with a maintenance overhead.
 
-:::image type="content" source="./{{site.baseurl}}/assets/img/network-diagram-ingress.png" alt-text="Diagram of network ingress for reference architecture with private endpoints.":::
+![]({{site.baseurl}}/assets/img/network-diagram-ingress.png)
 
 ### Private endpoints - Application platform
 
@@ -112,7 +112,7 @@ The public endpoints of the individual Azure PaaS services can be configured to 
 
 Self-hosted build agents must be used for the stamp deployment the same as above. The management of these agents comes with a maintenance overhead.
 
-:::image type="content" source="./{{site.baseurl}}/assets/img/network-diagram-vnet-paas-dependencies.png" alt-text="Diagram of the application platform communication dependencies with private endpoints.":::
+![]({{site.baseurl}}/assets/img/network-diagram-vnet-paas-dependencies.png)
 
 ## Next steps
 

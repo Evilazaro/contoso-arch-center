@@ -242,7 +242,7 @@ Card holder data (CHD) that transits over the public internet must be encrypted.
 
 Your design should have a strategic chain of TLS termination points. As data travels through network hops, maintain TLS at hops that require packet inspection. At the very least, have the final TLS termination point at the cluster's ingress resource. Consider taking it further within the cluster resources.
 
-:::image type="content" source="./{{site.baseurl}}/assets/img/flow.svg" alt-text="Diagram that illustrates data encryption." lightbox="./{{site.baseurl}}/assets/img/flow.png":::
+![]({{site.baseurl}}/assets/img/flow.svg)
 
 Use Azure Policy to govern creation of resources:
 - Deny the creation of any non-HTTPS ingress resource.
