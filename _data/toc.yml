@@ -22,6 +22,11 @@
   links:
     - title: Multitenant Architecture
       url: multi-tenant-overview
+      children:
+        - title: Tenancy Models
+          url: tenancy-models-content
+        - title: Approaches
+          url: compute-content
     - title: Architecture styles
       url: architecture-styles-content
       children:
