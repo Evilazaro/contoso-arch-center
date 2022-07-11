@@ -18,7 +18,7 @@ Below is a diagram of the solution architecture you will build in this lab. Plea
 
 The proposed containers deployed to the cluster are illustrated below with Cosmos DB as a managed service.
 
-![A diagram showing the solution, using Azure Kubernetes Service with a Cosmos DB back end.]({{site.baseurl}}/assets/img/solution-topology.png "Solution architecture diagram")
+![A diagram showing the solution, using Azure Kubernetes Service with a Cosmos DB back end.]({{site.baseurl}}/assets/img/media/solution-topology.png "Solution architecture diagram")
 
 Each tenant will have the following containers:
 
@@ -140,11 +140,11 @@ This task will deploy an instance of the Azure Database Migration Service used t
 
 3. Select **Create**.
 
-    ![The screenshot shows the Azure Database Migration Service in the Azure Marketplace.]({{site.baseurl}}/assets/img/dms-marketplace-create.png "Azure Database Migration Service")
+    ![The screenshot shows the Azure Database Migration Service in the Azure Marketplace.]({{site.baseurl}}/assets/img/media/dms-marketplace-create.png "Azure Database Migration Service")
 
 4. Select the `Migrate my SQL Server, MySQL, PostgresQL, or MongoDB database(s) to Azure` option when prompted.
 
-    ![The screenshot shows a prompt asking which target we plan to use for migration.]({{site.baseurl}}/assets/img/dms-select-target-type.png "Tell us about the target you plan to use for migration")
+    ![The screenshot shows a prompt asking which target we plan to use for migration.]({{site.baseurl}}/assets/img/media/dms-select-target-type.png "Tell us about the target you plan to use for migration")
 
 5. On the **Basics** tab of the **Create Migration Service** pane, enter the following values:
 
@@ -152,13 +152,13 @@ This task will deploy an instance of the Azure Database Migration Service used t
     - **Migration service name**: Enter a name, such as `fabmedical[SUFFIX]`.
     - **Location**: Choose the Azure Region used for the Resource Group.
 
-    ![The screenshot shows the Create Migration Service Basics tab with all values entered.]({{site.baseurl}}/assets/img/dms-create-basics.png "Create Migration Basics Tab")
+    ![The screenshot shows the Create Migration Service Basics tab with all values entered.]({{site.baseurl}}/assets/img/media/dms-create-basics.png "Create Migration Basics Tab")
 
 6. Select **Next: Networking >>**.
 
 7. On the **Networking** tab, select the **Virtual Network** within the `fabmedical-[SUFFIX]` resource group.
 
-    ![The screenshot shows the Create Migration Service Networking tab with Virtual Network selected.]({{site.baseurl}}/assets/img/dms-create-networking.png "Create Migration Service Networking tab")
+    ![The screenshot shows the Create Migration Service Networking tab with Virtual Network selected.]({{site.baseurl}}/assets/img/media/dms-create-networking.png "Create Migration Service Networking tab")
 
 8. Select **Review + create**.
 
@@ -172,7 +172,7 @@ In this task, you will create a **Migration project** within Azure Database Migr
 
 1. Navigate to your Build Agent VM in the Azure Portal and copy the Private IP address **(2)**. Then, paste the contents into the text editor of your choice (such as Notepad on Windows, macOS users can use TextEdit) for future use.
 
-   ![Built Agent VM is shown. Overview tab is open. Private IP address is highlighted.]({{site.baseurl}}/assets/img/agent-vm-private-ip-address.png "Private IP Address")
+   ![Built Agent VM is shown. Overview tab is open. Private IP address is highlighted.]({{site.baseurl}}/assets/img/media/agent-vm-private-ip-address.png "Private IP Address")
 
 2. In the Azure Portal, navigate to the **Azure Database Migration Service** created in a previous step..
 
@@ -185,7 +185,7 @@ In this task, you will create a **Migration project** within Azure Database Migr
     - **Target server type**: CosmosDB (MongoDB API)
     - **Choose type of activity**: Offline data migration
 
-    ![The screenshot shows the New migration project pane with values entered.]({{site.baseurl}}/assets/img/dms-new-migration-project.png "New migration project pane")
+    ![The screenshot shows the New migration project pane with values entered.]({{site.baseurl}}/assets/img/media/dms-new-migration-project.png "New migration project pane")
 
     > **Note:** The **Offline data migration** activity type is selected since you will be performing a one-time migration from MongoDB to Cosmos DB. Also, the migration operation will not update data in the database. In a production scenario, you will choose the migration project activity type that best fits your solution requirements.
 
@@ -198,7 +198,7 @@ In this task, you will create a **Migration project** within Azure Database Migr
 
     > **Note:** Leave the **User Name** and **Password** blank as the MongoDB instance on the Build Agent VM for this lab does not have authentication turned on. The Azure Database Migration Service resides in the same VNet as the Build Agent VM, so it can communicate within the VNet directly to the VM without exposing the MongoDB service to the Internet. In production scenarios, you should always have authentication enabled on MongoDB.
 
-    ![Select source tab with values selected for the MongoDB server.]({{site.baseurl}}/assets/img/dms-select-source.png "MongoDB to Azure Database for CosmosDB - Select source")
+    ![Select source tab with values selected for the MongoDB server.]({{site.baseurl}}/assets/img/media/dms-select-source.png "MongoDB to Azure Database for CosmosDB - Select source")
 
 6. Select **Next: Select target >>**.
 
@@ -210,7 +210,7 @@ In this task, you will create a **Migration project** within Azure Database Migr
 
     - **Select Cosmos DB name**: Select the `fabmedical-[SUFFIX]` Cosmos DB instance.
 
-    ![The Select target tab with values selected.]({{site.baseurl}}/assets/img/dms-select-target.png "MongoDB to Azure Database for CosmosDB - Select target")
+    ![The Select target tab with values selected.]({{site.baseurl}}/assets/img/media/dms-select-target.png "MongoDB to Azure Database for CosmosDB - Select target")
 
     Notice, the **Connection String** will automatically populate with the Key for your Azure Cosmos DB instance.
 
@@ -218,27 +218,27 @@ In this task, you will create a **Migration project** within Azure Database Migr
 
 10. On the **Database setting** tab, select the `contentdb` **Source Database** so this database from MongoDB will be migrated to Azure Cosmos DB.
 
-    ![The screenshot shows the Database setting tab with the contentdb source database selected.]({{site.baseurl}}/assets/img/dms-database-setting.png "Database setting tab")
+    ![The screenshot shows the Database setting tab with the contentdb source database selected.]({{site.baseurl}}/assets/img/media/dms-database-setting.png "Database setting tab")
 
 11. Select **Next: Collection setting >>**.
 
 12. On the **Collection setting** tab, expand the **contentdb** database, and ensure both the **sessions** and **speakers** collections are selected for migration. Also, update the **Throughput (RU/s)** to `400` for both collections.
 
-    ![The screenshot shows the Collection setting tab with both sessions and speakers collections selected with Throughput RU/s set to 400 for both collections.]({{site.baseurl}}/assets/img/dms-collection-setting.png "Throughput RU")
+    ![The screenshot shows the Collection setting tab with both sessions and speakers collections selected with Throughput RU/s set to 400 for both collections.]({{site.baseurl}}/assets/img/media/dms-collection-setting.png "Throughput RU")
 
 13. Select **Next: Migration summary >>**.
 
 14. On the **Migration summary** tab, enter `MigrateData` in the **Activity name** field, then select **Start migration** to initiate the migration of the MongoDB data to Azure Cosmos DB.
 
-    ![The screenshot shows the Migration summary is shown with MigrateData entered in the Activity name field.]({{site.baseurl}}/assets/img/dms-migration-summary.png "Migration summary")
+    ![The screenshot shows the Migration summary is shown with MigrateData entered in the Activity name field.]({{site.baseurl}}/assets/img/media/dms-migration-summary.png "Migration summary")
 
 15. The status for the migration activity will be shown. The migration will only take a few seconds to complete. Select **Refresh** to reload the status to ensure it shows a **Status** of **Complete**.
 
-    ![The screenshot shows the MigrateData activity showing the status has completed.]({{site.baseurl}}/assets/img/dms-migrate-complete.png "MigrateData activity completed")
+    ![The screenshot shows the MigrateData activity showing the status has completed.]({{site.baseurl}}/assets/img/media/dms-migrate-complete.png "MigrateData activity completed")
 
 16. Navigate to the **Cosmos DB Account** for the lab within the Azure Portal to verify the data was migrated, then select the **Data Explorer**. You will see the `speakers` and `sessions` collections listed within the `contentdb` database, and you will be able to explore the documents within.
 
-    ![The screenshot shows the Cosmos DB is open in the Azure Portal with Data Explorer open showing the data has been migrated.]({{site.baseurl}}/assets/img/dms-confirm-data-in-cosmosdb.png "Cosmos DB is open")
+    ![The screenshot shows the Cosmos DB is open in the Azure Portal with Data Explorer open showing the data has been migrated.]({{site.baseurl}}/assets/img/media/dms-confirm-data-in-cosmosdb.png "Cosmos DB is open")
 
 ## Exercise 2: Deploy the solution to Azure Kubernetes Service
 
@@ -277,7 +277,7 @@ This task will gather the information you need about your Azure Kubernetes Servi
    kubectl get nodes
    ```
 
-   ![In this screenshot of the console, kubectl get nodes has been typed and run at the command prompt, which produces a list of nodes.]({{site.baseurl}}/assets/img/image75.png "kubectl get nodes")
+   ![In this screenshot of the console, kubectl get nodes has been typed and run at the command prompt, which produces a list of nodes.]({{site.baseurl}}/assets/img/media/image75.png "kubectl get nodes")
 
 ### Task 2: Deploy a service using the Azure Portal
 
@@ -285,7 +285,7 @@ This task will deploy the API application to the Azure Kubernetes Service cluste
 
 1. Define a new Namespace for our API deployment. Select the **Namespaces** blade of the fabmedical-[SUFFIX] AKS resource detail page of the Azure Portal, and on the Namespaces tab select **+ Add**.
 
-  ![This is a screenshot of the Azure Portal for AKS showing adding a Namespace.]({{site.baseurl}}/assets/img/create-namespace.png "Add a Namespace")
+  ![This is a screenshot of the Azure Portal for AKS showing adding a Namespace.]({{site.baseurl}}/assets/img/media/create-namespace.png "Add a Namespace")
 
 2. In the **Add with YAML** screen, paste the following YAML and choose **Add**.
 
@@ -300,7 +300,7 @@ This task will deploy the API application to the Azure Kubernetes Service cluste
 
 3. Define a Service for our API so that the application is accessible within the cluster. Select the **Services and ingresses** blade of the fabmedical-[SUFFIX] AKS resource detail page of the Azure Portal, and on the Services tab, select **+ Add**.
 
-    ![This is a screenshot of the Azure Portal for AKS showing adding a Service.]({{site.baseurl}}/assets/img/2021-03-25-17-04-04.png "Add a Service")
+    ![This is a screenshot of the Azure Portal for AKS showing adding a Service.]({{site.baseurl}}/assets/img/media/2021-03-25-17-04-04.png "Add a Service")
 
 4. In the **Add with YAML** screen, paste the YAML below and choose **Add**.
 
@@ -326,11 +326,11 @@ This task will deploy the API application to the Azure Kubernetes Service cluste
 
 5. Select **Workloads** under the **Kubernetes resources** section in the left navigation.
 
-    ![Select workloads under Kubernetes resources.]({{site.baseurl}}/assets/img/2021-03-25-17-04-35.png "Select workloads under Kubernetes resources")
+    ![Select workloads under Kubernetes resources.]({{site.baseurl}}/assets/img/media/2021-03-25-17-04-35.png "Select workloads under Kubernetes resources")
 
 6. From the Workloads view, with **Deployments** selected (the default), then select **+ Add**.
 
-    ![Selecting + Add to create a deployment.]({{site.baseurl}}/assets/img/2021-03-25-17-05-05.png "Selecing + Add to create a deployment")
+    ![Selecting + Add to create a deployment.]({{site.baseurl}}/assets/img/media/2021-03-25-17-05-05.png "Selecing + Add to create a deployment")
 
 7. In the **Add with YAML** screen that loads, paste the following YAML and update the `[LOGINSERVER]` placeholder with the name of the ACR instance.
 
@@ -397,23 +397,23 @@ This task will deploy the API application to the Azure Kubernetes Service cluste
 
 8. Select **Add** to initiate the deployment. This can take a few minutes after which you will see the deployment listed.
 
-   ![Service is showing as unhealthy]({{site.baseurl}}/assets/img/2021-03-25-17-05-36.png "Service is showing as unhealthy")
+   ![Service is showing as unhealthy]({{site.baseurl}}/assets/img/media/2021-03-25-17-05-36.png "Service is showing as unhealthy")
 
 9. Select the **api** deployment to open the failing Deployment and observe the failing pod.
 
-    ![Pod is showing as unhealthy]({{site.baseurl}}/assets/img/failing-pod.png "Service pod is showing as unhealthy")
+    ![Pod is showing as unhealthy]({{site.baseurl}}/assets/img/media/failing-pod.png "Service pod is showing as unhealthy")
 
 10. Select the failing pod from the list of pods in the `api` deployment and select **Events**.  Observe that the pod is failing to start because the `cosmosdb` secret is not present.
 
-    ![cosmosdb secret is missing]({{site.baseurl}}/assets/img/missing-secret-event.png "Pod is failing because of a missing secret")
+    ![cosmosdb secret is missing]({{site.baseurl}}/assets/img/media/missing-secret-event.png "Pod is failing because of a missing secret")
 
 11. Navigate to your resource group in the Azure Portal and find your Cosmos DB. Select the Cosmos DB resource to view details.
 
-    ![This is a screenshot of the Azure Portal showing the Cosmos DB among existing resources.]({{site.baseurl}}/assets/img/Ex2-Task1.9.png "Select CosmosDB resource from list")
+    ![This is a screenshot of the Azure Portal showing the Cosmos DB among existing resources.]({{site.baseurl}}/assets/img/media/Ex2-Task1.9.png "Select CosmosDB resource from list")
 
 11. Under **Quick Start** select the **Node.js** tab and copy the **Node.js 3.0 connection string**.
 
-    ![This is a screenshot of the Azure Portal showing the quick start for setting up Cosmos DB with MongoDB API. The copy button is highlighted.]({{site.baseurl}}/assets/img/Ex2-Task1.10.png "Capture CosmosDB connection string")
+    ![This is a screenshot of the Azure Portal showing the quick start for setting up Cosmos DB with MongoDB API. The copy button is highlighted.]({{site.baseurl}}/assets/img/media/Ex2-Task1.10.png "Capture CosmosDB connection string")
 
 12. Modify the copied connection string by adding the database `contentdb` to the URL, along with a replicaSet of `globaldb`. The resulting connection string should look like the below sample. Note that you may need to modify the endpoint URL.
 
@@ -438,7 +438,7 @@ This task will deploy the API application to the Azure Kubernetes Service cluste
     echo -n "[CONNECTION STRING VALUE]" | base64 -w 0 - | echo $(</dev/stdin)
     ```
 
-    ![This is a screenshot of the Azure cloud shell window showing the command to create the base64 encoded secret.  The output to copy is highlighted.]({{site.baseurl}}/assets/img/hol-2019-10-18_07-12-13.png "Show encoded secret")
+    ![This is a screenshot of the Azure cloud shell window showing the command to create the base64 encoded secret.  The output to copy is highlighted.]({{site.baseurl}}/assets/img/media/hol-2019-10-18_07-12-13.png "Show encoded secret")
 
 14. Return to the AKS blade in the Azure Portal and select **Configuration** under the **Kubernetes resources** section. Select **Secrets** and choose **+ Add**.
 
@@ -455,15 +455,15 @@ This task will deploy the API application to the Azure Kubernetes Service cluste
       db: <base64 encoded value>
     ```
 
-    ![This is a screenshot of the Azure Portal for AKS howing the YAML file for creating a deployment.]({{site.baseurl}}/assets/img/2021-03-25-17-08-06.png "Upload YAML data")
+    ![This is a screenshot of the Azure Portal for AKS howing the YAML file for creating a deployment.]({{site.baseurl}}/assets/img/media/2021-03-25-17-08-06.png "Upload YAML data")
 
 16. Sort the Secrets list by name and you should now see your new secret displayed.
 
-    ![This is a screenshot of the Azure Portal for AKS showing secrets.]({{site.baseurl}}/assets/img/find-cosmosdb-secret.png "Manage Kubernetes secrets")
+    ![This is a screenshot of the Azure Portal for AKS showing secrets.]({{site.baseurl}}/assets/img/media/find-cosmosdb-secret.png "Manage Kubernetes secrets")
 
 17. View the details for the **cosmosdb** secret by selected it in the list.
 
-    ![This is a screenshot of the Azure Portal for AKS showing the value of a secret.]({{site.baseurl}}/assets/img/2021-03-25-17-08-54.png "View cosmosdb secret")
+    ![This is a screenshot of the Azure Portal for AKS showing the value of a secret.]({{site.baseurl}}/assets/img/media/2021-03-25-17-08-54.png "View cosmosdb secret")
 
 18. Create a new deployment manifest, `api.deployment.yml` and add the YAML content below to the file. Modify the `LOGINSERVER` placeholder for ACR.
 
@@ -535,7 +535,7 @@ This task will deploy the API application to the Azure Kubernetes Service cluste
 
 19. Save the file and close the editor.
 
-    ![This is a screenshot of the code editor save and close actions.]({{site.baseurl}}/assets/img/Ex2-Task1.17.1.png "Code editor configuration update")
+    ![This is a screenshot of the code editor save and close actions.]({{site.baseurl}}/assets/img/media/Ex2-Task1.17.1.png "Code editor configuration update")
 
 20. Update the api deployment by using `kubectl` to deploy the API.
 
@@ -546,7 +546,7 @@ This task will deploy the API application to the Azure Kubernetes Service cluste
 
 21. In the Azure Portal return to Events blade of the deployed pod in the api deployment (see Step 5). The last log should show as connected to MongoDB.
 
-    ![This is a screenshot of the Kubernetes management dashboard showing pod events.]({{site.baseurl}}/assets/img/2021-03-25-17-09-24.png "Pod Events")
+    ![This is a screenshot of the Kubernetes management dashboard showing pod events.]({{site.baseurl}}/assets/img/media/2021-03-25-17-09-24.png "Pod Events")
 
 ### Task 3: Deploy a service using kubectl
 
@@ -628,11 +628,11 @@ In this task, deploy the web service using `kubectl`.
 
 5. Select the **...** button and choose **Save**.
 
-   ![In this screenshot of an Azure Cloud Shell editor window, the ... button has been selected and the Save option is highlighted.]({{site.baseurl}}/assets/img/b4-image62.png "Save Azure Cloud Shell changes")
+   ![In this screenshot of an Azure Cloud Shell editor window, the ... button has been selected and the Save option is highlighted.]({{site.baseurl}}/assets/img/media/b4-image62.png "Save Azure Cloud Shell changes")
 
 6. Select the **...** button again and choose **Close Editor**.
 
-    ![In this screenshot of the Azure Cloud Shell editor window, the ... button has been selected and the Close Editor option is highlighted.]({{site.baseurl}}/assets/img/b4-image63.png "Close Azure Cloud Editor")
+    ![In this screenshot of the Azure Cloud Shell editor window, the ... button has been selected and the Close Editor option is highlighted.]({{site.baseurl}}/assets/img/media/b4-image63.png "Close Azure Cloud Editor")
 
 7. Create a text file called `web.service.yml` in the `~/Fabmedical` folder using the Azure Cloud Shell Editor.
 
@@ -673,15 +673,15 @@ In this task, deploy the web service using `kubectl`.
     kubectl create --save-config=true -f web.deployment.yml -f web.service.yml
     ```
 
-    ![In this screenshot of the console, kubectl apply -f kubernetes-web.yaml has been typed and run at the command prompt. Messages about web deployment and web service creation appear below.]({{site.baseurl}}/assets/img/image93.png "kubectl create application")
+    ![In this screenshot of the console, kubectl apply -f kubernetes-web.yaml has been typed and run at the command prompt. Messages about web deployment and web service creation appear below.]({{site.baseurl}}/assets/img/media/image93.png "kubectl create application")
 
 11. Return to the AKS blade in the Azure Portal. From the navigation menu, under **Kubernetes resources**, select the **Services and ingresses** view. You should be able to access the website via an external endpoint.
 
-    ![AKS services and ingresses shown with External IP highlighted]({{site.baseurl}}/assets/img/aks-resources-services-ingresses-view.png "AKS services and ingresses shown with External IP highlighted")
+    ![AKS services and ingresses shown with External IP highlighted]({{site.baseurl}}/assets/img/media/aks-resources-services-ingresses-view.png "AKS services and ingresses shown with External IP highlighted")
 
 12. In the top navigation, select the `speakers` and `sessions` links.
 
-    ![A screenshot of the web site showing no data displayed.]({{site.baseurl}}/assets/img/Ex2-Task3.11.png "Web site home page")
+    ![A screenshot of the web site showing no data displayed.]({{site.baseurl}}/assets/img/media/Ex2-Task3.11.png "Web site home page")
 
 ### Task 4: Review Azure Monitor for Containers
 
@@ -689,37 +689,37 @@ This task will access and review the various logs and dashboards made available 
 
 1. Select the resource group you created named `fabmedical-SUFFIX`, and then choose your `Kubernetes Service` Azure resource from the Azure Portal.
 
-    ![In this screenshot, the resource group was previously selected and the AKS cluster is selected.]({{site.baseurl}}/assets/img/Ex2-Task8.1.png "Select fabmedical resource group")
+    ![In this screenshot, the resource group was previously selected and the AKS cluster is selected.]({{site.baseurl}}/assets/img/media/Ex2-Task8.1.png "Select fabmedical resource group")
 
 2. From the Monitoring blade, select **Insights**.
 
-    ![In the Monitoring blade, Insights is highlighted.]({{site.baseurl}}/assets/img/Ex2-Task8.2.png "Select Insights link")
+    ![In the Monitoring blade, Insights is highlighted.]({{site.baseurl}}/assets/img/media/Ex2-Task8.2.png "Select Insights link")
 
 3. Review the various available dashboards and take a deeper look at the different metrics and logs available on the Cluster, Nodes, Controllers, and deployed Containers.
 
-    ![In this screenshot, the dashboards and blades are shown. Cluster metrics can be reviewed.]({{site.baseurl}}/assets/img/Ex2-Task8.3.png "Review the dashboard metrics")
+    ![In this screenshot, the dashboards and blades are shown. Cluster metrics can be reviewed.]({{site.baseurl}}/assets/img/media/Ex2-Task8.3.png "Review the dashboard metrics")
 
 4. To review the Containers dashboards and see more detailed information about each container, select the **Containers** tab.
 
 5. Filter by container name and search for the **web** containers; observe all the containers created in the Kubernetes cluster with the pod names. 
 
-    ![In this screenshot, the containers are filtered by container named web.]({{site.baseurl}}/assets/img/monitor_1.png "Filter data by container and web")
+    ![In this screenshot, the containers are filtered by container named web.]({{site.baseurl}}/assets/img/media/monitor_1.png "Filter data by container and web")
 
 6. The CPU Usage metric is selected by default, displaying all CPU information for the selected container. To switch to another metric, open the metric dropdown list and select a different metric.
 
-    ![In this screenshot, the various metric options are shown.]({{site.baseurl}}/assets/img/monitor_2.png "Filter by CPU usage")
+    ![In this screenshot, the various metric options are shown.]({{site.baseurl}}/assets/img/media/monitor_2.png "Filter by CPU usage")
 
 7. Upon selecting any pod, the right panel will display all the information related to the chosen metric, which would be the case when selecting any other metric. The portal will show the details on the right panel for the selected pod.
 
 8. To display the logs for any container, simply select it and view the right panel and you will find the "View in Log Analytics" option, which will list all logs for this specific container.
 
-    ![In the View in Analytics dropdown, the View container logs item is selected.]({{site.baseurl}}/assets/img/monitor_5.png "View container logs menu option")
+    ![In the View in Analytics dropdown, the View container logs item is selected.]({{site.baseurl}}/assets/img/media/monitor_5.png "View container logs menu option")
 
-    ![The container logs are displayed based on a query entered in the query window.]({{site.baseurl}}/assets/img/monitor_6.png "Container logs")
+    ![The container logs are displayed based on a query entered in the query window.]({{site.baseurl}}/assets/img/media/monitor_6.png "Container logs")
 
 9. For each log entry you can display more information by expanding the log entry to view the below details.
 
-    ![The container log query results are displayed, one log entry is expanded in the results view with its details shown.]({{site.baseurl}}/assets/img/monitor_7.png "Expand the results")
+    ![The container log query results are displayed, one log entry is expanded in the results view with its details shown.]({{site.baseurl}}/assets/img/media/monitor_7.png "Expand the results")
 
 ## Exercise 3: Scale the application and test HA
 
@@ -735,17 +735,17 @@ This task will increase the number of instances for the API deployment in the AK
 
 2. Select **YAML** in the window that loads and scroll down until you find **replicas**. Change the number of replicas to **2**, then select **Review + save**. Finally, check **Confirm manifest change** and select **Save** when prompted.
 
-    ![In the edit YAML dialog, 2 is entered in the desired number of replicas.]({{site.baseurl}}/assets/img/2021-03-26-16-49-32.png "Setting replicas to 2")
+    ![In the edit YAML dialog, 2 is entered in the desired number of replicas.]({{site.baseurl}}/assets/img/media/2021-03-26-16-49-32.png "Setting replicas to 2")
 
     > **Note**: If the deployment completes quickly, you may not see the deployment Waiting states in the portal, as described in the following steps.
 
 3. From the Replica Set view for the API, you will see it is now deploying and that there is one healthy instance and one pending instance.
 
-    ![Replica Sets is selected under Workloads in the navigation menu on the left, and at right, Pods status: 1 pending, 1 running is highlighted. Below that, a red arrow points at the API deployment in the Pods box.]({{site.baseurl}}/assets/img/api-replica-set.png "View replica details")
+    ![Replica Sets is selected under Workloads in the navigation menu on the left, and at right, Pods status: 1 pending, 1 running is highlighted. Below that, a red arrow points at the API deployment in the Pods box.]({{site.baseurl}}/assets/img/media/api-replica-set.png "View replica details")
 
 4. From the navigation menu, select **Workloads**. Note that the api Deployment has an alert and shows a pod count 1 of 2 instances (shown as `1/2`).
 
-    ![In the Deployments box, the api service is highlighted with a grey timer icon at left and a pod count of 1/2 listed at right.]({{site.baseurl}}/assets/img/2021-03-26-16-50-38.png "View api active pods")
+    ![In the Deployments box, the api service is highlighted with a grey timer icon at left and a pod count of 1/2 listed at right.]({{site.baseurl}}/assets/img/media/2021-03-26-16-50-38.png "View api active pods")
 
     > **Note**: If you receive an error about insufficient CPU, that is OK. We will see how to deal with this in the next Task (Hint: you can use the **Insights** option in the AKS Azure Portal to review the **Node** status and view the Kubernetes event logs).
 
@@ -802,11 +802,11 @@ This task will resolve the failed API replicas. These failures occur due to the 
 
    Select **Review + save** and, when prompted, confirm the changes, and select **Save**.
 
-      ![In the edit YAML dialog, showing two changes required.]({{site.baseurl}}/assets/img/2021-03-26-16-56-28.png "Modify deployment manifest")
+      ![In the edit YAML dialog, showing two changes required.]({{site.baseurl}}/assets/img/media/2021-03-26-16-56-28.png "Modify deployment manifest")
 
 3. Return to the **Workloads** main view on the AKS Azure Portal and observe that the Deployment has two healthy Pods.
 
-    ![In the Workload view with the API deployment highlighted.]({{site.baseurl}}/assets/img/healthy-deployment.png "API deployment is now healthy")
+    ![In the Workload view with the API deployment highlighted.]({{site.baseurl}}/assets/img/media/healthy-deployment.png "API deployment is now healthy")
 
 ### Task 3: Restart containers and test HA
 
@@ -814,37 +814,37 @@ This task will restart containers and validate that the restart does not impact 
 
 1. Open the sample web application and navigate to the "Stats" page as shown.
 
-    ![The Stats page is visible in this screenshot of the Contoso Neuro web application.]({{site.baseurl}}/assets/img/image123.png "Contoso web task details")
+    ![The Stats page is visible in this screenshot of the Contoso Neuro web application.]({{site.baseurl}}/assets/img/media/image123.png "Contoso web task details")
 
 2. Navigate to the api Deployment of the fabmedical-[SUFFIX] AKS cluster in the Azure Portal. Open the YAML via the **YAML** blade and increase the required replica count to `4` in the api Deployment YAML. (See steps in Exercise 4, Task 1).
 
-    ![In the left menu the Deployments item is selected. The API deployment is highlighted in the Deployments list box.]({{site.baseurl}}/assets/img/2021-03-26-17-30-28.png "API pod deployments")
+    ![In the left menu the Deployments item is selected. The API deployment is highlighted in the Deployments list box.]({{site.baseurl}}/assets/img/media/2021-03-26-17-30-28.png "API pod deployments")
 
 3. After a few moments, you will find that the API deployment is running four replicas successfully.
 
 4. Return to the browser tab with the web application stats page loaded. Refresh the page over and over. Observe that the api hostname periodically changes between the four api pod instances. Likewise, the task id and pid might also switch between the four api pod instances.
 
-    ![On the Stats page in the Contoso Neuro web application, two different api host name values are highlighted.]({{site.baseurl}}/assets/img/image126.png "View web task hostname")
+    ![On the Stats page in the Contoso Neuro web application, two different api host name values are highlighted.]({{site.baseurl}}/assets/img/media/image126.png "View web task hostname")
 
 5. After refreshing enough times to see that the `hostName` value is changing and the service remains healthy, you can open the **Replica Sets** view for the API in the Azure Portal.
 
 6. On this view, you can see that the hostname value shown in the web application stats page matches the pod names for the pods running.
 
-    ![Viewing replica set in the Azure Portal.]({{site.baseurl}}/assets/img/2021-03-26-17-31-02.png "Viewing replica set in the Azure Portal")
+    ![Viewing replica set in the Azure Portal.]({{site.baseurl}}/assets/img/media/2021-03-26-17-31-02.png "Viewing replica set in the Azure Portal")
 
 7. Select two of the Pods at random and choose **Delete**. Select **Confirm delete**, and press **Delete** again.
 
-    ![The context menu for a pod in the pod list is expanded with the Delete item selected.]({{site.baseurl}}/assets/img/2021-03-26-17-31-31.png "Delete running pod instance")
+    ![The context menu for a pod in the pod list is expanded with the Delete item selected.]({{site.baseurl}}/assets/img/media/2021-03-26-17-31-31.png "Delete running pod instance")
 
 8. Kubernetes will launch new Pods to meet the required replica count. Depending on your view, you may see the old instances in the Terminating state and new instances in the ContainerCreating state.
 
-    ![The first row of the Pods box is highlighted, and the pod has a green check mark and is running.]({{site.baseurl}}/assets/img/2021-03-26-17-31-54.png "API Pods changing state")
+    ![The first row of the Pods box is highlighted, and the pod has a green check mark and is running.]({{site.baseurl}}/assets/img/media/2021-03-26-17-31-54.png "API Pods changing state")
 
 9. Return to the API Deployment and scale it back to a value of `1` replica. See Step 2 above for how to do this if you are unsure.
 
 10. Return to the sample website's stats page in the browser and refresh while Kubernetes scales down the number of Pods. You will notice that only one API hostname shows up, even though you may still see several running pods in the API replica set view. This behavior is because Kubernetes will no longer send traffic to the pods it has selected to terminate, even though several pods are running. As a result, only one pod will show in the API Replica Set view in a few moments.
 
-    ![Replica Sets is selected under Workloads in the navigation menu on the left. On the right are the Details and Pods boxes. Only one API host name, which has a green check mark and is listed as running, appears in the Pods box.]({{site.baseurl}}/assets/img/2021-03-26-17-32-24.png "View replica details")
+    ![Replica Sets is selected under Workloads in the navigation menu on the left. On the right are the Details and Pods boxes. Only one API host name, which has a green check mark and is listed as running, appears in the Pods box.]({{site.baseurl}}/assets/img/media/2021-03-26-17-32-24.png "View replica details")
 
 ### Task 4: Configure Cosmos DB Autoscale
 
@@ -860,7 +860,7 @@ This task will set up Autoscaling on Azure Cosmos DB.
 
 5. On the **Scale & Settings**, select **Autoscale** for the **Throughput** setting under **Scale**.
 
-    ![The screenshot displays Cosmos DB Scale and Settings tab with Autoscale selected]({{site.baseurl}}/assets/img/cosmosdb-autoscale.png "CosmosDB collection scale and settings")
+    ![The screenshot displays Cosmos DB Scale and Settings tab with Autoscale selected]({{site.baseurl}}/assets/img/media/cosmosdb-autoscale.png "CosmosDB collection scale and settings")
 
 6. Select **Save**.
 
@@ -876,7 +876,7 @@ This task will run a performance test script that will test the Autoscale featur
 
 3. On the **Connection String** pane, copy the **HOST**, **USERNAME**, and **PRIMARY PASSWORD** values from the **Read-write Keys** selector. Save these for use later.
 
-    ![The Cosmos DB account Connection String pane with the fields to copy highlighted.]({{site.baseurl}}/assets/img/cosmos-connection-string-pane.png "View CosmosDB connection string")
+    ![The Cosmos DB account Connection String pane with the fields to copy highlighted.]({{site.baseurl}}/assets/img/media/cosmos-connection-string-pane.png "View CosmosDB connection string")
 
     >**Note**: In your Cosmos DB account, you may see that the host endpoint uses `.mongo.cosmos.azure.com`, which is for version 3.6 of Mongo DB. The endpoint shown here is `.documents.azure.com`, which is for version 3.2 of Mongo DB. You can use either endpoint for the purposes of this Task. If you are curious about the new features added to version 3.6 (that do not affect the application in this lab), consult [this](https://devblogs.microsoft.com/cosmosdb/upgrade-your-server-version-from-3-2-to-3-6-for-azure-cosmos-db-api-for-mongodb/) post.
 
@@ -896,7 +896,7 @@ This task will run a performance test script that will test the Autoscale featur
 
 7. There are several variables declared at the top of the `perftest.sh` script. Modify the **host**, **username**, and **password** variables by setting their values to the corresponding Cosmos DB Connection String values that were copied previously.
 
-    ![The screenshot shows Vim with perftest.sh file open and variables set to Cosmos DB Connection String values.]({{site.baseurl}}/assets/img/cosmos-perf-test-variables.png "Modify the connection information in Vim")
+    ![The screenshot shows Vim with perftest.sh file open and variables set to Cosmos DB Connection String values.]({{site.baseurl}}/assets/img/media/cosmos-perf-test-variables.png "Modify the connection information in Vim")
 
     > Press `i` on your keyboard to enter insert mode, where you can alter the file.
 
@@ -920,7 +920,7 @@ This task will run a performance test script that will test the Autoscale featur
 
 12. Notice that the **Request charge** now shows there was activity on the **Cosmos DB account** that exceeded the 400 RU/s limit that was previously set before Autoscale was turned on.
 
-    ![The screenshot shows the Cosmos DB request charge graph showing recent activity from performance test]({{site.baseurl}}/assets/img/cosmos-request-charge.png "Recent CosmosDB activity graph")
+    ![The screenshot shows the Cosmos DB request charge graph showing recent activity from performance test]({{site.baseurl}}/assets/img/media/cosmos-request-charge.png "Recent CosmosDB activity graph")
 
 ## Exercise 4: Working with services and routing application traffic
 
@@ -942,13 +942,13 @@ In this task, you will update the web service to support dynamic discovery throu
 
 4. Next, scroll to the web containers spec as shown in the screenshot. Remove the hostPort entry for the web container's port mapping.
 
-   ![This is a screenshot of the Edit a Deployment dialog box with various displayed information about spec, containers, ports, and env. The ports node, containerPort: 3001 and protocol: TCP are highlighted, along with the increase to 4 replicas.]({{site.baseurl}}/assets/img/update-web-deployment.png "Remove web container hostPort entry")
+   ![This is a screenshot of the Edit a Deployment dialog box with various displayed information about spec, containers, ports, and env. The ports node, containerPort: 3001 and protocol: TCP are highlighted, along with the increase to 4 replicas.]({{site.baseurl}}/assets/img/media/update-web-deployment.png "Remove web container hostPort entry")
 
 5. Select **Review + save** and then confirm the change and **Save**.
 
 6. Check the status of the scale out by refreshing the web deployment's view. From the navigation menu, select Pods from under Workloads. Select the web pods. You should see an error like that shown in the following screenshot from this view.
 
-    ![Deployments is selected under Workloads in the navigation menu on the left. On the right are the Details and New Replica Set boxes. The web deployment is highlighted in the New Replica Set box, indicating an error.]({{site.baseurl}}/assets/img/2021-03-26-18-23-38.png "View Pod deployment events")
+    ![Deployments is selected under Workloads in the navigation menu on the left. On the right are the Details and New Replica Set boxes. The web deployment is highlighted in the New Replica Set box, indicating an error.]({{site.baseurl}}/assets/img/media/2021-03-26-18-23-38.png "View Pod deployment events")
 
 Like the API deployment, the web deployment used a fixed _hostPort_, and the number of available agent nodes limited your ability to scale. However, after resolving this issue for the web service by removing the _hostPort_ setting, the web deployment cannot scale past two pods due to CPU constraints. The deployment requests more CPU than the web application needs; we will fix this constraint in the next task.
 
@@ -958,7 +958,7 @@ This task will modify the CPU requirements for the web service to scale out to m
 
 1. Re-open the JSON view for the web deployment and then find the **CPU** resource requirements for the web container. Change this value to `125m`.
 
-    ![This is a screenshot of the Edit a Deployment dialog box with various displayed information about ports, env, and resources. The resources node, with cpu: 125m selected, is highlighted.]({{site.baseurl}}/assets/img/2021-03-26-18-24-06.png "Change cpu value")
+    ![This is a screenshot of the Edit a Deployment dialog box with various displayed information about ports, env, and resources. The resources node, with cpu: 125m selected, is highlighted.]({{site.baseurl}}/assets/img/media/2021-03-26-18-24-06.png "Change cpu value")
 
 2. Select **Review + save**, confirm the change, and select **Save** to update the deployment.
 
@@ -966,7 +966,7 @@ This task will modify the CPU requirements for the web service to scale out to m
 
 4. Observe four web pods in the running state when the deployment update completes.
 
-    ![Four web pods are listed in the Pods box, and all have green check marks and are listed as Running.]({{site.baseurl}}/assets/img/2021-03-26-18-24-35.png "Four pods running")
+    ![Four web pods are listed in the Pods box, and all have green check marks and are listed as Running.]({{site.baseurl}}/assets/img/media/2021-03-26-18-24-35.png "Four pods running")
 
 ### Task 3: Perform a rolling update
 
@@ -1010,7 +1010,7 @@ This task will edit the web application source code to add Application Insights 
     appInsights.start();
     ```
 
-    ![A screenshot of the code editor showing updates in context of the app.js file]({{site.baseurl}}/assets/img/hol-2019-10-02_12-33-29.png "AppInsights updates in app.js")
+    ![A screenshot of the code editor showing updates in context of the app.js file]({{site.baseurl}}/assets/img/media/hol-2019-10-02_12-33-29.png "AppInsights updates in app.js")
 
 5. Save changes and close the editor.
 
@@ -1102,11 +1102,11 @@ This task will edit the web application source code to add Application Insights 
 
 13. From the navigation menu, select **Replica Sets** under **Workloads**. From this view, you will see a new replica set for the web, which may still be in the process of deploying (as shown below) or already fully deployed.
 
-    ![At the top of the list, a new web replica set is listed as a pending deployment in the Replica Set box.]({{site.baseurl}}/assets/img/2021-03-26-18-25-30.png "Pod deployment is in progress")
+    ![At the top of the list, a new web replica set is listed as a pending deployment in the Replica Set box.]({{site.baseurl}}/assets/img/media/2021-03-26-18-25-30.png "Pod deployment is in progress")
 
 14. While the deployment is in progress, you can navigate to the web application and visit the stats page at `/stats`. Refresh the page as the rolling update executes. Observe that the service is running normally, and tasks continue to be load balanced.
 
-    ![On the Stats page, the hostName is highlighted.]({{site.baseurl}}/assets/img/image145.png "On Stats page hostName is displayed")
+    ![On the Stats page, the hostName is highlighted.]({{site.baseurl}}/assets/img/media/image145.png "On Stats page hostName is displayed")
 
 ### Task 4: Configure Kubernetes Ingress
 
@@ -1143,7 +1143,7 @@ This task will set up a Kubernetes Ingress using an [Nginx proxy server](https:/
 
 4. In the Azure Portal under **Services and ingresses**, copy the IP Address for the **External IP** for the `nginx-ingress-RANDOM-nginx-ingress` service.
 
-   ![A screenshot of the Kubernetes management dashboard showing the ingress controller settings.]({{site.baseurl}}/assets/img/2021-03-26-18-26-13.png "Copy ingress controller settings")
+   ![A screenshot of the Kubernetes management dashboard showing the ingress controller settings.]({{site.baseurl}}/assets/img/media/2021-03-26-18-26-13.png "Copy ingress controller settings")
 
     > **Note**: It could take a few minutes to refresh, alternately, you can find the IP using the following command in Azure Cloud Shell.
     >
@@ -1151,7 +1151,7 @@ This task will set up a Kubernetes Ingress using an [Nginx proxy server](https:/
     > kubectl get svc --namespace ingress-demo
     > ```
     >
-   ![A screenshot of Azure Cloud Shell showing the command output.]({{site.baseurl}}/assets/img/Ex4-Task5.5a.png "View the ingress controller LoadBalancer")
+   ![A screenshot of Azure Cloud Shell showing the command output.]({{site.baseurl}}/assets/img/media/Ex4-Task5.5a.png "View the ingress controller LoadBalancer")
 
 5. Open the [Azure Portal Resource Groups blade](https://portal.azure.com/?feature.customPortal=false#blade/HubsExtension/BrowseResourceGroups) and locate the Resource Group automatically created to host the Node Pools for AKS. It will have the naming format of `MC_fabmedical-[SUFFIX]_fabmedical-[SUFFIX]_[REGION]`.
 
@@ -1187,7 +1187,7 @@ This task will set up a Kubernetes Ingress using an [Nginx proxy server](https:/
    az network public-ip update --ids $PUBLICIPID --dns-name $DNSNAME
    ```
 
-   ![A screenshot of cloud shell editor showing the updated IP and SUFFIX values.]({{site.baseurl}}/assets/img/Ex4-Task5.6.png "Update the IP and SUFFIX values")
+   ![A screenshot of cloud shell editor showing the updated IP and SUFFIX values.]({{site.baseurl}}/assets/img/media/Ex4-Task5.6.png "Update the IP and SUFFIX values")
 
 7. Save changes and close the editor.
 
@@ -1205,7 +1205,7 @@ This task will set up a Kubernetes Ingress using an [Nginx proxy server](https:/
     http://fabmedical-[SUFFIX]-ingress.[AZURE-REGION].cloudapp.azure.com/
     ```
 
-    ![A screenshot of the fabmedical browser URL.]({{site.baseurl}}/assets/img/Ex4-Task5.9.png "fabmedical browser URL")
+    ![A screenshot of the fabmedical browser URL.]({{site.baseurl}}/assets/img/media/Ex4-Task5.9.png "fabmedical browser URL")
 
 10. Use helm to install `cert-manager`, a tool that can provision SSL certificates automatically from letsencrypt.org.
 
@@ -1356,7 +1356,7 @@ This task will set up a Kubernetes Ingress using an [Nginx proxy server](https:/
 
 21. Visit the API directly, by navigating to `/content-api/sessions` at the ingress endpoint.
 
-    ![A screenshot showing the output of the sessions content in the browser.]({{site.baseurl}}/assets/img/Ex4-Task5.19.png "Content api sessions")
+    ![A screenshot showing the output of the sessions content in the browser.]({{site.baseurl}}/assets/img/media/Ex4-Task5.19.png "Content api sessions")
 
 22. Test TLS termination by visiting both services again using `https`.
 
