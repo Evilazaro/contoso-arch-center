@@ -35,7 +35,7 @@ The TripInsights application, once a monolith, has been refactored into a number
 
 | Source Code                       	| GitHub repo                                                                           	|
 |------------------------------------------	|---------------------------------------------------------------------------------------	|
-| Trip Insights 	| ![GitHub logo]({{site.baseurl}}/assets/img/github.png) [GitHub Repo](https://github.com/Microsoft-OpenHack/containers_artifacts) 	|
+| Trip Insights 	| ![GitHub logo]({{site.baseurl}}/assets/img/github.png) [GitHub Repo](https://github.com/Evilazaro/Trip-Insights-App) 	|
 
 
 ## The Challenges
