@@ -4,12 +4,19 @@ title: Microservices
 permalink: /microservices-content/
 ---
 
+# Example Deployment
+
+| Example deployment                       	| GitHub repo                                                                           	|
+|------------------------------------------	|---------------------------------------------------------------------------------------	|
+| Container Apps Store Microservice Sample 	| [GitHub Repo](https://github.com/Azure-Samples/container-apps-store-api-microservice) 	|
+
+
 A microservices architecture consists of a collection of small, autonomous services. Each service is self-contained and should implement a single business capability within a bounded context. A bounded context is a natural division within a business and provides an explicit boundary within which a domain model exists.
 
 ![Logical diagram of microservices architecture style.]({{site.baseurl}}/assets/img/microservices-logical.png)
 
 
-## What are microservices?
+# What are microservices?
 
 - Microservices are small, independent, and loosely coupled. A single small team of developers can write and maintain a service.
 
