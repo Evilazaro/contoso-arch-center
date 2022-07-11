@@ -16,7 +16,7 @@ This architecture builds on the [AKS Baseline architecture](../aks/secure-baseli
 
 # Architecture
 
-{{site.baseurl}}/assets/img/aks-production-deployment.png
+![]({{site.baseurl}}/assets/img/aks-production-deployment.png)
 
 *Download a [Visio file](https://arch-center.azureedge.net/aks-microservices-advanced-production-deployment.vsdx) of this architecture.*
 
