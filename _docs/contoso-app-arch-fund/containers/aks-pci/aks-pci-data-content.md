@@ -290,5 +290,5 @@ People who are operating regulated environments must be educated, informed, and 
 
 Protect all systems against malware and regularly update antivirus software or programs. Develop and maintain secure systems and applications.
 
-> [!div class="nextstepaction"]
+
 > [Maintain a Vulnerability Management Program](aks-pci-malware.yml)

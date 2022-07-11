@@ -521,7 +521,7 @@ Azure provides security assurances for the hosted environment that are shared. I
 
 Protect stored cardholder data. Encrypt transmission of cardholder data across open, public networks.
 
-> [!div class="nextstepaction"]
+
 > [Protect cardholder data](aks-pci-data.yml)
 
 ## Related resources

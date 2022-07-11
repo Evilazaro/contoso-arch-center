@@ -353,5 +353,5 @@ This is particularly important for people who are part of the approval process f
 
 Maintain a policy that addresses information security for all personnel.
 
-> [!div class="nextstepaction"]
+
 > [Maintain an Information Security Policy](aks-pci-policy.yml)

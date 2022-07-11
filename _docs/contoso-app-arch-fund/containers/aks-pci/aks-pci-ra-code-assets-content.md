@@ -239,5 +239,5 @@ Here are links to feature documentation of some key components of this architect
 
 Install and maintain a firewall configuration to protect cardholder data. Do not use vendor-supplied defaults for system passwords and other security parameters.
 
-> [!div class="nextstepaction"]
+
 > [Build and maintain a secure network and systems](aks-pci-network.yml)

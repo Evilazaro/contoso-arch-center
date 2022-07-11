@@ -279,7 +279,7 @@ For Azure Monitor Log Analytics, you are charged for data ingestion and retentio
 
 To deploy the reference implementation for this architecture, follow the steps in the [GitHub repo][ri-deploy].
 
-> [!div class="nextstepaction"]
+
 > [AKS Microservices Reference Implementation](https://github.com/mspnp/microservices-reference-implementation)
 
 ## Next steps

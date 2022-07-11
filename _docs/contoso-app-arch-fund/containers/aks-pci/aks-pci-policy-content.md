@@ -33,5 +33,5 @@ Here are other articles that will help you plan the operational compliance.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
+
 > [Summary](aks-pci-summary.yml)

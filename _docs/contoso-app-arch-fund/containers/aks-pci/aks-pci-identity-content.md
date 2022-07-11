@@ -423,5 +423,5 @@ Here are some suggestions for applying technical controls:
 
 Track and monitor all access to network resources and cardholder data. Regularly test security systems and processes.
 
-> [!div class="nextstepaction"]
+
 > [Regularly monitor and test networks](aks-pci-monitor.yml)
